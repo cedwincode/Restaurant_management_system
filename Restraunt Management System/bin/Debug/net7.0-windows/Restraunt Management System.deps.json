@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Restraunt Management System/1.0.0": {
+        "runtime": {
+          "Restraunt Management System.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Restraunt Management System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

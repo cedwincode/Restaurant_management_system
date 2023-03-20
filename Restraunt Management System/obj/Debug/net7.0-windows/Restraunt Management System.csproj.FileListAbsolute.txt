@@ -1,0 +1,17 @@
+C:\Programming\web programming\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.exe
+C:\Programming\web programming\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.deps.json
+C:\Programming\web programming\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.runtimeconfig.json
+C:\Programming\web programming\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.dll
+C:\Programming\web programming\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.pdb
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.AssemblyReference.cache
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.GenerateResource.cache
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.AssemblyInfoInputs.cache
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.AssemblyInfo.cs
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CoreCompileInputs.cache
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.dll
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\refint\Restraunt Management System.dll
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.pdb
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.genruntimeconfig.cache
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\ref\Restraunt Management System.dll
+C:\Programming\web programming\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Login_Page.resources
