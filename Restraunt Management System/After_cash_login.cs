@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Restraunt_Management_System
 {
     public partial class After_cash_login : Form
     {
+        
         public After_cash_login()
         {
             InitializeComponent();
@@ -22,6 +24,11 @@ namespace Restraunt_Management_System
             Application.Run(new Login_Page());
         }
 
+        public void openBill_Form(object obj)
+        {
+            Application.Run(new Bill_Form());
+        }
+
         private void bt_back_login_Click(object sender, EventArgs e)
         {
             Thread th = new Thread(openLogin_Page);
@@ -29,6 +36,14 @@ namespace Restraunt_Management_System
             th.Start();
             this.Close();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(openBill_Form);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
         }
     }
 }
