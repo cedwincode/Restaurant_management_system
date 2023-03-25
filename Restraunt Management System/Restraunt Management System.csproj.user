@@ -7,6 +7,9 @@
     <Compile Update="After_mngr_login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Bill_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Login_Page.cs">
       <SubType>Form</SubType>
     </Compile>
