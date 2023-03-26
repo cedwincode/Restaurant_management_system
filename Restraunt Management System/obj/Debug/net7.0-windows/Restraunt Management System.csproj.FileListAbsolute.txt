@@ -42,3 +42,5 @@ C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\
 C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CopyComplete
+C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Revenue_Form.resources
+C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Properties.Resources.resources

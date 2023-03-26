@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-//using System.Collections;
-//using System.Security.Policy;
-//using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace Restraunt_Management_System
 {
@@ -81,6 +79,12 @@ namespace Restraunt_Management_System
             cb_ftype.Text = "";
             cb_fqty.Text = "";
             rb_none.Checked = true;
+            
+            
+            dtp.Value = DateTime.Now;
+            dtp.Checked = false;
+            tb_date.Text = "";
+
 
         }
 
@@ -98,7 +102,16 @@ namespace Restraunt_Management_System
             dqty = Convert.ToInt32(cb_dqty.Text); 
             total = Convert.ToInt32(cb_ftype.Text.Split("Rs")[1]) * fqty + Convert.ToInt32(cb_dtype.Text.Split("Rs")[1]) * dqty;
             discount = 0;
-            date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+            if(tb_date.Text.Equals(""))
+            {
+                date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            }
+            else
+            {
+                date = tb_date.Text;
+            }
+            
 
             int k;//for checking if query has worked or not
 
@@ -209,6 +222,22 @@ namespace Restraunt_Management_System
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
             this.Close();
+        }
+
+        private void tb_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_ValueChanged(object sender, EventArgs e)
+        {
+            String date = dtp.Value.ToString("yyyy-MM-dd HH:mm:ss");
+            tb_date.Text = date;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
