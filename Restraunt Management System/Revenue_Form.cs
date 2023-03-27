@@ -37,8 +37,10 @@ namespace Restraunt_Management_System
         public void show_Rev()
         {
             con.Open();
+            
 
             //resetting everyones value
+            
             from_dtp.Value = DateTime.Now;
             from_dtp.Checked = false;
             to_dtp.Value = DateTime.Now;
@@ -56,7 +58,7 @@ namespace Restraunt_Management_System
 
             con.Open();
             DataTable dta = new DataTable();
-            SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT * FROM [Revenue]", con);
+            SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)'FROM [Revenue] GROUP BY date", con);
             dtaadp.Fill(dta);
             dgv_rev.DataSource = dta;
 
@@ -79,40 +81,38 @@ namespace Restraunt_Management_System
                 String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
                 String todate = to_dtp.Value.ToString("yyyy-MM-dd");
                 DataTable dta = new DataTable();
-                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT * FROM [Revenue] WHERE date between '" + fromdate + "' AND '" + todate + "'", con); ;
+                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date", con); ;
                 dtaadp.Fill(dta);
                 dgv_rev.DataSource = dta;
-                //con.Close();
             }
             else if((cb_Beg.Text.Equals("") == false) && (cb_End.Text.Equals("") == true))
             {
                 String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
                 String todate = to_dtp.Value.ToString("yyyy-MM-dd");
                 DataTable dta = new DataTable();
-                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT * FROM [Revenue] WHERE date between '" + fromdate + "' AND '" + todate + "' AND Amount >= '"+st+"' ", con); 
+                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date HAVING SUM(Amount) >= '"+st+ "'", con); 
                 dtaadp.Fill(dta);
                 dgv_rev.DataSource = dta;
-               // con.Close();
             }
             else if((cb_End.Text.Equals("") == false) && (cb_Beg.Text.Equals("") == true))
             {
                 String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
                 String todate = to_dtp.Value.ToString("yyyy-MM-dd");
                 DataTable dta = new DataTable();
-                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT * FROM [Revenue] WHERE date between '" + fromdate + "' AND '" + todate + "' AND Amount <= '" + ed + "' ", con); 
+                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date HAVING SUM(Amount) <= '" + ed + "'", con);
                 dtaadp.Fill(dta);
                 dgv_rev.DataSource = dta;
-                //con.Close();
+               
             }
             else
             {
                 String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
                 String todate = to_dtp.Value.ToString("yyyy-MM-dd");
                 DataTable dta = new DataTable();
-                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT * FROM [Revenue] WHERE date between '" + fromdate + "' AND '" + todate + "' AND Amount >= '" + st + "' AND Amount <= '"+ed+"' ", con);
+                SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)'FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date  HAVING SUM(Amount) BETWEEN '" + st + "' AND '"+ed+ "'", con);
                 dtaadp.Fill(dta);
                 dgv_rev.DataSource = dta;
-               // con.Close();
+               
             }
             con.Close();
         }
@@ -143,6 +143,7 @@ namespace Restraunt_Management_System
                 }
                 
             }
+            day_dtp.Checked = false;
             con.Close();
         }
 
@@ -173,7 +174,7 @@ namespace Restraunt_Management_System
                 }
                 else if ((cb_Beg.Text.Equals("") == false) && (cb_End.Text.Equals("") == true))
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT SUM(Amount) AS Total FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' AND Amount >= '"+st+"'", con);
+                    SqlCommand cmd = new SqlCommand("SELECT SUM(subquery.subtotal) AS Total FROM (SELECT SUM(Amount) AS subtotal FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date  HAVING SUM(Amount) >= '"+st+"') AS subquery", con);
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         if (dr.Read())
@@ -184,7 +185,7 @@ namespace Restraunt_Management_System
                 }
                 else if ((cb_Beg.Text.Equals("") == true) && (cb_End.Text.Equals("") == false))
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT SUM(Amount) AS Total FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' AND Amount <= '" + ed + "'", con);
+                    SqlCommand cmd = new SqlCommand(" SELECT SUM(subquery.subtotal) AS Total FROM (SELECT SUM(Amount) AS subtotal FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date HAVING SUM(Amount) <= '" + ed + "') AS subquery", con);
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         if (dr.Read())
@@ -195,7 +196,7 @@ namespace Restraunt_Management_System
                 }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT SUM(Amount) AS Total FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' AND Amount >= '"+st+"' AND Amount <= '" + ed + "'", con);
+                    SqlCommand cmd = new SqlCommand("SELECT SUM(subquery.subtotal) AS Total FROM (SELECT SUM(Amount) AS subtotal FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date  HAVING SUM(Amount) BETWEEN '" + st+"' AND '" + ed + "')  AS subquery", con);
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         if (dr.Read())
@@ -257,6 +258,16 @@ namespace Restraunt_Management_System
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void from_dtp_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_rev_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
