@@ -30,16 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.bt_back_login = new System.Windows.Forms.Button();
+            this.bt_revenue_form = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(339, 27);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(336, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.Size = new System.Drawing.Size(148, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mangaer page";
+            this.label1.Text = "Manager page";
             // 
             // bt_back_login
             // 
@@ -51,11 +53,25 @@
             this.bt_back_login.UseVisualStyleBackColor = true;
             this.bt_back_login.Click += new System.EventHandler(this.bt_back_login_Click);
             // 
+            // bt_revenue_form
+            // 
+            this.bt_revenue_form.Image = global::Restraunt_Management_System.Properties.Resources.revenue_bt;
+            this.bt_revenue_form.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_revenue_form.Location = new System.Drawing.Point(66, 139);
+            this.bt_revenue_form.Name = "bt_revenue_form";
+            this.bt_revenue_form.Size = new System.Drawing.Size(97, 98);
+            this.bt_revenue_form.TabIndex = 3;
+            this.bt_revenue_form.Text = "Revenue";
+            this.bt_revenue_form.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bt_revenue_form.UseVisualStyleBackColor = true;
+            this.bt_revenue_form.Click += new System.EventHandler(this.bt_bill_form_Click);
+            // 
             // After_mngr_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt_revenue_form);
             this.Controls.Add(this.bt_back_login);
             this.Controls.Add(this.label1);
             this.Name = "After_mngr_login";
@@ -69,5 +85,6 @@
 
         private Label label1;
         private Button bt_back_login;
+        private Button bt_revenue_form;
     }
 }

@@ -36,9 +36,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(351, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(324, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.Size = new System.Drawing.Size(133, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cashier page";
             // 
@@ -54,11 +55,14 @@
             // 
             // bt_bill_form
             // 
-            this.bt_bill_form.Location = new System.Drawing.Point(67, 136);
+            this.bt_bill_form.Image = global::Restraunt_Management_System.Properties.Resources.bill_bt;
+            this.bt_bill_form.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_bill_form.Location = new System.Drawing.Point(86, 154);
             this.bt_bill_form.Name = "bt_bill_form";
-            this.bt_bill_form.Size = new System.Drawing.Size(94, 64);
+            this.bt_bill_form.Size = new System.Drawing.Size(97, 95);
             this.bt_bill_form.TabIndex = 2;
             this.bt_bill_form.Text = "Bill";
+            this.bt_bill_form.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bt_bill_form.UseVisualStyleBackColor = true;
             this.bt_bill_form.Click += new System.EventHandler(this.button1_Click);
             // 
