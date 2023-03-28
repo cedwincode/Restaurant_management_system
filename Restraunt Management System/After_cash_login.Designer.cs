@@ -28,57 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.bt_back_login = new System.Windows.Forms.Button();
-            this.bt_bill_form = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(After_cash_login));
+            label1 = new Label();
+            bt_back_login = new Button();
+            bt_bill_form = new Button();
+            label2 = new Label();
+            button1 = new Button();
+            label3 = new Label();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(324, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cashier page";
+            label1.AutoSize = true;
+            label1.Font = new Font("Cascadia Code", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Lime;
+            label1.Location = new Point(253, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 39);
+            label1.TabIndex = 0;
+            label1.Text = "Cashier";
             // 
             // bt_back_login
             // 
-            this.bt_back_login.Location = new System.Drawing.Point(352, 409);
-            this.bt_back_login.Name = "bt_back_login";
-            this.bt_back_login.Size = new System.Drawing.Size(94, 29);
-            this.bt_back_login.TabIndex = 1;
-            this.bt_back_login.Text = "Back";
-            this.bt_back_login.UseVisualStyleBackColor = true;
-            this.bt_back_login.Click += new System.EventHandler(this.bt_back_login_Click);
+            bt_back_login.FlatStyle = FlatStyle.Flat;
+            bt_back_login.Image = (Image)resources.GetObject("bt_back_login.Image");
+            bt_back_login.Location = new Point(12, 5);
+            bt_back_login.Margin = new Padding(3, 2, 3, 2);
+            bt_back_login.Name = "bt_back_login";
+            bt_back_login.Size = new Size(51, 62);
+            bt_back_login.TabIndex = 1;
+            bt_back_login.UseVisualStyleBackColor = true;
+            bt_back_login.Click += bt_back_login_Click;
             // 
             // bt_bill_form
             // 
-            this.bt_bill_form.Image = global::Restraunt_Management_System.Properties.Resources.bill_bt;
-            this.bt_bill_form.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bt_bill_form.Location = new System.Drawing.Point(86, 154);
-            this.bt_bill_form.Name = "bt_bill_form";
-            this.bt_bill_form.Size = new System.Drawing.Size(97, 95);
-            this.bt_bill_form.TabIndex = 2;
-            this.bt_bill_form.Text = "Bill";
-            this.bt_bill_form.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.bt_bill_form.UseVisualStyleBackColor = true;
-            this.bt_bill_form.Click += new System.EventHandler(this.button1_Click);
+            bt_bill_form.FlatStyle = FlatStyle.Flat;
+            bt_bill_form.Image = (Image)resources.GetObject("bt_bill_form.Image");
+            bt_bill_form.ImageAlign = ContentAlignment.TopCenter;
+            bt_bill_form.Location = new Point(126, 194);
+            bt_bill_form.Margin = new Padding(3, 2, 3, 2);
+            bt_bill_form.Name = "bt_bill_form";
+            bt_bill_form.Size = new Size(101, 106);
+            bt_bill_form.TabIndex = 2;
+            bt_bill_form.TextAlign = ContentAlignment.BottomCenter;
+            bt_bill_form.UseVisualStyleBackColor = true;
+            bt_bill_form.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Cascadia Code", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Lime;
+            label2.Location = new Point(149, 302);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 28);
+            label2.TabIndex = 3;
+            label2.Text = "Bill";
+            // 
+            // button1
+            // 
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(435, 193);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 106);
+            button1.TabIndex = 4;
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Cascadia Code", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Lime;
+            label3.Location = new Point(418, 302);
+            label3.Name = "label3";
+            label3.Size = new Size(144, 28);
+            label3.TabIndex = 5;
+            label3.Text = "Reservation";
             // 
             // After_cash_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bt_bill_form);
-            this.Controls.Add(this.bt_back_login);
-            this.Controls.Add(this.label1);
-            this.Name = "After_cash_login";
-            this.Text = "After_cash_login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(714, 411);
+            Controls.Add(label3);
+            Controls.Add(button1);
+            Controls.Add(label2);
+            Controls.Add(bt_bill_form);
+            Controls.Add(bt_back_login);
+            Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "After_cash_login";
+            Text = "After_cash_login";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -86,5 +130,8 @@
         private Label label1;
         private Button bt_back_login;
         private Button bt_bill_form;
+        private Label label2;
+        private Button button1;
+        private Label label3;
     }
 }

@@ -28,308 +28,342 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_id = new System.Windows.Forms.TextBox();
-            this.cb_ftype = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cb_fqty = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cb_dtype = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cb_dqty = new System.Windows.Forms.ComboBox();
-            this.rb_none = new System.Windows.Forms.RadioButton();
-            this.rb_member = new System.Windows.Forms.RadioButton();
-            this.bt_add = new System.Windows.Forms.Button();
-            this.bt_del = new System.Windows.Forms.Button();
-            this.bt_disp = new System.Windows.Forms.Button();
-            this.bill_dgv = new System.Windows.Forms.DataGridView();
-            this.bt_back_cash = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb_date = new System.Windows.Forms.TextBox();
-            this.dtp = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.bill_dgv)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bill_Form));
+            label1 = new Label();
+            tb_id = new TextBox();
+            cb_ftype = new ComboBox();
+            label2 = new Label();
+            label3 = new Label();
+            cb_fqty = new ComboBox();
+            label4 = new Label();
+            cb_dtype = new ComboBox();
+            label5 = new Label();
+            cb_dqty = new ComboBox();
+            rb_none = new RadioButton();
+            rb_member = new RadioButton();
+            bt_add = new Button();
+            bt_del = new Button();
+            bt_disp = new Button();
+            bill_dgv = new DataGridView();
+            bt_back_cash = new Button();
+            label6 = new Label();
+            tb_date = new TextBox();
+            dtp = new DateTimePicker();
+            label7 = new Label();
+            panel1 = new Panel();
+            label8 = new Label();
+            ((System.ComponentModel.ISupportInitialize)bill_dgv).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(80, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Id";
+            label1.AutoSize = true;
+            label1.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.Lime;
+            label1.Location = new Point(14, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(24, 17);
+            label1.TabIndex = 0;
+            label1.Text = "Id";
+            label1.Click += label1_Click;
             // 
             // tb_id
             // 
-            this.tb_id.Location = new System.Drawing.Point(108, 19);
-            this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(151, 27);
-            this.tb_id.TabIndex = 1;
-            this.tb_id.TextChanged += new System.EventHandler(this.tb_id_TextChanged);
+            tb_id.BackColor = Color.LightGray;
+            tb_id.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_id.Location = new Point(94, 14);
+            tb_id.Margin = new Padding(3, 2, 3, 2);
+            tb_id.Name = "tb_id";
+            tb_id.Size = new Size(133, 22);
+            tb_id.TabIndex = 1;
+            tb_id.TextChanged += tb_id_TextChanged;
             // 
             // cb_ftype
             // 
-            this.cb_ftype.FormattingEnabled = true;
-            this.cb_ftype.Items.AddRange(new object[] {
-            "Ros omlet Rs25",
-            "Cupcake Rs10",
-            "Fried Rice Rs60",
-            "Pork Roast Rs120",
-            "Dosa Rs35"});
-            this.cb_ftype.Location = new System.Drawing.Point(108, 81);
-            this.cb_ftype.Name = "cb_ftype";
-            this.cb_ftype.Size = new System.Drawing.Size(151, 28);
-            this.cb_ftype.TabIndex = 2;
+            cb_ftype.BackColor = Color.LightGray;
+            cb_ftype.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cb_ftype.FormattingEnabled = true;
+            cb_ftype.Items.AddRange(new object[] { "Ros omlet Rs25", "Cupcake Rs10", "Fried Rice Rs60", "Pork Roast Rs120", "Dosa Rs35" });
+            cb_ftype.Location = new Point(94, 56);
+            cb_ftype.Margin = new Padding(3, 2, 3, 2);
+            cb_ftype.Name = "cb_ftype";
+            cb_ftype.Size = new Size(133, 22);
+            cb_ftype.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(24, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Food Type";
+            label2.AutoSize = true;
+            label2.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Lime;
+            label2.Location = new Point(14, 58);
+            label2.Name = "label2";
+            label2.Size = new Size(80, 17);
+            label2.TabIndex = 3;
+            label2.Text = "Food Type";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(24, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Food Qty";
+            label3.AutoSize = true;
+            label3.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Lime;
+            label3.Location = new Point(14, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 17);
+            label3.TabIndex = 4;
+            label3.Text = "Food Qty";
             // 
             // cb_fqty
             // 
-            this.cb_fqty.FormattingEnabled = true;
-            this.cb_fqty.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cb_fqty.Location = new System.Drawing.Point(108, 138);
-            this.cb_fqty.Name = "cb_fqty";
-            this.cb_fqty.Size = new System.Drawing.Size(151, 28);
-            this.cb_fqty.TabIndex = 5;
+            cb_fqty.BackColor = Color.LightGray;
+            cb_fqty.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cb_fqty.FormattingEnabled = true;
+            cb_fqty.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
+            cb_fqty.Location = new Point(94, 104);
+            cb_fqty.Margin = new Padding(3, 2, 3, 2);
+            cb_fqty.Name = "cb_fqty";
+            cb_fqty.Size = new Size(133, 22);
+            cb_fqty.TabIndex = 5;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(313, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Drink Type";
+            label4.AutoSize = true;
+            label4.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Lime;
+            label4.Location = new Point(238, 62);
+            label4.Name = "label4";
+            label4.Size = new Size(88, 17);
+            label4.TabIndex = 6;
+            label4.Text = "Drink Type";
             // 
             // cb_dtype
             // 
-            this.cb_dtype.FormattingEnabled = true;
-            this.cb_dtype.Items.AddRange(new object[] {
-            "Sprite 200ml Rs15",
-            "Pepsi 200ml Rs15",
-            "Maaza 200ml Rs25",
-            "Lassi Rs15",
-            "Coke 200ml Rs20"});
-            this.cb_dtype.Location = new System.Drawing.Point(398, 81);
-            this.cb_dtype.Name = "cb_dtype";
-            this.cb_dtype.Size = new System.Drawing.Size(151, 28);
-            this.cb_dtype.TabIndex = 7;
+            cb_dtype.BackColor = Color.LightGray;
+            cb_dtype.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cb_dtype.FormattingEnabled = true;
+            cb_dtype.Items.AddRange(new object[] { "Sprite 200ml Rs15", "Pepsi 200ml Rs15", "Maaza 200ml Rs25", "Lassi Rs15", "Coke 200ml Rs20" });
+            cb_dtype.Location = new Point(329, 56);
+            cb_dtype.Margin = new Padding(3, 2, 3, 2);
+            cb_dtype.Name = "cb_dtype";
+            cb_dtype.Size = new Size(133, 22);
+            cb_dtype.TabIndex = 7;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(313, 141);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 20);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Drink Qty";
+            label5.AutoSize = true;
+            label5.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Lime;
+            label5.Location = new Point(238, 106);
+            label5.Name = "label5";
+            label5.Size = new Size(80, 17);
+            label5.TabIndex = 8;
+            label5.Text = "Drink Qty";
             // 
             // cb_dqty
             // 
-            this.cb_dqty.FormattingEnabled = true;
-            this.cb_dqty.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cb_dqty.Location = new System.Drawing.Point(398, 141);
-            this.cb_dqty.Name = "cb_dqty";
-            this.cb_dqty.Size = new System.Drawing.Size(151, 28);
-            this.cb_dqty.TabIndex = 9;
+            cb_dqty.BackColor = Color.LightGray;
+            cb_dqty.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cb_dqty.FormattingEnabled = true;
+            cb_dqty.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
+            cb_dqty.Location = new Point(329, 104);
+            cb_dqty.Margin = new Padding(3, 2, 3, 2);
+            cb_dqty.Name = "cb_dqty";
+            cb_dqty.Size = new Size(133, 22);
+            cb_dqty.TabIndex = 9;
             // 
             // rb_none
             // 
-            this.rb_none.AutoSize = true;
-            this.rb_none.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rb_none.Location = new System.Drawing.Point(24, 192);
-            this.rb_none.Name = "rb_none";
-            this.rb_none.Size = new System.Drawing.Size(68, 24);
-            this.rb_none.TabIndex = 10;
-            this.rb_none.TabStop = true;
-            this.rb_none.Text = "None";
-            this.rb_none.UseVisualStyleBackColor = true;
+            rb_none.AutoSize = true;
+            rb_none.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rb_none.ForeColor = Color.Lime;
+            rb_none.Location = new Point(484, 79);
+            rb_none.Margin = new Padding(3, 2, 3, 2);
+            rb_none.Name = "rb_none";
+            rb_none.Size = new Size(53, 20);
+            rb_none.TabIndex = 10;
+            rb_none.TabStop = true;
+            rb_none.Text = "None";
+            rb_none.UseVisualStyleBackColor = true;
             // 
             // rb_member
             // 
-            this.rb_member.AutoSize = true;
-            this.rb_member.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rb_member.Location = new System.Drawing.Point(118, 192);
-            this.rb_member.Name = "rb_member";
-            this.rb_member.Size = new System.Drawing.Size(89, 24);
-            this.rb_member.TabIndex = 11;
-            this.rb_member.TabStop = true;
-            this.rb_member.Text = "Member";
-            this.rb_member.UseVisualStyleBackColor = true;
+            rb_member.AutoSize = true;
+            rb_member.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rb_member.ForeColor = Color.Lime;
+            rb_member.Location = new Point(484, 103);
+            rb_member.Margin = new Padding(3, 2, 3, 2);
+            rb_member.Name = "rb_member";
+            rb_member.Size = new Size(67, 20);
+            rb_member.TabIndex = 11;
+            rb_member.TabStop = true;
+            rb_member.Text = "Member";
+            rb_member.UseVisualStyleBackColor = true;
             // 
             // bt_add
             // 
-            this.bt_add.Location = new System.Drawing.Point(398, 187);
-            this.bt_add.Name = "bt_add";
-            this.bt_add.Size = new System.Drawing.Size(94, 29);
-            this.bt_add.TabIndex = 12;
-            this.bt_add.Text = "Add";
-            this.bt_add.UseVisualStyleBackColor = true;
-            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
-            this.bt_add.MouseEnter += new System.EventHandler(this.bt_add_MouseEnter);
-            this.bt_add.MouseLeave += new System.EventHandler(this.bt_add_MouseLeave);
+            bt_add.Location = new Point(726, 12);
+            bt_add.Margin = new Padding(3, 2, 3, 2);
+            bt_add.Name = "bt_add";
+            bt_add.Size = new Size(82, 22);
+            bt_add.TabIndex = 12;
+            bt_add.Text = "Add";
+            bt_add.UseVisualStyleBackColor = true;
+            bt_add.Click += bt_add_Click;
+            bt_add.MouseEnter += bt_add_MouseEnter;
+            bt_add.MouseLeave += bt_add_MouseLeave;
             // 
             // bt_del
             // 
-            this.bt_del.Location = new System.Drawing.Point(510, 187);
-            this.bt_del.Name = "bt_del";
-            this.bt_del.Size = new System.Drawing.Size(94, 29);
-            this.bt_del.TabIndex = 13;
-            this.bt_del.Text = "Delete";
-            this.bt_del.UseVisualStyleBackColor = true;
-            this.bt_del.Click += new System.EventHandler(this.button2_Click);
-            this.bt_del.MouseEnter += new System.EventHandler(this.bt_del_MouseEnter);
-            this.bt_del.MouseLeave += new System.EventHandler(this.bt_del_MouseLeave);
+            bt_del.Location = new Point(726, 55);
+            bt_del.Margin = new Padding(3, 2, 3, 2);
+            bt_del.Name = "bt_del";
+            bt_del.Size = new Size(82, 22);
+            bt_del.TabIndex = 13;
+            bt_del.Text = "Delete";
+            bt_del.UseVisualStyleBackColor = true;
+            bt_del.Click += button2_Click;
+            bt_del.MouseEnter += bt_del_MouseEnter;
+            bt_del.MouseLeave += bt_del_MouseLeave;
             // 
             // bt_disp
             // 
-            this.bt_disp.Location = new System.Drawing.Point(623, 187);
-            this.bt_disp.Name = "bt_disp";
-            this.bt_disp.Size = new System.Drawing.Size(94, 29);
-            this.bt_disp.TabIndex = 15;
-            this.bt_disp.Text = "Display";
-            this.bt_disp.UseVisualStyleBackColor = true;
-            this.bt_disp.Click += new System.EventHandler(this.bt_disp_Click);
+            bt_disp.Location = new Point(726, 100);
+            bt_disp.Margin = new Padding(3, 2, 3, 2);
+            bt_disp.Name = "bt_disp";
+            bt_disp.Size = new Size(82, 22);
+            bt_disp.TabIndex = 15;
+            bt_disp.Text = "Display";
+            bt_disp.UseVisualStyleBackColor = true;
+            bt_disp.Click += bt_disp_Click;
             // 
             // bill_dgv
             // 
-            this.bill_dgv.AllowUserToAddRows = false;
-            this.bill_dgv.AllowUserToDeleteRows = false;
-            this.bill_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bill_dgv.BackgroundColor = System.Drawing.Color.SandyBrown;
-            this.bill_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bill_dgv.Location = new System.Drawing.Point(12, 274);
-            this.bill_dgv.Name = "bill_dgv";
-            this.bill_dgv.ReadOnly = true;
-            this.bill_dgv.RowHeadersWidth = 51;
-            this.bill_dgv.RowTemplate.Height = 29;
-            this.bill_dgv.Size = new System.Drawing.Size(905, 282);
-            this.bill_dgv.TabIndex = 16;
+            bill_dgv.AllowUserToAddRows = false;
+            bill_dgv.AllowUserToDeleteRows = false;
+            bill_dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            bill_dgv.BackgroundColor = Color.Black;
+            bill_dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            bill_dgv.Location = new Point(10, 206);
+            bill_dgv.Margin = new Padding(3, 2, 3, 2);
+            bill_dgv.Name = "bill_dgv";
+            bill_dgv.ReadOnly = true;
+            bill_dgv.RowHeadersWidth = 51;
+            bill_dgv.RowTemplate.Height = 29;
+            bill_dgv.Size = new Size(810, 212);
+            bill_dgv.TabIndex = 16;
+            bill_dgv.CellContentClick += bill_dgv_CellContentClick;
             // 
             // bt_back_cash
             // 
-            this.bt_back_cash.Location = new System.Drawing.Point(858, -1);
-            this.bt_back_cash.Name = "bt_back_cash";
-            this.bt_back_cash.Size = new System.Drawing.Size(94, 29);
-            this.bt_back_cash.TabIndex = 17;
-            this.bt_back_cash.Text = "Back";
-            this.bt_back_cash.UseVisualStyleBackColor = true;
-            this.bt_back_cash.Click += new System.EventHandler(this.bt_back_cash_Click);
+            bt_back_cash.FlatStyle = FlatStyle.Flat;
+            bt_back_cash.Image = (Image)resources.GetObject("bt_back_cash.Image");
+            bt_back_cash.Location = new Point(10, 9);
+            bt_back_cash.Margin = new Padding(3, 2, 3, 2);
+            bt_back_cash.Name = "bt_back_cash";
+            bt_back_cash.Size = new Size(45, 43);
+            bt_back_cash.TabIndex = 17;
+            bt_back_cash.UseVisualStyleBackColor = true;
+            bt_back_cash.Click += bt_back_cash_Click;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(350, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 20);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Date";
+            label6.AutoSize = true;
+            label6.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Lime;
+            label6.Location = new Point(238, 15);
+            label6.Name = "label6";
+            label6.Size = new Size(40, 17);
+            label6.TabIndex = 18;
+            label6.Text = "Date";
             // 
             // tb_date
             // 
-            this.tb_date.Location = new System.Drawing.Point(398, 19);
-            this.tb_date.Name = "tb_date";
-            this.tb_date.Size = new System.Drawing.Size(151, 27);
-            this.tb_date.TabIndex = 19;
+            tb_date.BackColor = Color.LightGray;
+            tb_date.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_date.Location = new Point(329, 12);
+            tb_date.Margin = new Padding(3, 2, 3, 2);
+            tb_date.Name = "tb_date";
+            tb_date.Size = new Size(133, 22);
+            tb_date.TabIndex = 19;
             // 
             // dtp
             // 
-            this.dtp.Location = new System.Drawing.Point(555, 19);
-            this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(177, 27);
-            this.dtp.TabIndex = 20;
-            this.dtp.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
+            dtp.Location = new Point(484, 12);
+            dtp.Margin = new Padding(3, 2, 3, 2);
+            dtp.Name = "dtp";
+            dtp.Size = new Size(155, 23);
+            dtp.TabIndex = 20;
+            dtp.ValueChanged += dtp_ValueChanged;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(12, -4);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 28);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Bill Generator";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            label7.AutoSize = true;
+            label7.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Lime;
+            label7.Location = new Point(310, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(210, 32);
+            label7.TabIndex = 21;
+            label7.Text = "Bill Generator";
+            label7.Click += label7_Click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SandyBrown;
-            this.panel1.Controls.Add(this.tb_id);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dtp);
-            this.panel1.Controls.Add(this.cb_ftype);
-            this.panel1.Controls.Add(this.tb_date);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.cb_fqty);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.bt_disp);
-            this.panel1.Controls.Add(this.cb_dtype);
-            this.panel1.Controls.Add(this.bt_del);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.bt_add);
-            this.panel1.Controls.Add(this.cb_dqty);
-            this.panel1.Controls.Add(this.rb_member);
-            this.panel1.Controls.Add(this.rb_none);
-            this.panel1.Location = new System.Drawing.Point(12, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 227);
-            this.panel1.TabIndex = 22;
+            panel1.BackColor = Color.Black;
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(tb_id);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(dtp);
+            panel1.Controls.Add(cb_ftype);
+            panel1.Controls.Add(tb_date);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(cb_fqty);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(bt_disp);
+            panel1.Controls.Add(cb_dtype);
+            panel1.Controls.Add(bt_del);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(bt_add);
+            panel1.Controls.Add(cb_dqty);
+            panel1.Controls.Add(rb_member);
+            panel1.Controls.Add(rb_none);
+            panel1.Location = new Point(12, 60);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(811, 135);
+            panel1.TabIndex = 22;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.Lime;
+            label8.Location = new Point(484, 55);
+            label8.Name = "label8";
+            label8.Size = new Size(99, 20);
+            label8.TabIndex = 21;
+            label8.Text = "Membership";
             // 
             // Bill_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 568);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.bt_back_cash);
-            this.Controls.Add(this.bill_dgv);
-            this.Name = "Bill_Form";
-            this.Text = "Bill_Form";
-            ((System.ComponentModel.ISupportInitialize)(this.bill_dgv)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(835, 426);
+            Controls.Add(panel1);
+            Controls.Add(label7);
+            Controls.Add(bt_back_cash);
+            Controls.Add(bill_dgv);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Bill_Form";
+            Text = "Bill_Form";
+            ((System.ComponentModel.ISupportInitialize)bill_dgv).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -356,5 +390,6 @@
         private DateTimePicker dtp;
         private Label label7;
         private Panel panel1;
+        private Label label8;
     }
 }

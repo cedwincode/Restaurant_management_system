@@ -14,7 +14,7 @@ namespace Restraunt_Management_System
 {
     public partial class Bill_Form : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
         public Bill_Form()
         {
             InitializeComponent();
@@ -30,11 +30,11 @@ namespace Restraunt_Management_System
         private void button2_Click(object sender, EventArgs e)
         {
             con.Open();
-            
+
 
             int k; //for checking if query has worked or not
 
-            if(tb_id.Text.Equals(""))
+            if (tb_id.Text.Equals(""))
             {
                 int d_id = Convert.ToInt32(bill_dgv.CurrentCell.Value);
                 SqlCommand cmd = new SqlCommand("DELETE FROM [Bill] WHERE Id = '" + d_id + "'", con);
@@ -79,8 +79,8 @@ namespace Restraunt_Management_System
             cb_ftype.Text = "";
             cb_fqty.Text = "";
             rb_none.Checked = true;
-            
-            
+
+
             dtp.Value = DateTime.Now;
             dtp.Checked = false;
             tb_date.Text = "";
@@ -97,13 +97,13 @@ namespace Restraunt_Management_System
 
             id = Convert.ToInt32(tb_id.Text);
             ftype = cb_ftype.Text;
-            fqty =  Convert.ToInt32(cb_fqty.Text); 
+            fqty = Convert.ToInt32(cb_fqty.Text);
             dtype = cb_dtype.Text;
-            dqty = Convert.ToInt32(cb_dqty.Text); 
+            dqty = Convert.ToInt32(cb_dqty.Text);
             total = Convert.ToInt32(cb_ftype.Text.Split("Rs")[1]) * fqty + Convert.ToInt32(cb_dtype.Text.Split("Rs")[1]) * dqty;
             discount = 0;
 
-            if(tb_date.Text.Equals(""))
+            if (tb_date.Text.Equals(""))
             {
                 date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             }
@@ -111,29 +111,29 @@ namespace Restraunt_Management_System
             {
                 date = tb_date.Text;
             }
-            
+
 
             int k;//for checking if query has worked or not
 
-            
-            if(rb_member.Checked)
+
+            if (rb_member.Checked)
             {
-                discount = (10 * total)/100;
+                discount = (10 * total) / 100;
                 total = total - discount;
                 SqlCommand cmd = new SqlCommand("INSERT INTO [Bill] VALUES('" + id + "','" + ftype + "','" + fqty + "','" + dtype + "','" + dqty + "','" + discount + "','" + total + "','" + date + "')", con);
-                k =  cmd.ExecuteNonQuery();
+                k = cmd.ExecuteNonQuery();
                 con.Close();
-                if (k> 0)
+                if (k > 0)
                 {
                     show_bill();
-                    Auto_add_Rev(id,total,date);
+                    Auto_add_Rev(id, total, date);
                 }
                 else
                 {
                     MessageBox.Show("Data was not added successfully");
                 }
                 clear_text();
-                
+
             }
             else
             {
@@ -154,18 +154,18 @@ namespace Restraunt_Management_System
 
         }
 
-        public void Auto_add_Rev(int id,int total,String date)
+        public void Auto_add_Rev(int id, int total, String date)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO [Revenue] VALUES('"+id+"','"+total+"','"+date+"')",con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO [Revenue] VALUES('" + id + "','" + total + "','" + date + "')", con);
             cmd.ExecuteNonQuery();
-            con.Close();        
+            con.Close();
         }
 
         public void Auto_del_Rev(int del_id)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("DELETE FROM [Revenue] WHERE Id = '"+del_id+"'", con);
+            SqlCommand cmd = new SqlCommand("DELETE FROM [Revenue] WHERE Id = '" + del_id + "'", con);
             cmd.ExecuteNonQuery();
             con.Close();
         }
@@ -236,6 +236,16 @@ namespace Restraunt_Management_System
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bill_dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

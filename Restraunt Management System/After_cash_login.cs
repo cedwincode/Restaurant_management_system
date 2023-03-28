@@ -13,7 +13,7 @@ namespace Restraunt_Management_System
 {
     public partial class After_cash_login : Form
     {
-        
+
         public After_cash_login()
         {
             InitializeComponent();
