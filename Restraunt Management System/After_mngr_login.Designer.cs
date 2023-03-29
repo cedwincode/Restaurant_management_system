@@ -29,101 +29,100 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(After_mngr_login));
-            label1 = new Label();
-            bt_back_login = new Button();
-            bt_revenue_form = new Button();
-            label2 = new Label();
-            bt_inventory_form = new Button();
-            label3 = new Label();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bt_back_login = new System.Windows.Forms.Button();
+            this.bt_revenue_form = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bt_inventory_form = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(253, 7);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 39);
-            label1.TabIndex = 0;
-            label1.Text = "Manager";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(311, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manager";
             // 
             // bt_back_login
             // 
-            bt_back_login.BackColor = Color.Black;
-            bt_back_login.FlatStyle = FlatStyle.Flat;
-            bt_back_login.Image = (Image)resources.GetObject("bt_back_login.Image");
-            bt_back_login.Location = new Point(12, 11);
-            bt_back_login.Margin = new Padding(3, 2, 3, 2);
-            bt_back_login.Name = "bt_back_login";
-            bt_back_login.Size = new Size(45, 46);
-            bt_back_login.TabIndex = 1;
-            bt_back_login.UseVisualStyleBackColor = false;
-            bt_back_login.Click += bt_back_login_Click;
+            this.bt_back_login.BackColor = System.Drawing.Color.Black;
+            this.bt_back_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_back_login.Image = ((System.Drawing.Image)(resources.GetObject("bt_back_login.Image")));
+            this.bt_back_login.Location = new System.Drawing.Point(14, 15);
+            this.bt_back_login.Name = "bt_back_login";
+            this.bt_back_login.Size = new System.Drawing.Size(51, 61);
+            this.bt_back_login.TabIndex = 1;
+            this.bt_back_login.UseVisualStyleBackColor = false;
             // 
             // bt_revenue_form
             // 
-            bt_revenue_form.FlatStyle = FlatStyle.Flat;
-            bt_revenue_form.Image = (Image)resources.GetObject("bt_revenue_form.Image");
-            bt_revenue_form.ImageAlign = ContentAlignment.TopCenter;
-            bt_revenue_form.Location = new Point(126, 194);
-            bt_revenue_form.Margin = new Padding(3, 2, 3, 2);
-            bt_revenue_form.Name = "bt_revenue_form";
-            bt_revenue_form.Size = new Size(107, 99);
-            bt_revenue_form.TabIndex = 3;
-            bt_revenue_form.TextAlign = ContentAlignment.BottomCenter;
-            bt_revenue_form.UseVisualStyleBackColor = true;
-            bt_revenue_form.Click += bt_bill_form_Click;
+            this.bt_revenue_form.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_revenue_form.Image = ((System.Drawing.Image)(resources.GetObject("bt_revenue_form.Image")));
+            this.bt_revenue_form.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_revenue_form.Location = new System.Drawing.Point(161, 195);
+            this.bt_revenue_form.Name = "bt_revenue_form";
+            this.bt_revenue_form.Size = new System.Drawing.Size(127, 114);
+            this.bt_revenue_form.TabIndex = 3;
+            this.bt_revenue_form.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bt_revenue_form.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Lime;
-            label2.Location = new Point(131, 295);
-            label2.Name = "label2";
-            label2.Size = new Size(96, 28);
-            label2.TabIndex = 4;
-            label2.Text = "Revenue";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(161, 303);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 35);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Revenue";
             // 
             // bt_inventory_form
             // 
-            bt_inventory_form.FlatStyle = FlatStyle.Flat;
-            bt_inventory_form.Image = (Image)resources.GetObject("bt_inventory_form.Image");
-            bt_inventory_form.Location = new Point(434, 194);
-            bt_inventory_form.Name = "bt_inventory_form";
-            bt_inventory_form.Size = new Size(123, 99);
-            bt_inventory_form.TabIndex = 5;
-            bt_inventory_form.UseVisualStyleBackColor = true;
+            this.bt_inventory_form.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_inventory_form.Image = ((System.Drawing.Image)(resources.GetObject("bt_inventory_form.Image")));
+            this.bt_inventory_form.Location = new System.Drawing.Point(519, 182);
+            this.bt_inventory_form.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_inventory_form.Name = "bt_inventory_form";
+            this.bt_inventory_form.Size = new System.Drawing.Size(141, 127);
+            this.bt_inventory_form.TabIndex = 5;
+            this.bt_inventory_form.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Cascadia Code", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Lime;
-            label3.Location = new Point(437, 296);
-            label3.Name = "label3";
-            label3.Size = new Size(120, 28);
-            label3.TabIndex = 6;
-            label3.Text = "Inventory";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(510, 303);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(159, 35);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Inventory";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // After_mngr_login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(714, 411);
-            Controls.Add(label3);
-            Controls.Add(bt_inventory_form);
-            Controls.Add(label2);
-            Controls.Add(bt_revenue_form);
-            Controls.Add(bt_back_login);
-            Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "After_mngr_login";
-            Text = "After_mngr_login";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(816, 548);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.bt_inventory_form);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.bt_revenue_form);
+            this.Controls.Add(this.bt_back_login);
+            this.Controls.Add(this.label1);
+            this.Name = "After_mngr_login";
+            this.Text = "After_mngr_login";
+            this.Load += new System.EventHandler(this.After_mngr_login_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

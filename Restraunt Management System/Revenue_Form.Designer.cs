@@ -64,11 +64,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(149, 87);
+            this.label1.Location = new System.Drawing.Point(105, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Revenue Statement";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // dgv_rev
             // 
@@ -135,14 +136,14 @@
             // 
             // from_dtp
             // 
-            this.from_dtp.Location = new System.Drawing.Point(130, 9);
+            this.from_dtp.Location = new System.Drawing.Point(148, 9);
             this.from_dtp.Name = "from_dtp";
             this.from_dtp.Size = new System.Drawing.Size(178, 27);
             this.from_dtp.TabIndex = 5;
             // 
             // to_dtp
             // 
-            this.to_dtp.Location = new System.Drawing.Point(130, 64);
+            this.to_dtp.Location = new System.Drawing.Point(148, 64);
             this.to_dtp.Name = "to_dtp";
             this.to_dtp.Size = new System.Drawing.Size(178, 27);
             this.to_dtp.TabIndex = 6;
@@ -173,7 +174,7 @@
             this.lb_total.AutoSize = true;
             this.lb_total.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lb_total.ForeColor = System.Drawing.Color.Lime;
-            this.lb_total.Location = new System.Drawing.Point(135, 68);
+            this.lb_total.Location = new System.Drawing.Point(153, 68);
             this.lb_total.Name = "lb_total";
             this.lb_total.Size = new System.Drawing.Size(40, 18);
             this.lb_total.TabIndex = 9;
@@ -181,7 +182,7 @@
             // 
             // day_dtp
             // 
-            this.day_dtp.Location = new System.Drawing.Point(177, 60);
+            this.day_dtp.Location = new System.Drawing.Point(199, 62);
             this.day_dtp.Name = "day_dtp";
             this.day_dtp.Size = new System.Drawing.Size(221, 27);
             this.day_dtp.TabIndex = 10;
@@ -203,7 +204,7 @@
             this.total.AutoSize = true;
             this.total.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.total.ForeColor = System.Drawing.Color.Lime;
-            this.total.Location = new System.Drawing.Point(130, 164);
+            this.total.Location = new System.Drawing.Point(148, 164);
             this.total.Name = "total";
             this.total.Size = new System.Drawing.Size(40, 18);
             this.total.TabIndex = 12;
@@ -211,7 +212,7 @@
             // 
             // bt_get_total
             // 
-            this.bt_get_total.Location = new System.Drawing.Point(209, 159);
+            this.bt_get_total.Location = new System.Drawing.Point(232, 159);
             this.bt_get_total.Name = "bt_get_total";
             this.bt_get_total.Size = new System.Drawing.Size(94, 29);
             this.bt_get_total.TabIndex = 13;
@@ -232,7 +233,7 @@
             "500",
             "1000",
             "2000"});
-            this.cb_Beg.Location = new System.Drawing.Point(130, 115);
+            this.cb_Beg.Location = new System.Drawing.Point(148, 115);
             this.cb_Beg.Name = "cb_Beg";
             this.cb_Beg.Size = new System.Drawing.Size(71, 28);
             this.cb_Beg.TabIndex = 14;
@@ -250,7 +251,7 @@
             "500",
             "1000",
             "2000"});
-            this.cb_End.Location = new System.Drawing.Point(240, 115);
+            this.cb_End.Location = new System.Drawing.Point(255, 115);
             this.cb_End.Name = "cb_End";
             this.cb_End.Size = new System.Drawing.Size(71, 28);
             this.cb_End.TabIndex = 15;
@@ -271,7 +272,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Lime;
-            this.label7.Location = new System.Drawing.Point(209, 117);
+            this.label7.Location = new System.Drawing.Point(225, 118);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(27, 20);
             this.label7.TabIndex = 17;
@@ -293,7 +294,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Lime;
-            this.label8.Location = new System.Drawing.Point(510, 87);
+            this.label8.Location = new System.Drawing.Point(522, 87);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 35);
             this.label8.TabIndex = 19;

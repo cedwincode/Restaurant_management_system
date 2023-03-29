@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bill_Form));
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_id = new System.Windows.Forms.TextBox();
+            this.tb_b_id = new System.Windows.Forms.TextBox();
             this.cb_ftype = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,6 +51,8 @@
             this.dtp = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_display = new System.Windows.Forms.Button();
+            this.tb_search_bill = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bill_dgv)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,20 +63,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(16, 19);
+            this.label1.Location = new System.Drawing.Point(21, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 22);
+            this.label1.Size = new System.Drawing.Size(80, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Id";
+            this.label1.Text = "Bill Id";
             // 
-            // tb_id
+            // tb_b_id
             // 
-            this.tb_id.BackColor = System.Drawing.Color.LightGray;
-            this.tb_id.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_id.Location = new System.Drawing.Point(107, 19);
-            this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(151, 25);
-            this.tb_id.TabIndex = 1;
+            this.tb_b_id.BackColor = System.Drawing.Color.LightGray;
+            this.tb_b_id.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_b_id.Location = new System.Drawing.Point(107, 19);
+            this.tb_b_id.Name = "tb_b_id";
+            this.tb_b_id.Size = new System.Drawing.Size(151, 25);
+            this.tb_b_id.TabIndex = 1;
             // 
             // cb_ftype
             // 
@@ -97,7 +99,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(16, 77);
+            this.label2.Location = new System.Drawing.Point(6, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 22);
             this.label2.TabIndex = 3;
@@ -108,7 +110,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(16, 141);
+            this.label3.Location = new System.Drawing.Point(11, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 22);
             this.label3.TabIndex = 4;
@@ -135,7 +137,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(264, 80);
+            this.label4.Location = new System.Drawing.Point(272, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 22);
             this.label4.TabIndex = 6;
@@ -152,7 +154,7 @@
             "Maaza 200ml Rs25",
             "Lassi Rs15",
             "Coke 200ml Rs20"});
-            this.cb_dtype.Location = new System.Drawing.Point(376, 76);
+            this.cb_dtype.Location = new System.Drawing.Point(388, 77);
             this.cb_dtype.Name = "cb_dtype";
             this.cb_dtype.Size = new System.Drawing.Size(151, 25);
             this.cb_dtype.TabIndex = 7;
@@ -179,7 +181,7 @@
             "3",
             "4",
             "5"});
-            this.cb_dqty.Location = new System.Drawing.Point(376, 139);
+            this.cb_dqty.Location = new System.Drawing.Point(388, 139);
             this.cb_dqty.Name = "cb_dqty";
             this.cb_dqty.Size = new System.Drawing.Size(151, 25);
             this.cb_dqty.TabIndex = 9;
@@ -189,7 +191,7 @@
             this.rb_none.AutoSize = true;
             this.rb_none.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rb_none.ForeColor = System.Drawing.Color.Lime;
-            this.rb_none.Location = new System.Drawing.Point(553, 105);
+            this.rb_none.Location = new System.Drawing.Point(571, 105);
             this.rb_none.Name = "rb_none";
             this.rb_none.Size = new System.Drawing.Size(66, 24);
             this.rb_none.TabIndex = 10;
@@ -202,7 +204,7 @@
             this.rb_member.AutoSize = true;
             this.rb_member.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rb_member.ForeColor = System.Drawing.Color.Lime;
-            this.rb_member.Location = new System.Drawing.Point(553, 137);
+            this.rb_member.Location = new System.Drawing.Point(571, 138);
             this.rb_member.Name = "rb_member";
             this.rb_member.Size = new System.Drawing.Size(84, 24);
             this.rb_member.TabIndex = 11;
@@ -212,7 +214,7 @@
             // 
             // bt_add
             // 
-            this.bt_add.Location = new System.Drawing.Point(830, 16);
+            this.bt_add.Location = new System.Drawing.Point(829, 17);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(94, 29);
             this.bt_add.TabIndex = 12;
@@ -224,7 +226,7 @@
             // 
             // bt_del
             // 
-            this.bt_del.Location = new System.Drawing.Point(830, 73);
+            this.bt_del.Location = new System.Drawing.Point(829, 52);
             this.bt_del.Name = "bt_del";
             this.bt_del.Size = new System.Drawing.Size(94, 29);
             this.bt_del.TabIndex = 13;
@@ -236,13 +238,13 @@
             // 
             // bt_disp
             // 
-            this.bt_disp.Location = new System.Drawing.Point(830, 133);
+            this.bt_disp.Location = new System.Drawing.Point(829, 136);
             this.bt_disp.Name = "bt_disp";
             this.bt_disp.Size = new System.Drawing.Size(94, 29);
             this.bt_disp.TabIndex = 15;
-            this.bt_disp.Text = "Display";
+            this.bt_disp.Text = "Search Bill";
             this.bt_disp.UseVisualStyleBackColor = true;
-            this.bt_disp.Click += new System.EventHandler(this.bt_disp_Click);
+            this.bt_disp.Click += new System.EventHandler(this.bt_search_bill_Click);
             // 
             // bill_dgv
             // 
@@ -285,14 +287,14 @@
             // 
             this.tb_date.BackColor = System.Drawing.Color.LightGray;
             this.tb_date.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_date.Location = new System.Drawing.Point(376, 16);
+            this.tb_date.Location = new System.Drawing.Point(388, 20);
             this.tb_date.Name = "tb_date";
             this.tb_date.Size = new System.Drawing.Size(151, 25);
             this.tb_date.TabIndex = 19;
             // 
             // dtp
             // 
-            this.dtp.Location = new System.Drawing.Point(553, 16);
+            this.dtp.Location = new System.Drawing.Point(553, 20);
             this.dtp.Name = "dtp";
             this.dtp.Size = new System.Drawing.Size(177, 27);
             this.dtp.TabIndex = 20;
@@ -312,8 +314,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.bt_display);
+            this.panel1.Controls.Add(this.tb_search_bill);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.tb_id);
+            this.panel1.Controls.Add(this.tb_b_id);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dtp);
             this.panel1.Controls.Add(this.cb_ftype);
@@ -335,13 +339,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(927, 180);
             this.panel1.TabIndex = 22;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // bt_display
+            // 
+            this.bt_display.Location = new System.Drawing.Point(829, 98);
+            this.bt_display.Name = "bt_display";
+            this.bt_display.Size = new System.Drawing.Size(94, 29);
+            this.bt_display.TabIndex = 23;
+            this.bt_display.Text = "Display";
+            this.bt_display.UseVisualStyleBackColor = true;
+            this.bt_display.Click += new System.EventHandler(this.bt_display_Click);
+            // 
+            // tb_search_bill
+            // 
+            this.tb_search_bill.BackColor = System.Drawing.Color.LightGray;
+            this.tb_search_bill.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_search_bill.Location = new System.Drawing.Point(724, 137);
+            this.tb_search_bill.Name = "tb_search_bill";
+            this.tb_search_bill.Size = new System.Drawing.Size(99, 25);
+            this.tb_search_bill.TabIndex = 22;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Lime;
-            this.label8.Location = new System.Drawing.Point(553, 73);
+            this.label8.Location = new System.Drawing.Point(567, 77);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 25);
             this.label8.TabIndex = 21;
@@ -370,7 +394,7 @@
         #endregion
 
         private Label label1;
-        private TextBox tb_id;
+        private TextBox tb_b_id;
         private ComboBox cb_ftype;
         private Label label2;
         private Label label3;
@@ -392,5 +416,7 @@
         private Label label7;
         private Panel panel1;
         private Label label8;
+        private TextBox tb_search_bill;
+        private Button bt_display;
     }
 }

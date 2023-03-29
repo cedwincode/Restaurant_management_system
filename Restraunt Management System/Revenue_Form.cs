@@ -279,5 +279,10 @@ namespace Restraunt_Management_System
         {
 
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
