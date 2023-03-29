@@ -14,7 +14,7 @@ namespace Restraunt_Management_System
 {
     public partial class Revenue_Form : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
         public Revenue_Form()
         {
             InitializeComponent();
@@ -271,6 +271,11 @@ namespace Restraunt_Management_System
         }
 
         private void lb_total_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Revenue_Form_Load_1(object sender, EventArgs e)
         {
 
         }

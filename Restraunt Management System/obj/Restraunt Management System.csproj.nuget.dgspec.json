@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programming\\web programming\\restaurant management system\\Restraunt Management System\\Restraunt Management System.csproj": {}
+    "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj": {}
   },
   "projects": {
-    "C:\\Programming\\web programming\\restaurant management system\\Restraunt Management System\\Restraunt Management System.csproj": {
+    "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\web programming\\restaurant management system\\Restraunt Management System\\Restraunt Management System.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj",
         "projectName": "Restraunt Management System",
-        "projectPath": "C:\\Programming\\web programming\\restaurant management system\\Restraunt Management System\\Restraunt Management System.csproj",
-        "packagesPath": "C:\\Users\\Red Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\web programming\\restaurant management system\\Restraunt Management System\\obj\\",
+        "projectPath": "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj",
+        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Red Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
