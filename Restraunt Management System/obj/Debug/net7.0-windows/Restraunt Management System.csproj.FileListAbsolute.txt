@@ -44,3 +44,61 @@ C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\
 C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CopyComplete
 C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Revenue_Form.resources
 C:\Users\rodri\Desktop\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Properties.Resources.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.exe
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.deps.json
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.runtimeconfig.json
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.pdb
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.AssemblyReference.cache
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.After_cash_login.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.After_mngr_login.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Bill_Form.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Login_Page.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Properties.Resources.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Revenue_Form.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.GenerateResource.cache
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.AssemblyInfoInputs.cache
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.AssemblyInfo.cs
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CoreCompileInputs.cache
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CopyComplete
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\refint\Restraunt Management System.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.pdb
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.genruntimeconfig.cache
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\ref\Restraunt Management System.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.exe
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.deps.json
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.runtimeconfig.json
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\Restraunt Management System.pdb
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.AssemblyReference.cache
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.After_cash_login.resources
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.After_mngr_login.resources
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Bill_Form.resources
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Login_Page.resources
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Properties.Resources.resources
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Revenue_Form.resources
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.GenerateResource.cache
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.AssemblyInfoInputs.cache
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.AssemblyInfo.cs
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CoreCompileInputs.cache
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.csproj.CopyComplete
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\refint\Restraunt Management System.dll
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.pdb
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.genruntimeconfig.cache
+C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\ref\Restraunt Management System.dll

@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\Desktop\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj",
       "projectName": "Restraunt Management System",
-      "projectPath": "C:\\Users\\rodri\\Desktop\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj",
+      "projectPath": "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\Restraunt Management System.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\Desktop\\Restaurant_management_system\\Restraunt Management System\\obj\\",
+      "outputPath": "C:\\Users\\rodri\\Source\\Repos\\Restaurant_management_system\\Restraunt Management System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",

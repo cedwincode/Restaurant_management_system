@@ -21,17 +21,17 @@ namespace Restraunt_Management_System
         {
 
         }
-       
+
         private void submit_Click(object sender, EventArgs e)
         {
-            if((username_textbox.Text=="cashier")&&(password_textbox.Text=="admin"))
+            if ((username_textbox.Text == "cashier") && (password_textbox.Text == "admin"))
             {
                 Thread th = new Thread(openAfter_cash_login);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
                 this.Close();
             }
-            else if((username_textbox.Text == "manager") && (password_textbox.Text == "admin"))
+            else if ((username_textbox.Text == "manager") && (password_textbox.Text == "admin"))
             {
                 Thread th = new Thread(openAfter_mngr_login);
                 th.SetApartmentState(ApartmentState.STA);
@@ -42,6 +42,11 @@ namespace Restraunt_Management_System
             {
                 MessageBox.Show("Invalid details try again!");
             }
+        }
+
+        private void username_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
