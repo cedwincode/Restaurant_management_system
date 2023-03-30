@@ -57,6 +57,7 @@
             this.bt_back_login.Size = new System.Drawing.Size(58, 83);
             this.bt_back_login.TabIndex = 1;
             this.bt_back_login.UseVisualStyleBackColor = true;
+            this.bt_back_login.Click += new System.EventHandler(this.bt_back_login_Click);
             // 
             // bt_bill_form
             // 
@@ -69,6 +70,7 @@
             this.bt_bill_form.TabIndex = 2;
             this.bt_bill_form.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bt_bill_form.UseVisualStyleBackColor = true;
+            this.bt_bill_form.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
