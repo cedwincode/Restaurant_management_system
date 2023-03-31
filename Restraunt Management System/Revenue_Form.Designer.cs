@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Revenue_Form));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_rev = new System.Windows.Forms.DataGridView();
@@ -52,8 +52,11 @@
             this.bt_back_mngr = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_rev)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,26 +80,26 @@
             this.dgv_rev.AllowUserToDeleteRows = false;
             this.dgv_rev.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_rev.BackgroundColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_rev.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_rev.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_rev.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_rev.Location = new System.Drawing.Point(31, 127);
             this.dgv_rev.Name = "dgv_rev";
             this.dgv_rev.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_rev.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_rev.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_rev.RowHeadersWidth = 51;
             this.dgv_rev.RowTemplate.Height = 29;
             this.dgv_rev.Size = new System.Drawing.Size(430, 205);
@@ -140,6 +143,7 @@
             this.from_dtp.Name = "from_dtp";
             this.from_dtp.Size = new System.Drawing.Size(178, 27);
             this.from_dtp.TabIndex = 5;
+            this.from_dtp.ValueChanged += new System.EventHandler(this.from_dtp_ValueChanged_1);
             // 
             // to_dtp
             // 
@@ -147,6 +151,7 @@
             this.to_dtp.Name = "to_dtp";
             this.to_dtp.Size = new System.Drawing.Size(178, 27);
             this.to_dtp.TabIndex = 6;
+            this.to_dtp.ValueChanged += new System.EventHandler(this.to_dtp_ValueChanged);
             // 
             // bt_spec_disp
             // 
@@ -174,7 +179,7 @@
             this.lb_total.AutoSize = true;
             this.lb_total.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lb_total.ForeColor = System.Drawing.Color.Lime;
-            this.lb_total.Location = new System.Drawing.Point(153, 68);
+            this.lb_total.Location = new System.Drawing.Point(144, 68);
             this.lb_total.Name = "lb_total";
             this.lb_total.Size = new System.Drawing.Size(40, 18);
             this.lb_total.TabIndex = 9;
@@ -182,9 +187,9 @@
             // 
             // day_dtp
             // 
-            this.day_dtp.Location = new System.Drawing.Point(199, 62);
+            this.day_dtp.Location = new System.Drawing.Point(211, 62);
             this.day_dtp.Name = "day_dtp";
-            this.day_dtp.Size = new System.Drawing.Size(221, 27);
+            this.day_dtp.Size = new System.Drawing.Size(209, 27);
             this.day_dtp.TabIndex = 10;
             this.day_dtp.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -237,6 +242,7 @@
             this.cb_Beg.Name = "cb_Beg";
             this.cb_Beg.Size = new System.Drawing.Size(71, 28);
             this.cb_Beg.TabIndex = 14;
+            this.cb_Beg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_Beg_KeyPress);
             // 
             // cb_End
             // 
@@ -255,6 +261,8 @@
             this.cb_End.Name = "cb_End";
             this.cb_End.Size = new System.Drawing.Size(71, 28);
             this.cb_End.TabIndex = 15;
+            this.cb_End.SelectedIndexChanged += new System.EventHandler(this.cb_End_SelectedIndexChanged);
+            this.cb_End.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_End_KeyPress);
             // 
             // label6
             // 
@@ -303,6 +311,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.from_dtp);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
@@ -319,10 +329,33 @@
             this.panel1.Size = new System.Drawing.Size(349, 205);
             this.panel1.TabIndex = 20;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Lime;
+            this.label11.Location = new System.Drawing.Point(124, 14);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(18, 20);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "+";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Lime;
+            this.label10.Location = new System.Drawing.Point(124, 69);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 20);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "+";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.lb_total);
@@ -342,6 +375,17 @@
             this.label9.Size = new System.Drawing.Size(221, 25);
             this.label9.TabIndex = 22;
             this.label9.Text = "Select Specific Day";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Lime;
+            this.label12.Location = new System.Drawing.Point(190, 66);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(18, 20);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "+";
             // 
             // Revenue_Form
             // 
@@ -395,5 +439,8 @@
         private Panel panel1;
         private Panel panel2;
         private Label label9;
+        private Label label11;
+        private Label label10;
+        private Label label12;
     }
 }

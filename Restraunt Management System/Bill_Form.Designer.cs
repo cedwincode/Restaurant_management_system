@@ -77,6 +77,8 @@
             this.tb_b_id.Name = "tb_b_id";
             this.tb_b_id.Size = new System.Drawing.Size(151, 25);
             this.tb_b_id.TabIndex = 1;
+            this.tb_b_id.TextChanged += new System.EventHandler(this.tb_b_id_TextChanged);
+            this.tb_b_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_b_id_KeyPress);
             // 
             // cb_ftype
             // 
@@ -131,6 +133,8 @@
             this.cb_fqty.Name = "cb_fqty";
             this.cb_fqty.Size = new System.Drawing.Size(151, 25);
             this.cb_fqty.TabIndex = 5;
+            this.cb_fqty.SelectedIndexChanged += new System.EventHandler(this.cb_fqty_SelectedIndexChanged);
+            this.cb_fqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_fqty_KeyPress);
             // 
             // label4
             // 
@@ -185,6 +189,8 @@
             this.cb_dqty.Name = "cb_dqty";
             this.cb_dqty.Size = new System.Drawing.Size(151, 25);
             this.cb_dqty.TabIndex = 9;
+            this.cb_dqty.SelectedIndexChanged += new System.EventHandler(this.cb_dqty_SelectedIndexChanged);
+            this.cb_dqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_dqty_KeyPress);
             // 
             // rb_none
             // 
