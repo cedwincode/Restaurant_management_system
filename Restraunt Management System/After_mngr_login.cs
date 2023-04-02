@@ -29,20 +29,6 @@ namespace Restraunt_Management_System
             Application.Run(new Revenue_Form());
         }
 
-        public void openInventory_Form(object obj)
-        {
-            Application.Run(new Inventory());
-        }
-
-        private void bt_inventory_form_Click(object sender, EventArgs e)
-        {
-            Thread th = new Thread(openInventory_Form);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-            this.Close();
-        }
-
-
         private void bt_back_login_Click(object sender, EventArgs e)
         {
 
@@ -73,6 +59,5 @@ namespace Restraunt_Management_System
         {
 
         }
-
     }
 }

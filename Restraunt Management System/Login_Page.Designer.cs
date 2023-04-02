@@ -34,8 +34,6 @@
             username_textbox = new TextBox();
             password_textbox = new TextBox();
             submit = new Button();
-            button1 = new Button();
-            label1 = new Label();
             SuspendLayout();
             // 
             // username
@@ -44,7 +42,7 @@
             username.BackColor = Color.Black;
             username.Font = new Font("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
             username.ForeColor = Color.Lime;
-            username.Location = new Point(238, 174);
+            username.Location = new Point(238, 141);
             username.Name = "username";
             username.Size = new Size(82, 21);
             username.TabIndex = 0;
@@ -56,7 +54,7 @@
             password.AutoSize = true;
             password.Font = new Font("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
             password.ForeColor = Color.Lime;
-            password.Location = new Point(238, 213);
+            password.Location = new Point(238, 177);
             password.Name = "password";
             password.Size = new Size(82, 21);
             password.TabIndex = 1;
@@ -66,7 +64,7 @@
             // 
             username_textbox.BackColor = Color.LightGray;
             username_textbox.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            username_textbox.Location = new Point(341, 177);
+            username_textbox.Location = new Point(341, 141);
             username_textbox.Name = "username_textbox";
             username_textbox.PlaceholderText = "Enter Username";
             username_textbox.Size = new Size(156, 22);
@@ -76,7 +74,7 @@
             // 
             password_textbox.BackColor = Color.LightGray;
             password_textbox.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            password_textbox.Location = new Point(341, 216);
+            password_textbox.Location = new Point(341, 175);
             password_textbox.Name = "password_textbox";
             password_textbox.PasswordChar = '*';
             password_textbox.PlaceholderText = "Enter Password";
@@ -90,33 +88,12 @@
             submit.FlatStyle = FlatStyle.Flat;
             submit.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point);
             submit.Image = (Image)resources.GetObject("submit.Image");
-            submit.Location = new Point(341, 253);
+            submit.Location = new Point(341, 213);
             submit.Name = "submit";
             submit.Size = new Size(77, 52);
             submit.TabIndex = 4;
             submit.UseVisualStyleBackColor = false;
             submit.Click += submit_Click;
-            // 
-            // button1
-            // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(12, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 112);
-            button1.TabIndex = 5;
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(153, 49);
-            label1.Name = "label1";
-            label1.Size = new Size(551, 43);
-            label1.TabIndex = 6;
-            label1.Text = "Restaurant Management System";
             // 
             // Login_Page
             // 
@@ -124,8 +101,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(790, 444);
-            Controls.Add(label1);
-            Controls.Add(button1);
             Controls.Add(submit);
             Controls.Add(password_textbox);
             Controls.Add(username_textbox);
@@ -144,7 +119,5 @@
         private TextBox username_textbox;
         private TextBox password_textbox;
         private Button submit;
-        private Button button1;
-        private Label label1;
     }
 }
