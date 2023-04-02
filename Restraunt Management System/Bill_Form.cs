@@ -16,7 +16,7 @@ namespace Restraunt_Management_System
 {
     public partial class Bill_Form : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restruaunt management system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
         public Bill_Form()
         {
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace Restraunt_Management_System
             {
                 int d_id = Convert.ToInt32(bill_dgv.CurrentCell.Value);
 
-                SqlCommand delfrev = new SqlCommand("DELETE FROM Revenue WHERE Id IN(SELECT Id AS BID FROM Bill WHERE B_id = '"+d_id+"')", con);
+                SqlCommand delfrev = new SqlCommand("DELETE FROM Revenue WHERE Id IN(SELECT Id AS BID FROM Bill WHERE B_id = '" + d_id + "')", con);
                 delfrev.ExecuteNonQuery();
                 con.Close();
                 con.Open();
@@ -50,7 +50,7 @@ namespace Restraunt_Management_System
                 if (k > 0)
                 {
                     show_bill();
-                   
+
                 }
                 else
                 {
@@ -71,7 +71,7 @@ namespace Restraunt_Management_System
                 if (k > 0)
                 {
                     show_bill();
-                   
+
                 }
                 else
                 {
@@ -103,7 +103,7 @@ namespace Restraunt_Management_System
         private void bt_add_Click(object sender, EventArgs e)  //TO ADD BUTTON EVENT
         {
             con.Open();
-            int id,b_id, fqty, dqty;
+            int id, b_id, fqty, dqty;
             int discount, total;
             String ftype, dtype, date;
 
@@ -136,29 +136,29 @@ namespace Restraunt_Management_System
                 SqlCommand cmd = new SqlCommand("INSERT INTO [Bill] ([Food type],[Food qty],[Drink type],[Drink qty],[Discount],[Total],[Datetime],[B_id]) VALUES('" + ftype + "','" + fqty + "','" + dtype + "','" + dqty + "','" + discount + "','" + total + "','" + date + "','" + b_id + "')", con);
                 k = cmd.ExecuteNonQuery();
                 con.Close();
-                if(k > 0)
+                if (k > 0)
                 {
-                    
+
                     show_bill();
                     con.Open();
-                    SqlCommand cmd1 = new SqlCommand("SELECT MAX(Id) AS Id FROM Bill",con);
+                    SqlCommand cmd1 = new SqlCommand("SELECT MAX(Id) AS Id FROM Bill", con);
                     con.Close();
                     con.Open();
                     using (SqlDataReader dr = cmd1.ExecuteReader())
                     {
 
-                        if(dr.Read())
+                        if (dr.Read())
                         {
                             id = Convert.ToInt32(dr["Id"]);
                             con.Close();
                             Auto_add_Rev(id, total, date);
                         }
-                        
+
                     }
-                    
-                    
-                    
-                    
+
+
+
+
                 }
                 else
                 {
@@ -187,11 +187,11 @@ namespace Restraunt_Management_System
                             con.Close();
                             Auto_add_Rev(id, total, date);
                         }
-                        
+
                     }
-                    
-                    
-                    
+
+
+
                 }
                 else
                 {
@@ -230,8 +230,8 @@ namespace Restraunt_Management_System
 
         private void bt_search_bill_Click(object sender, EventArgs e)  //TO SEARCH BILL
         {
-           
-            if(tb_search_bill.Text.Equals(""))
+
+            if (tb_search_bill.Text.Equals(""))
             {
                 MessageBox.Show("Enter Bill value to be searched");
             }
@@ -242,12 +242,12 @@ namespace Restraunt_Management_System
                 {
                     con.Open();
                     DataTable dta = new DataTable();
-                    SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT [B_id],[Datetime],[Food type],[Food qty],[Drink type],[Drink qty],[Discount],[Total] FROM [Bill] WHERE B_id = '" + bsearch+"'",con);
+                    SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT [B_id],[Datetime],[Food type],[Food qty],[Drink type],[Drink qty],[Discount],[Total] FROM [Bill] WHERE B_id = '" + bsearch + "'", con);
                     dtaadp.Fill(dta);
                     con.Close();
-                    
 
-                    if (dta.Rows.Count>0)
+
+                    if (dta.Rows.Count > 0)
                     {
                         con.Open();
                         SqlCommand cmd = new SqlCommand("SELECT SUM(Total) FROM Bill WHERE B_id='" + bsearch + "'", con);
@@ -261,7 +261,7 @@ namespace Restraunt_Management_System
                         bill_dgv.DataSource = dta;
                     }
                     else
-                    { 
+                    {
                         MessageBox.Show("There are no Bill with Bill no: " + bsearch);
                     }
                 }
@@ -270,8 +270,8 @@ namespace Restraunt_Management_System
                     MessageBox.Show("Enter a number from Bill not words");
                 }
             }
-            
-          
+
+
         }
 
         private void bt_upd_Click(object sender, EventArgs e)
@@ -346,8 +346,8 @@ namespace Restraunt_Management_System
 
         private void bt_display_Click(object sender, EventArgs e)
         {
-            
-            clear_text();  
+
+            clear_text();
             show_bill();
         }
 
@@ -360,18 +360,18 @@ namespace Restraunt_Management_System
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                e.Handled = true; 
+                e.Handled = true;
             }
         }
 
         private void cb_fqty_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void cb_dqty_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cb_fqty_KeyPress(object sender, KeyPressEventArgs e)
@@ -388,6 +388,11 @@ namespace Restraunt_Management_System
             {
                 e.Handled = true;
             }
+        }
+
+        private void tb_date_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
