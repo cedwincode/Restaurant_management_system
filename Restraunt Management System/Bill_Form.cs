@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.LinkLabel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Restraunt_Management_System
@@ -345,8 +346,48 @@ namespace Restraunt_Management_System
 
         private void bt_display_Click(object sender, EventArgs e)
         {
-            clear_text();
-             show_bill();
+            
+            clear_text();  
+            show_bill();
+        }
+
+        private void tb_b_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_b_id_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; 
+            }
+        }
+
+        private void cb_fqty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void cb_dqty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cb_fqty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cb_dqty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
