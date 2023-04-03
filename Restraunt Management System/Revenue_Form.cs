@@ -14,7 +14,7 @@ namespace Restraunt_Management_System
 {
     public partial class Revenue_Form : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restruaunt management system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
         public Revenue_Form()
         {
             InitializeComponent();
@@ -76,9 +76,9 @@ namespace Restraunt_Management_System
 
         private void bt_spec_disp_Click(object sender, EventArgs e)  //To do filter display
         {
-            if (day_dtp.Checked == true)
+            if(day_dtp.Checked==true)
             {
-                day_dtp.Checked = false;
+                day_dtp.Checked=false;
                 show_Rev();
                 return;
             }
@@ -89,9 +89,9 @@ namespace Restraunt_Management_System
             String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
             String todate = to_dtp.Value.ToString("yyyy-MM-dd");
 
-
+            
             //filter search with range only
-            if (((from_dtp.Checked == true) && (to_dtp.Checked == true)) || (from_dtp.Checked == true) || (to_dtp.Checked == true)) //validation included display
+            if(((from_dtp.Checked==true)&&(to_dtp.Checked==true)) ||(from_dtp.Checked==true)||(to_dtp.Checked==true)) //validation included display
             {
 
                 //validation
@@ -109,7 +109,7 @@ namespace Restraunt_Management_System
                     return;
                 }
 
-                if ((cb_Beg.Text != "") && (cb_End.Text != ""))
+                if((cb_Beg.Text != "") &&(cb_End.Text != ""))
                 {
                     if (Convert.ToInt32(cb_Beg.Text) > Convert.ToInt32(cb_End.Text))
                     {
@@ -128,7 +128,7 @@ namespace Restraunt_Management_System
                     SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "' GROUP BY date", con); ;
                     dtaadp.Fill(dta);
 
-                    if (dta.Rows.Count == 0)
+                    if(dta.Rows.Count==0)
                     {
                         MessageBox.Show("There are no records to display");
                     }
@@ -169,7 +169,7 @@ namespace Restraunt_Management_System
                 }
                 con.Close();
             }
-            else if ((cb_Beg.Text != "") || (cb_End.Text != "") || ((cb_Beg.Text != "") && (cb_End.Text != "")))
+            else if((cb_Beg.Text != "") || (cb_End.Text != "") || ((cb_Beg.Text != "") && (cb_End.Text != "")))
             {
                 if ((cb_Beg.Text != "") && (cb_End.Text != ""))
                 {
@@ -185,7 +185,7 @@ namespace Restraunt_Management_System
                 if ((cb_Beg.Text.Equals("") == false) && (cb_End.Text.Equals("") == true))
                 {
                     DataTable dta = new DataTable();
-                    SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] GROUP BY date HAVING SUM(Amount) >= '" + st + "' ", con);
+                    SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] GROUP BY date HAVING SUM(Amount) >= '"+st+"' ", con);
                     dtaadp.Fill(dta);
                     if (dta.Rows.Count == 0)
                     {
@@ -199,7 +199,7 @@ namespace Restraunt_Management_System
                     SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] GROUP BY date HAVING SUM(Amount) <= '" + ed + "' ", con);
                     dtaadp.Fill(dta);
 
-                    if (dta.Rows.Count == 0)
+                    if(dta.Rows.Count == 0)
                     {
                         MessageBox.Show("There are no records to display");
                     }
@@ -208,7 +208,7 @@ namespace Restraunt_Management_System
                 else
                 {
                     DataTable dta = new DataTable();
-                    SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] GROUP BY date HAVING SUM(Amount) BETWEEN '" + st + "' AND  '" + ed + "' ", con);
+                    SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT date,SUM(Amount) AS 'Total(Day)' FROM [Revenue] GROUP BY date HAVING SUM(Amount) BETWEEN '" + st+"' AND  '" + ed + "' ", con);
                     dtaadp.Fill(dta);
                     if (dta.Rows.Count == 0)
                     {
@@ -223,7 +223,7 @@ namespace Restraunt_Management_System
                 MessageBox.Show("No filters are applied You can press DISPLAY ALL");
                 return;
             }
-
+            
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e) //to check each transaction on single day 
@@ -244,7 +244,7 @@ namespace Restraunt_Management_System
             DataTable dta = new DataTable();
             SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT * FROM [Revenue] WHERE  date BETWEEN '" + (daydate + " 00:00:00") + "' AND '" + (daydate + " 23:59:59") + "'", con);
             dtaadp.Fill(dta);
-
+            
             dgv_rev.DataSource = dta;
             con.Close();
 
@@ -257,26 +257,26 @@ namespace Restraunt_Management_System
                     lb_total.Text = dr["Total(Day)"].ToString();
                     if (lb_total.Text.Equals(""))
                     {
-                        lb_total.Text = "None";
+                        lb_total.Text = "None";       
                     }
                 }
 
             }
-            // day_dtp.Checked = false;
+           // day_dtp.Checked = false;
             con.Close();
-
+            
         }
 
         private void bt_get_total_Click(object sender, EventArgs e) // for getting total amount
         {
-            if (day_dtp.Checked)
+            if(day_dtp.Checked)
             {
-                day_dtp.Checked = false;
-                //label12.Visible visible= false;
+                day_dtp.Checked=false;
+               //label12.Visible visible= false;
                 show_Rev();
             }
 
-            if (((from_dtp.Checked == true) && (to_dtp.Checked == true)) || (from_dtp.Checked == true) || (to_dtp.Checked == true)) //validation
+            if(((from_dtp.Checked == true) && (to_dtp.Checked == true)) || (from_dtp.Checked == true) || (to_dtp.Checked == true)) //validation
             {
                 if (from_dtp.Value > to_dtp.Value)
                 {
@@ -306,7 +306,7 @@ namespace Restraunt_Management_System
             }
 
             // filter total without range only
-            if ((from_dtp.Checked && to_dtp.Checked) || (from_dtp.Checked == true) || (to_dtp.Checked == true))  //Id filter date is selected 
+            if((from_dtp.Checked && to_dtp.Checked) || (from_dtp.Checked == true) || (to_dtp.Checked == true))  //Id filter date is selected 
             {
                 con.Open();
 
@@ -325,7 +325,7 @@ namespace Restraunt_Management_System
                         {
                             total.Text = dr["Total"].ToString();
 
-                            if (total.Text.Equals(""))
+                            if(total.Text.Equals(""))
                             {
                                 total.Text = "None";
                             }
@@ -382,13 +382,13 @@ namespace Restraunt_Management_System
                 con.Close();
 
             }
-            else if ((cb_Beg.Text != "") || (cb_End.Text != "") || ((cb_Beg.Text != "") && (cb_End.Text != "")))
+            else if((cb_Beg.Text!="")||(cb_End.Text!="")||((cb_Beg.Text!="")&&(cb_End.Text!="")))
             {
                 String st = cb_Beg.Text;
                 String ed = cb_End.Text;
 
                 con.Open();
-                if ((cb_Beg.Text.Equals("") == false) && (cb_End.Text.Equals("") == true))
+                if((cb_Beg.Text.Equals("")==false)&&(cb_End.Text.Equals("")==true))
                 {
                     SqlCommand cmd = new SqlCommand("SELECT SUM(subquery.subtotal) AS Total FROM (SELECT SUM(Amount) AS subtotal FROM [Revenue] GROUP BY date HAVING SUM(Amount) >= '" + st + "') AS subquery", con);
                     total.Text = cmd.ExecuteScalar().ToString();
@@ -397,7 +397,7 @@ namespace Restraunt_Management_System
                         total.Text = "None";
                     }
                 }
-                else if ((cb_Beg.Text.Equals("") == true) && (cb_End.Text.Equals("") == false))
+                else if((cb_Beg.Text.Equals("") == true) && (cb_End.Text.Equals("") == false))
                 {
                     SqlCommand cmd = new SqlCommand("SELECT SUM(subquery.subtotal) AS Total FROM (SELECT SUM(Amount) AS subtotal FROM [Revenue] GROUP BY date HAVING SUM(Amount) <= '" + ed + "') AS subquery", con);
                     total.Text = cmd.ExecuteScalar().ToString();
@@ -523,26 +523,26 @@ namespace Restraunt_Management_System
         private void from_dtp_ValueChanged_1(object sender, EventArgs e)
         {
             label11.Visible = false;
-            if (from_dtp.Checked)
+            if(from_dtp.Checked)
             {
                 label11.Visible = true;
             }
 
-            if (from_dtp.Value.ToString("dd-MMM-yyyy") == DateTime.Now.ToString("dd-MMM-yyyy"))
+            if(from_dtp.Value.ToString("dd-MMM-yyyy") == DateTime.Now.ToString("dd-MMM-yyyy"))
             {
                 label11.Visible = false;
                 from_dtp.Checked = false;
-            }
+            }            
         }
 
         private void to_dtp_ValueChanged(object sender, EventArgs e)
         {
             label10.Visible = false;
-            if (to_dtp.Checked)
+            if(to_dtp.Checked)
             {
                 label10.Visible = true;
             }
-            if (to_dtp.Value.ToString("dd-MMM-yyyy") == DateTime.Now.ToString("dd-MMM-yyyy"))
+            if(to_dtp.Value.ToString("dd-MMM-yyyy") == DateTime.Now.ToString("dd-MMM-yyyy"))
             {
                 label10.Visible = false;
                 to_dtp.Checked = false;
