@@ -29,102 +29,100 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(After_cash_login));
-            label1 = new Label();
-            bt_back_login = new Button();
-            bt_bill_form = new Button();
-            label2 = new Label();
-            button1 = new Button();
-            label3 = new Label();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bt_back_login = new System.Windows.Forms.Button();
+            this.bt_bill_form = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bt_resv_form = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(267, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 39);
-            label1.TabIndex = 0;
-            label1.Text = "Cashier";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(305, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cashier";
             // 
             // bt_back_login
             // 
-            bt_back_login.FlatStyle = FlatStyle.Flat;
-            bt_back_login.Image = (Image)resources.GetObject("bt_back_login.Image");
-            bt_back_login.Location = new Point(12, 5);
-            bt_back_login.Margin = new Padding(3, 2, 3, 2);
-            bt_back_login.Name = "bt_back_login";
-            bt_back_login.Size = new Size(51, 62);
-            bt_back_login.TabIndex = 1;
-            bt_back_login.UseVisualStyleBackColor = true;
-            bt_back_login.Click += bt_back_login_Click;
+            this.bt_back_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_back_login.Image = ((System.Drawing.Image)(resources.GetObject("bt_back_login.Image")));
+            this.bt_back_login.Location = new System.Drawing.Point(14, 7);
+            this.bt_back_login.Name = "bt_back_login";
+            this.bt_back_login.Size = new System.Drawing.Size(58, 83);
+            this.bt_back_login.TabIndex = 1;
+            this.bt_back_login.UseVisualStyleBackColor = true;
+            this.bt_back_login.Click += new System.EventHandler(this.bt_back_login_Click);
             // 
             // bt_bill_form
             // 
-            bt_bill_form.FlatStyle = FlatStyle.Flat;
-            bt_bill_form.Image = (Image)resources.GetObject("bt_bill_form.Image");
-            bt_bill_form.ImageAlign = ContentAlignment.TopCenter;
-            bt_bill_form.Location = new Point(127, 154);
-            bt_bill_form.Margin = new Padding(3, 2, 3, 2);
-            bt_bill_form.Name = "bt_bill_form";
-            bt_bill_form.Size = new Size(110, 98);
-            bt_bill_form.TabIndex = 2;
-            bt_bill_form.TextAlign = ContentAlignment.BottomCenter;
-            bt_bill_form.UseVisualStyleBackColor = true;
-            bt_bill_form.Click += button1_Click;
+            this.bt_bill_form.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_bill_form.Image = ((System.Drawing.Image)(resources.GetObject("bt_bill_form.Image")));
+            this.bt_bill_form.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_bill_form.Location = new System.Drawing.Point(145, 205);
+            this.bt_bill_form.Name = "bt_bill_form";
+            this.bt_bill_form.Size = new System.Drawing.Size(126, 131);
+            this.bt_bill_form.TabIndex = 2;
+            this.bt_bill_form.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bt_bill_form.UseVisualStyleBackColor = true;
+            this.bt_bill_form.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Lime;
-            label2.Location = new Point(150, 254);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 28);
-            label2.TabIndex = 3;
-            label2.Text = "Bill";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(171, 339);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 35);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Bill";
             // 
-            // button1
+            // bt_resv_form
             // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(439, 155);
-            button1.Name = "button1";
-            button1.Size = new Size(130, 97);
-            button1.TabIndex = 4;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            this.bt_resv_form.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_resv_form.Image = ((System.Drawing.Image)(resources.GetObject("bt_resv_form.Image")));
+            this.bt_resv_form.Location = new System.Drawing.Point(502, 207);
+            this.bt_resv_form.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_resv_form.Name = "bt_resv_form";
+            this.bt_resv_form.Size = new System.Drawing.Size(149, 129);
+            this.bt_resv_form.TabIndex = 4;
+            this.bt_resv_form.UseVisualStyleBackColor = true;
+            this.bt_resv_form.Click += new System.EventHandler(this.bt_resv_form_Click);
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Cascadia Code", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Lime;
-            label3.Location = new Point(438, 254);
-            label3.Name = "label3";
-            label3.Size = new Size(144, 28);
-            label3.TabIndex = 5;
-            label3.Text = "Reservation";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(501, 339);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(191, 35);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Reservation";
             // 
             // After_cash_login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(714, 411);
-            Controls.Add(label3);
-            Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(bt_bill_form);
-            Controls.Add(bt_back_login);
-            Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "After_cash_login";
-            Text = "After_cash_login";
-            Load += After_cash_login_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(816, 548);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.bt_resv_form);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.bt_bill_form);
+            this.Controls.Add(this.bt_back_login);
+            this.Controls.Add(this.label1);
+            this.Name = "After_cash_login";
+            this.Text = "After_cash_login";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -133,7 +131,7 @@
         private Button bt_back_login;
         private Button bt_bill_form;
         private Label label2;
-        private Button button1;
+        private Button bt_resv_form;
         private Label label3;
     }
 }

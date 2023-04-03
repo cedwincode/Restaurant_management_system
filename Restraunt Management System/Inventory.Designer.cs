@@ -29,466 +29,502 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
-            label1 = new Label();
-            sugar_bar = new ProgressBar();
-            buy_all_sugar = new Button();
-            label2 = new Label();
-            label3 = new Label();
-            eggs_bar = new ProgressBar();
-            potato_bar = new ProgressBar();
-            buy_all_eggs = new Button();
-            buy_all_potato = new Button();
-            label4 = new Label();
-            label5 = new Label();
-            tomato_bar = new ProgressBar();
-            oil_bar = new ProgressBar();
-            buy_all_tomato = new Button();
-            buy_all_oil = new Button();
-            label6 = new Label();
-            sugar_per = new TextBox();
-            eggs_per = new TextBox();
-            potato_per = new TextBox();
-            tomato_per = new TextBox();
-            oil_per = new TextBox();
-            buy_selected_eggs = new Button();
-            buy_selected_potato = new Button();
-            buy_selected_totato = new Button();
-            buy_selected_oil = new Button();
-            buy_selected_sugar = new Button();
-            use_selected_eggs = new Button();
-            use_selected_potato = new Button();
-            use_selected_tomato = new Button();
-            use_selected_oil = new Button();
-            use_selected_sugar = new Button();
-            button1 = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sugar_bar = new System.Windows.Forms.ProgressBar();
+            this.buy_all_sugar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.eggs_bar = new System.Windows.Forms.ProgressBar();
+            this.potato_bar = new System.Windows.Forms.ProgressBar();
+            this.buy_all_eggs = new System.Windows.Forms.Button();
+            this.buy_all_potato = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tomato_bar = new System.Windows.Forms.ProgressBar();
+            this.oil_bar = new System.Windows.Forms.ProgressBar();
+            this.buy_all_tomato = new System.Windows.Forms.Button();
+            this.buy_all_oil = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.sugar_per = new System.Windows.Forms.TextBox();
+            this.eggs_per = new System.Windows.Forms.TextBox();
+            this.potato_per = new System.Windows.Forms.TextBox();
+            this.tomato_per = new System.Windows.Forms.TextBox();
+            this.oil_per = new System.Windows.Forms.TextBox();
+            this.buy_selected_eggs = new System.Windows.Forms.Button();
+            this.buy_selected_potato = new System.Windows.Forms.Button();
+            this.buy_selected_totato = new System.Windows.Forms.Button();
+            this.buy_selected_oil = new System.Windows.Forms.Button();
+            this.buy_selected_sugar = new System.Windows.Forms.Button();
+            this.use_selected_eggs = new System.Windows.Forms.Button();
+            this.use_selected_potato = new System.Windows.Forms.Button();
+            this.use_selected_tomato = new System.Windows.Forms.Button();
+            this.use_selected_oil = new System.Windows.Forms.Button();
+            this.use_selected_sugar = new System.Windows.Forms.Button();
+            this.bt_back_mngr = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(27, 102);
-            label1.Name = "label1";
-            label1.Size = new Size(67, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Sugar";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(31, 136);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Sugar";
             // 
             // sugar_bar
             // 
-            sugar_bar.BackColor = Color.Black;
-            sugar_bar.ForeColor = Color.Lime;
-            sugar_bar.Location = new Point(27, 144);
-            sugar_bar.Name = "sugar_bar";
-            sugar_bar.Size = new Size(287, 32);
-            sugar_bar.TabIndex = 1;
-            sugar_bar.Value = 50;
+            this.sugar_bar.BackColor = System.Drawing.Color.Black;
+            this.sugar_bar.ForeColor = System.Drawing.Color.Lime;
+            this.sugar_bar.Location = new System.Drawing.Point(31, 192);
+            this.sugar_bar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sugar_bar.Name = "sugar_bar";
+            this.sugar_bar.Size = new System.Drawing.Size(328, 43);
+            this.sugar_bar.TabIndex = 1;
+            this.sugar_bar.Value = 50;
             // 
             // buy_all_sugar
             // 
-            buy_all_sugar.BackColor = Color.Lime;
-            buy_all_sugar.FlatStyle = FlatStyle.Flat;
-            buy_all_sugar.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_all_sugar.ForeColor = Color.Black;
-            buy_all_sugar.Location = new Point(696, 144);
-            buy_all_sugar.Name = "buy_all_sugar";
-            buy_all_sugar.Size = new Size(94, 32);
-            buy_all_sugar.TabIndex = 2;
-            buy_all_sugar.Text = "Buy All";
-            buy_all_sugar.UseVisualStyleBackColor = false;
-            buy_all_sugar.Click += buy_all_sugar_Click;
+            this.buy_all_sugar.BackColor = System.Drawing.Color.Lime;
+            this.buy_all_sugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_all_sugar.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_all_sugar.ForeColor = System.Drawing.Color.Black;
+            this.buy_all_sugar.Location = new System.Drawing.Point(795, 192);
+            this.buy_all_sugar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_all_sugar.Name = "buy_all_sugar";
+            this.buy_all_sugar.Size = new System.Drawing.Size(107, 43);
+            this.buy_all_sugar.TabIndex = 2;
+            this.buy_all_sugar.Text = "Buy All";
+            this.buy_all_sugar.UseVisualStyleBackColor = false;
+            this.buy_all_sugar.Click += new System.EventHandler(this.buy_all_sugar_Click);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Lime;
-            label2.Location = new Point(27, 197);
-            label2.Name = "label2";
-            label2.Size = new Size(56, 25);
-            label2.TabIndex = 3;
-            label2.Text = "Eggs";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(31, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 32);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Eggs";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Lime;
-            label3.Location = new Point(27, 291);
-            label3.Name = "label3";
-            label3.Size = new Size(78, 25);
-            label3.TabIndex = 4;
-            label3.Text = "Potato";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(31, 388);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 32);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Potato";
             // 
             // eggs_bar
             // 
-            eggs_bar.BackColor = Color.Black;
-            eggs_bar.ForeColor = Color.Lime;
-            eggs_bar.Location = new Point(27, 245);
-            eggs_bar.Name = "eggs_bar";
-            eggs_bar.Size = new Size(288, 32);
-            eggs_bar.TabIndex = 5;
-            eggs_bar.Value = 80;
+            this.eggs_bar.BackColor = System.Drawing.Color.Black;
+            this.eggs_bar.ForeColor = System.Drawing.Color.Lime;
+            this.eggs_bar.Location = new System.Drawing.Point(31, 327);
+            this.eggs_bar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.eggs_bar.Name = "eggs_bar";
+            this.eggs_bar.Size = new System.Drawing.Size(329, 43);
+            this.eggs_bar.TabIndex = 5;
+            this.eggs_bar.Value = 80;
             // 
             // potato_bar
             // 
-            potato_bar.Location = new Point(27, 341);
-            potato_bar.Name = "potato_bar";
-            potato_bar.Size = new Size(288, 32);
-            potato_bar.TabIndex = 6;
-            potato_bar.Value = 50;
+            this.potato_bar.Location = new System.Drawing.Point(31, 455);
+            this.potato_bar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.potato_bar.Name = "potato_bar";
+            this.potato_bar.Size = new System.Drawing.Size(329, 43);
+            this.potato_bar.TabIndex = 6;
+            this.potato_bar.Value = 50;
             // 
             // buy_all_eggs
             // 
-            buy_all_eggs.BackColor = Color.Lime;
-            buy_all_eggs.FlatStyle = FlatStyle.Flat;
-            buy_all_eggs.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_all_eggs.ForeColor = Color.Black;
-            buy_all_eggs.Location = new Point(696, 247);
-            buy_all_eggs.Name = "buy_all_eggs";
-            buy_all_eggs.Size = new Size(94, 32);
-            buy_all_eggs.TabIndex = 7;
-            buy_all_eggs.Text = "Buy All";
-            buy_all_eggs.UseVisualStyleBackColor = false;
-            buy_all_eggs.Click += buy_all_eggs_Click;
+            this.buy_all_eggs.BackColor = System.Drawing.Color.Lime;
+            this.buy_all_eggs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_all_eggs.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_all_eggs.ForeColor = System.Drawing.Color.Black;
+            this.buy_all_eggs.Location = new System.Drawing.Point(795, 329);
+            this.buy_all_eggs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_all_eggs.Name = "buy_all_eggs";
+            this.buy_all_eggs.Size = new System.Drawing.Size(107, 43);
+            this.buy_all_eggs.TabIndex = 7;
+            this.buy_all_eggs.Text = "Buy All";
+            this.buy_all_eggs.UseVisualStyleBackColor = false;
+            this.buy_all_eggs.Click += new System.EventHandler(this.buy_all_eggs_Click);
             // 
             // buy_all_potato
             // 
-            buy_all_potato.BackColor = Color.Lime;
-            buy_all_potato.FlatStyle = FlatStyle.Flat;
-            buy_all_potato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_all_potato.ForeColor = Color.Black;
-            buy_all_potato.Location = new Point(696, 341);
-            buy_all_potato.Name = "buy_all_potato";
-            buy_all_potato.Size = new Size(94, 32);
-            buy_all_potato.TabIndex = 8;
-            buy_all_potato.Text = "Buy All";
-            buy_all_potato.UseVisualStyleBackColor = false;
-            buy_all_potato.Click += buy_all_potato_Click;
+            this.buy_all_potato.BackColor = System.Drawing.Color.Lime;
+            this.buy_all_potato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_all_potato.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_all_potato.ForeColor = System.Drawing.Color.Black;
+            this.buy_all_potato.Location = new System.Drawing.Point(795, 455);
+            this.buy_all_potato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_all_potato.Name = "buy_all_potato";
+            this.buy_all_potato.Size = new System.Drawing.Size(107, 43);
+            this.buy_all_potato.TabIndex = 8;
+            this.buy_all_potato.Text = "Buy All";
+            this.buy_all_potato.UseVisualStyleBackColor = false;
+            this.buy_all_potato.Click += new System.EventHandler(this.buy_all_potato_Click);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Lime;
-            label4.Location = new Point(27, 391);
-            label4.Name = "label4";
-            label4.Size = new Size(78, 25);
-            label4.TabIndex = 9;
-            label4.Text = "Tomato";
-            label4.Click += label4_Click;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(31, 521);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 32);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Tomato";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Lime;
-            label5.Location = new Point(27, 498);
-            label5.Name = "label5";
-            label5.Size = new Size(45, 25);
-            label5.TabIndex = 10;
-            label5.Text = "Oil";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(31, 664);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 32);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Oil";
             // 
             // tomato_bar
             // 
-            tomato_bar.Location = new Point(27, 446);
-            tomato_bar.Name = "tomato_bar";
-            tomato_bar.Size = new Size(288, 32);
-            tomato_bar.TabIndex = 11;
-            tomato_bar.Value = 30;
+            this.tomato_bar.Location = new System.Drawing.Point(31, 595);
+            this.tomato_bar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tomato_bar.Name = "tomato_bar";
+            this.tomato_bar.Size = new System.Drawing.Size(329, 43);
+            this.tomato_bar.TabIndex = 11;
+            this.tomato_bar.Value = 30;
             // 
             // oil_bar
             // 
-            oil_bar.Location = new Point(27, 544);
-            oil_bar.Name = "oil_bar";
-            oil_bar.Size = new Size(287, 32);
-            oil_bar.TabIndex = 12;
-            oil_bar.Value = 70;
+            this.oil_bar.Location = new System.Drawing.Point(31, 725);
+            this.oil_bar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.oil_bar.Name = "oil_bar";
+            this.oil_bar.Size = new System.Drawing.Size(328, 43);
+            this.oil_bar.TabIndex = 12;
+            this.oil_bar.Value = 70;
             // 
             // buy_all_tomato
             // 
-            buy_all_tomato.BackColor = Color.Lime;
-            buy_all_tomato.FlatStyle = FlatStyle.Flat;
-            buy_all_tomato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_all_tomato.ForeColor = Color.Black;
-            buy_all_tomato.Location = new Point(696, 446);
-            buy_all_tomato.Name = "buy_all_tomato";
-            buy_all_tomato.Size = new Size(94, 32);
-            buy_all_tomato.TabIndex = 13;
-            buy_all_tomato.Text = "Buy All";
-            buy_all_tomato.UseVisualStyleBackColor = false;
-            buy_all_tomato.Click += buy_all_tomato_Click;
+            this.buy_all_tomato.BackColor = System.Drawing.Color.Lime;
+            this.buy_all_tomato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_all_tomato.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_all_tomato.ForeColor = System.Drawing.Color.Black;
+            this.buy_all_tomato.Location = new System.Drawing.Point(795, 595);
+            this.buy_all_tomato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_all_tomato.Name = "buy_all_tomato";
+            this.buy_all_tomato.Size = new System.Drawing.Size(107, 43);
+            this.buy_all_tomato.TabIndex = 13;
+            this.buy_all_tomato.Text = "Buy All";
+            this.buy_all_tomato.UseVisualStyleBackColor = false;
+            this.buy_all_tomato.Click += new System.EventHandler(this.buy_all_tomato_Click);
             // 
             // buy_all_oil
             // 
-            buy_all_oil.BackColor = Color.Lime;
-            buy_all_oil.FlatStyle = FlatStyle.Flat;
-            buy_all_oil.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_all_oil.ForeColor = Color.Black;
-            buy_all_oil.Location = new Point(696, 544);
-            buy_all_oil.Name = "buy_all_oil";
-            buy_all_oil.Size = new Size(94, 32);
-            buy_all_oil.TabIndex = 14;
-            buy_all_oil.Text = "Buy All";
-            buy_all_oil.UseVisualStyleBackColor = false;
-            buy_all_oil.Click += buy_all_oil_Click;
+            this.buy_all_oil.BackColor = System.Drawing.Color.Lime;
+            this.buy_all_oil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_all_oil.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_all_oil.ForeColor = System.Drawing.Color.Black;
+            this.buy_all_oil.Location = new System.Drawing.Point(795, 725);
+            this.buy_all_oil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_all_oil.Name = "buy_all_oil";
+            this.buy_all_oil.Size = new System.Drawing.Size(107, 43);
+            this.buy_all_oil.TabIndex = 14;
+            this.buy_all_oil.Text = "Buy All";
+            this.buy_all_oil.UseVisualStyleBackColor = false;
+            this.buy_all_oil.Click += new System.EventHandler(this.buy_all_oil_Click);
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Cascadia Code", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.Lime;
-            label6.Location = new Point(311, 30);
-            label6.Name = "label6";
-            label6.Size = new Size(209, 46);
-            label6.TabIndex = 15;
-            label6.Text = "Inventory";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cascadia Code", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Lime;
+            this.label6.Location = new System.Drawing.Point(355, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(259, 58);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Inventory";
             // 
             // sugar_per
             // 
-            sugar_per.BackColor = Color.DarkGray;
-            sugar_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            sugar_per.ForeColor = Color.Black;
-            sugar_per.Location = new Point(328, 144);
-            sugar_per.Multiline = true;
-            sugar_per.Name = "sugar_per";
-            sugar_per.PlaceholderText = "%";
-            sugar_per.Size = new Size(49, 34);
-            sugar_per.TabIndex = 16;
-            sugar_per.TextChanged += textBox1_TextChanged;
+            this.sugar_per.BackColor = System.Drawing.Color.DarkGray;
+            this.sugar_per.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sugar_per.ForeColor = System.Drawing.Color.Black;
+            this.sugar_per.Location = new System.Drawing.Point(375, 192);
+            this.sugar_per.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sugar_per.Multiline = true;
+            this.sugar_per.Name = "sugar_per";
+            this.sugar_per.PlaceholderText = "%";
+            this.sugar_per.Size = new System.Drawing.Size(55, 44);
+            this.sugar_per.TabIndex = 16;
+            this.sugar_per.TextChanged += new System.EventHandler(this.sugar_per_TextChanged);
+            this.sugar_per.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sugar_per_KeyPress);
             // 
             // eggs_per
             // 
-            eggs_per.BackColor = Color.DarkGray;
-            eggs_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            eggs_per.ForeColor = Color.Black;
-            eggs_per.Location = new Point(328, 245);
-            eggs_per.Multiline = true;
-            eggs_per.Name = "eggs_per";
-            eggs_per.PlaceholderText = "%";
-            eggs_per.Size = new Size(49, 32);
-            eggs_per.TabIndex = 17;
+            this.eggs_per.BackColor = System.Drawing.Color.DarkGray;
+            this.eggs_per.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.eggs_per.ForeColor = System.Drawing.Color.Black;
+            this.eggs_per.Location = new System.Drawing.Point(375, 327);
+            this.eggs_per.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.eggs_per.Multiline = true;
+            this.eggs_per.Name = "eggs_per";
+            this.eggs_per.PlaceholderText = "%";
+            this.eggs_per.Size = new System.Drawing.Size(55, 41);
+            this.eggs_per.TabIndex = 17;
+            this.eggs_per.TextChanged += new System.EventHandler(this.eggs_per_TextChanged);
+            this.eggs_per.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eggs_per_KeyPress);
             // 
             // potato_per
             // 
-            potato_per.BackColor = Color.DarkGray;
-            potato_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            potato_per.ForeColor = Color.Black;
-            potato_per.Location = new Point(328, 341);
-            potato_per.Multiline = true;
-            potato_per.Name = "potato_per";
-            potato_per.PlaceholderText = "%";
-            potato_per.Size = new Size(49, 32);
-            potato_per.TabIndex = 18;
+            this.potato_per.BackColor = System.Drawing.Color.DarkGray;
+            this.potato_per.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.potato_per.ForeColor = System.Drawing.Color.Black;
+            this.potato_per.Location = new System.Drawing.Point(375, 455);
+            this.potato_per.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.potato_per.Multiline = true;
+            this.potato_per.Name = "potato_per";
+            this.potato_per.PlaceholderText = "%";
+            this.potato_per.Size = new System.Drawing.Size(55, 41);
+            this.potato_per.TabIndex = 18;
+            this.potato_per.TextChanged += new System.EventHandler(this.potato_per_TextChanged);
+            this.potato_per.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.potato_per_KeyPress);
             // 
             // tomato_per
             // 
-            tomato_per.BackColor = Color.DarkGray;
-            tomato_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            tomato_per.ForeColor = Color.Black;
-            tomato_per.Location = new Point(328, 446);
-            tomato_per.Multiline = true;
-            tomato_per.Name = "tomato_per";
-            tomato_per.PlaceholderText = "%";
-            tomato_per.Size = new Size(49, 32);
-            tomato_per.TabIndex = 19;
+            this.tomato_per.BackColor = System.Drawing.Color.DarkGray;
+            this.tomato_per.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tomato_per.ForeColor = System.Drawing.Color.Black;
+            this.tomato_per.Location = new System.Drawing.Point(375, 595);
+            this.tomato_per.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tomato_per.Multiline = true;
+            this.tomato_per.Name = "tomato_per";
+            this.tomato_per.PlaceholderText = "%";
+            this.tomato_per.Size = new System.Drawing.Size(55, 41);
+            this.tomato_per.TabIndex = 19;
+            this.tomato_per.TextChanged += new System.EventHandler(this.tomato_per_TextChanged);
+            this.tomato_per.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tomato_per_KeyPress);
             // 
             // oil_per
             // 
-            oil_per.BackColor = Color.DarkGray;
-            oil_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            oil_per.ForeColor = Color.Black;
-            oil_per.Location = new Point(328, 544);
-            oil_per.Multiline = true;
-            oil_per.Name = "oil_per";
-            oil_per.PlaceholderText = "%";
-            oil_per.Size = new Size(49, 32);
-            oil_per.TabIndex = 20;
+            this.oil_per.BackColor = System.Drawing.Color.DarkGray;
+            this.oil_per.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.oil_per.ForeColor = System.Drawing.Color.Black;
+            this.oil_per.Location = new System.Drawing.Point(375, 725);
+            this.oil_per.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.oil_per.Multiline = true;
+            this.oil_per.Name = "oil_per";
+            this.oil_per.PlaceholderText = "%";
+            this.oil_per.Size = new System.Drawing.Size(55, 41);
+            this.oil_per.TabIndex = 20;
+            this.oil_per.TextChanged += new System.EventHandler(this.oil_per_TextChanged);
+            this.oil_per.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.oil_per_KeyPress);
             // 
             // buy_selected_eggs
             // 
-            buy_selected_eggs.BackColor = Color.Lime;
-            buy_selected_eggs.FlatStyle = FlatStyle.Flat;
-            buy_selected_eggs.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_eggs.Location = new Point(391, 245);
-            buy_selected_eggs.Name = "buy_selected_eggs";
-            buy_selected_eggs.Size = new Size(134, 32);
-            buy_selected_eggs.TabIndex = 22;
-            buy_selected_eggs.Text = "Buy Selected";
-            buy_selected_eggs.UseVisualStyleBackColor = false;
-            buy_selected_eggs.Click += buy_selected_eggs_Click;
+            this.buy_selected_eggs.BackColor = System.Drawing.Color.Lime;
+            this.buy_selected_eggs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_selected_eggs.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_selected_eggs.Location = new System.Drawing.Point(447, 327);
+            this.buy_selected_eggs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_selected_eggs.Name = "buy_selected_eggs";
+            this.buy_selected_eggs.Size = new System.Drawing.Size(153, 43);
+            this.buy_selected_eggs.TabIndex = 22;
+            this.buy_selected_eggs.Text = "Buy Selected";
+            this.buy_selected_eggs.UseVisualStyleBackColor = false;
+            this.buy_selected_eggs.Click += new System.EventHandler(this.buy_selected_eggs_Click);
             // 
             // buy_selected_potato
             // 
-            buy_selected_potato.BackColor = Color.Lime;
-            buy_selected_potato.FlatStyle = FlatStyle.Flat;
-            buy_selected_potato.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_potato.Location = new Point(391, 341);
-            buy_selected_potato.Name = "buy_selected_potato";
-            buy_selected_potato.Size = new Size(134, 32);
-            buy_selected_potato.TabIndex = 23;
-            buy_selected_potato.Text = "Buy Selected";
-            buy_selected_potato.UseVisualStyleBackColor = false;
-            buy_selected_potato.Click += buy_selected_potato_Click;
+            this.buy_selected_potato.BackColor = System.Drawing.Color.Lime;
+            this.buy_selected_potato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_selected_potato.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_selected_potato.Location = new System.Drawing.Point(447, 455);
+            this.buy_selected_potato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_selected_potato.Name = "buy_selected_potato";
+            this.buy_selected_potato.Size = new System.Drawing.Size(153, 43);
+            this.buy_selected_potato.TabIndex = 23;
+            this.buy_selected_potato.Text = "Buy Selected";
+            this.buy_selected_potato.UseVisualStyleBackColor = false;
+            this.buy_selected_potato.Click += new System.EventHandler(this.buy_selected_potato_Click);
             // 
             // buy_selected_totato
             // 
-            buy_selected_totato.BackColor = Color.Lime;
-            buy_selected_totato.FlatStyle = FlatStyle.Flat;
-            buy_selected_totato.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_totato.Location = new Point(391, 446);
-            buy_selected_totato.Name = "buy_selected_totato";
-            buy_selected_totato.Size = new Size(134, 32);
-            buy_selected_totato.TabIndex = 24;
-            buy_selected_totato.Text = "Buy Selected";
-            buy_selected_totato.UseVisualStyleBackColor = false;
-            buy_selected_totato.Click += buy_selected_totato_Click;
+            this.buy_selected_totato.BackColor = System.Drawing.Color.Lime;
+            this.buy_selected_totato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_selected_totato.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_selected_totato.Location = new System.Drawing.Point(447, 595);
+            this.buy_selected_totato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_selected_totato.Name = "buy_selected_totato";
+            this.buy_selected_totato.Size = new System.Drawing.Size(153, 43);
+            this.buy_selected_totato.TabIndex = 24;
+            this.buy_selected_totato.Text = "Buy Selected";
+            this.buy_selected_totato.UseVisualStyleBackColor = false;
+            this.buy_selected_totato.Click += new System.EventHandler(this.buy_selected_totato_Click);
             // 
             // buy_selected_oil
             // 
-            buy_selected_oil.BackColor = Color.Lime;
-            buy_selected_oil.FlatStyle = FlatStyle.Flat;
-            buy_selected_oil.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_oil.Location = new Point(391, 544);
-            buy_selected_oil.Name = "buy_selected_oil";
-            buy_selected_oil.Size = new Size(134, 32);
-            buy_selected_oil.TabIndex = 25;
-            buy_selected_oil.Text = "Buy Selected";
-            buy_selected_oil.UseVisualStyleBackColor = false;
-            buy_selected_oil.Click += buy_selected_oil_Click;
+            this.buy_selected_oil.BackColor = System.Drawing.Color.Lime;
+            this.buy_selected_oil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_selected_oil.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_selected_oil.Location = new System.Drawing.Point(447, 725);
+            this.buy_selected_oil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_selected_oil.Name = "buy_selected_oil";
+            this.buy_selected_oil.Size = new System.Drawing.Size(153, 43);
+            this.buy_selected_oil.TabIndex = 25;
+            this.buy_selected_oil.Text = "Buy Selected";
+            this.buy_selected_oil.UseVisualStyleBackColor = false;
+            this.buy_selected_oil.Click += new System.EventHandler(this.buy_selected_oil_Click);
             // 
             // buy_selected_sugar
             // 
-            buy_selected_sugar.BackColor = Color.Lime;
-            buy_selected_sugar.FlatStyle = FlatStyle.Flat;
-            buy_selected_sugar.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_sugar.ForeColor = Color.Black;
-            buy_selected_sugar.Location = new Point(391, 144);
-            buy_selected_sugar.Name = "buy_selected_sugar";
-            buy_selected_sugar.Size = new Size(134, 32);
-            buy_selected_sugar.TabIndex = 26;
-            buy_selected_sugar.Text = "Buy Selected";
-            buy_selected_sugar.UseVisualStyleBackColor = false;
-            buy_selected_sugar.Click += buy_selected_sugar_Click;
+            this.buy_selected_sugar.BackColor = System.Drawing.Color.Lime;
+            this.buy_selected_sugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buy_selected_sugar.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buy_selected_sugar.ForeColor = System.Drawing.Color.Black;
+            this.buy_selected_sugar.Location = new System.Drawing.Point(447, 192);
+            this.buy_selected_sugar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buy_selected_sugar.Name = "buy_selected_sugar";
+            this.buy_selected_sugar.Size = new System.Drawing.Size(153, 43);
+            this.buy_selected_sugar.TabIndex = 26;
+            this.buy_selected_sugar.Text = "Buy Selected";
+            this.buy_selected_sugar.UseVisualStyleBackColor = false;
+            this.buy_selected_sugar.Click += new System.EventHandler(this.buy_selected_sugar_Click);
             // 
             // use_selected_eggs
             // 
-            use_selected_eggs.BackColor = Color.Lime;
-            use_selected_eggs.FlatStyle = FlatStyle.Flat;
-            use_selected_eggs.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            use_selected_eggs.Location = new Point(540, 247);
-            use_selected_eggs.Name = "use_selected_eggs";
-            use_selected_eggs.Size = new Size(139, 32);
-            use_selected_eggs.TabIndex = 28;
-            use_selected_eggs.Text = "Use Selected";
-            use_selected_eggs.UseVisualStyleBackColor = false;
-            use_selected_eggs.Click += use_selected_eggs_Click;
+            this.use_selected_eggs.BackColor = System.Drawing.Color.Lime;
+            this.use_selected_eggs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.use_selected_eggs.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.use_selected_eggs.Location = new System.Drawing.Point(617, 329);
+            this.use_selected_eggs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.use_selected_eggs.Name = "use_selected_eggs";
+            this.use_selected_eggs.Size = new System.Drawing.Size(159, 43);
+            this.use_selected_eggs.TabIndex = 28;
+            this.use_selected_eggs.Text = "Use Selected";
+            this.use_selected_eggs.UseVisualStyleBackColor = false;
+            this.use_selected_eggs.Click += new System.EventHandler(this.use_selected_eggs_Click);
             // 
             // use_selected_potato
             // 
-            use_selected_potato.BackColor = Color.Lime;
-            use_selected_potato.FlatStyle = FlatStyle.Flat;
-            use_selected_potato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            use_selected_potato.Location = new Point(540, 341);
-            use_selected_potato.Name = "use_selected_potato";
-            use_selected_potato.Size = new Size(139, 32);
-            use_selected_potato.TabIndex = 29;
-            use_selected_potato.Text = "Use Selected";
-            use_selected_potato.UseVisualStyleBackColor = false;
-            use_selected_potato.Click += use_selected_potato_Click;
+            this.use_selected_potato.BackColor = System.Drawing.Color.Lime;
+            this.use_selected_potato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.use_selected_potato.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.use_selected_potato.Location = new System.Drawing.Point(617, 455);
+            this.use_selected_potato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.use_selected_potato.Name = "use_selected_potato";
+            this.use_selected_potato.Size = new System.Drawing.Size(159, 43);
+            this.use_selected_potato.TabIndex = 29;
+            this.use_selected_potato.Text = "Use Selected";
+            this.use_selected_potato.UseVisualStyleBackColor = false;
+            this.use_selected_potato.Click += new System.EventHandler(this.use_selected_potato_Click);
             // 
             // use_selected_tomato
             // 
-            use_selected_tomato.BackColor = Color.Lime;
-            use_selected_tomato.FlatStyle = FlatStyle.Flat;
-            use_selected_tomato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            use_selected_tomato.Location = new Point(540, 446);
-            use_selected_tomato.Name = "use_selected_tomato";
-            use_selected_tomato.Size = new Size(139, 32);
-            use_selected_tomato.TabIndex = 30;
-            use_selected_tomato.Text = "Use Selected";
-            use_selected_tomato.UseVisualStyleBackColor = false;
-            use_selected_tomato.Click += use_selected_tomato_Click;
+            this.use_selected_tomato.BackColor = System.Drawing.Color.Lime;
+            this.use_selected_tomato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.use_selected_tomato.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.use_selected_tomato.Location = new System.Drawing.Point(617, 595);
+            this.use_selected_tomato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.use_selected_tomato.Name = "use_selected_tomato";
+            this.use_selected_tomato.Size = new System.Drawing.Size(159, 43);
+            this.use_selected_tomato.TabIndex = 30;
+            this.use_selected_tomato.Text = "Use Selected";
+            this.use_selected_tomato.UseVisualStyleBackColor = false;
+            this.use_selected_tomato.Click += new System.EventHandler(this.use_selected_tomato_Click);
             // 
             // use_selected_oil
             // 
-            use_selected_oil.BackColor = Color.Lime;
-            use_selected_oil.FlatStyle = FlatStyle.Flat;
-            use_selected_oil.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            use_selected_oil.Location = new Point(540, 544);
-            use_selected_oil.Name = "use_selected_oil";
-            use_selected_oil.Size = new Size(139, 32);
-            use_selected_oil.TabIndex = 31;
-            use_selected_oil.Text = "Use Selected";
-            use_selected_oil.UseVisualStyleBackColor = false;
-            use_selected_oil.Click += use_selected_oil_Click;
+            this.use_selected_oil.BackColor = System.Drawing.Color.Lime;
+            this.use_selected_oil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.use_selected_oil.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.use_selected_oil.Location = new System.Drawing.Point(617, 725);
+            this.use_selected_oil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.use_selected_oil.Name = "use_selected_oil";
+            this.use_selected_oil.Size = new System.Drawing.Size(159, 43);
+            this.use_selected_oil.TabIndex = 31;
+            this.use_selected_oil.Text = "Use Selected";
+            this.use_selected_oil.UseVisualStyleBackColor = false;
+            this.use_selected_oil.Click += new System.EventHandler(this.use_selected_oil_Click);
             // 
             // use_selected_sugar
             // 
-            use_selected_sugar.BackColor = Color.Lime;
-            use_selected_sugar.FlatStyle = FlatStyle.Flat;
-            use_selected_sugar.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            use_selected_sugar.Location = new Point(540, 144);
-            use_selected_sugar.Name = "use_selected_sugar";
-            use_selected_sugar.Size = new Size(139, 32);
-            use_selected_sugar.TabIndex = 32;
-            use_selected_sugar.Text = "Use Selected";
-            use_selected_sugar.UseVisualStyleBackColor = false;
-            use_selected_sugar.Click += use_selected_sugar_Click;
+            this.use_selected_sugar.BackColor = System.Drawing.Color.Lime;
+            this.use_selected_sugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.use_selected_sugar.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.use_selected_sugar.Location = new System.Drawing.Point(617, 192);
+            this.use_selected_sugar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.use_selected_sugar.Name = "use_selected_sugar";
+            this.use_selected_sugar.Size = new System.Drawing.Size(159, 43);
+            this.use_selected_sugar.TabIndex = 32;
+            this.use_selected_sugar.Text = "Use Selected";
+            this.use_selected_sugar.UseVisualStyleBackColor = false;
+            this.use_selected_sugar.Click += new System.EventHandler(this.use_selected_sugar_Click);
             // 
-            // button1
+            // bt_back_mngr
             // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(12, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(54, 57);
-            button1.TabIndex = 33;
-            button1.UseVisualStyleBackColor = true;
+            this.bt_back_mngr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_back_mngr.Image = ((System.Drawing.Image)(resources.GetObject("bt_back_mngr.Image")));
+            this.bt_back_mngr.Location = new System.Drawing.Point(14, 16);
+            this.bt_back_mngr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_back_mngr.Name = "bt_back_mngr";
+            this.bt_back_mngr.Size = new System.Drawing.Size(62, 76);
+            this.bt_back_mngr.TabIndex = 33;
+            this.bt_back_mngr.UseVisualStyleBackColor = true;
+            this.bt_back_mngr.Click += new System.EventHandler(this.bt_back_man_Click);
             // 
             // Inventory
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(819, 630);
-            Controls.Add(button1);
-            Controls.Add(use_selected_sugar);
-            Controls.Add(use_selected_oil);
-            Controls.Add(use_selected_tomato);
-            Controls.Add(use_selected_potato);
-            Controls.Add(use_selected_eggs);
-            Controls.Add(buy_selected_sugar);
-            Controls.Add(buy_selected_oil);
-            Controls.Add(buy_selected_totato);
-            Controls.Add(buy_selected_potato);
-            Controls.Add(buy_selected_eggs);
-            Controls.Add(oil_per);
-            Controls.Add(tomato_per);
-            Controls.Add(potato_per);
-            Controls.Add(eggs_per);
-            Controls.Add(sugar_per);
-            Controls.Add(label6);
-            Controls.Add(buy_all_oil);
-            Controls.Add(buy_all_tomato);
-            Controls.Add(oil_bar);
-            Controls.Add(tomato_bar);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(buy_all_potato);
-            Controls.Add(buy_all_eggs);
-            Controls.Add(potato_bar);
-            Controls.Add(eggs_bar);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(buy_all_sugar);
-            Controls.Add(sugar_bar);
-            Controls.Add(label1);
-            Name = "Inventory";
-            Text = "Inventory";
-            Load += Inventory_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(936, 840);
+            this.Controls.Add(this.bt_back_mngr);
+            this.Controls.Add(this.use_selected_sugar);
+            this.Controls.Add(this.use_selected_oil);
+            this.Controls.Add(this.use_selected_tomato);
+            this.Controls.Add(this.use_selected_potato);
+            this.Controls.Add(this.use_selected_eggs);
+            this.Controls.Add(this.buy_selected_sugar);
+            this.Controls.Add(this.buy_selected_oil);
+            this.Controls.Add(this.buy_selected_totato);
+            this.Controls.Add(this.buy_selected_potato);
+            this.Controls.Add(this.buy_selected_eggs);
+            this.Controls.Add(this.oil_per);
+            this.Controls.Add(this.tomato_per);
+            this.Controls.Add(this.potato_per);
+            this.Controls.Add(this.eggs_per);
+            this.Controls.Add(this.sugar_per);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.buy_all_oil);
+            this.Controls.Add(this.buy_all_tomato);
+            this.Controls.Add(this.oil_bar);
+            this.Controls.Add(this.tomato_bar);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buy_all_potato);
+            this.Controls.Add(this.buy_all_eggs);
+            this.Controls.Add(this.potato_bar);
+            this.Controls.Add(this.eggs_bar);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.buy_all_sugar);
+            this.Controls.Add(this.sugar_bar);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Inventory";
+            this.Text = "Inventory";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -524,6 +560,6 @@
         private Button use_selected_tomato;
         private Button use_selected_oil;
         private Button use_selected_sugar;
-        private Button button1;
+        private Button bt_back_mngr;
     }
 }

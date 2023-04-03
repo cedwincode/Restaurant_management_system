@@ -29,178 +29,185 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Page));
-            username = new Label();
-            password = new Label();
-            username_textbox = new TextBox();
-            password_textbox = new TextBox();
-            submit = new Button();
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            label3 = new Label();
-            label4 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            SuspendLayout();
+            this.username = new System.Windows.Forms.Label();
+            this.password = new System.Windows.Forms.Label();
+            this.username_textbox = new System.Windows.Forms.TextBox();
+            this.password_textbox = new System.Windows.Forms.TextBox();
+            this.submit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.SuspendLayout();
             // 
             // username
             // 
-            username.AutoSize = true;
-            username.BackColor = Color.Black;
-            username.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            username.ForeColor = Color.Lime;
-            username.Location = new Point(260, 187);
-            username.Name = "username";
-            username.Size = new Size(100, 25);
-            username.TabIndex = 0;
-            username.Text = "Username";
-            username.Click += username_Click;
+            this.username.AutoSize = true;
+            this.username.BackColor = System.Drawing.Color.Black;
+            this.username.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.username.ForeColor = System.Drawing.Color.Lime;
+            this.username.Location = new System.Drawing.Point(297, 249);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(126, 32);
+            this.username.TabIndex = 0;
+            this.username.Text = "Username";
             // 
             // password
             // 
-            password.AutoSize = true;
-            password.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            password.ForeColor = Color.Lime;
-            password.Location = new Point(260, 226);
-            password.Name = "password";
-            password.Size = new Size(100, 25);
-            password.TabIndex = 1;
-            password.Text = "Password";
+            this.password.AutoSize = true;
+            this.password.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.password.ForeColor = System.Drawing.Color.Lime;
+            this.password.Location = new System.Drawing.Point(297, 301);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(126, 32);
+            this.password.TabIndex = 1;
+            this.password.Text = "Password";
             // 
             // username_textbox
             // 
-            username_textbox.BackColor = Color.LightGray;
-            username_textbox.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            username_textbox.Location = new Point(366, 190);
-            username_textbox.Name = "username_textbox";
-            username_textbox.PlaceholderText = "Enter Username";
-            username_textbox.Size = new Size(156, 22);
-            username_textbox.TabIndex = 2;
+            this.username_textbox.BackColor = System.Drawing.Color.LightGray;
+            this.username_textbox.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.username_textbox.Location = new System.Drawing.Point(418, 253);
+            this.username_textbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.username_textbox.Name = "username_textbox";
+            this.username_textbox.PlaceholderText = "Enter Username";
+            this.username_textbox.Size = new System.Drawing.Size(178, 25);
+            this.username_textbox.TabIndex = 2;
             // 
             // password_textbox
             // 
-            password_textbox.BackColor = Color.LightGray;
-            password_textbox.Font = new Font("Cambria", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            password_textbox.Location = new Point(366, 233);
-            password_textbox.Name = "password_textbox";
-            password_textbox.PasswordChar = '*';
-            password_textbox.PlaceholderText = "Enter Password";
-            password_textbox.Size = new Size(156, 22);
-            password_textbox.TabIndex = 3;
+            this.password_textbox.BackColor = System.Drawing.Color.LightGray;
+            this.password_textbox.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.password_textbox.Location = new System.Drawing.Point(418, 311);
+            this.password_textbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.password_textbox.Name = "password_textbox";
+            this.password_textbox.PasswordChar = '*';
+            this.password_textbox.PlaceholderText = "Enter Password";
+            this.password_textbox.Size = new System.Drawing.Size(178, 25);
+            this.password_textbox.TabIndex = 3;
             // 
             // submit
             // 
-            submit.BackColor = Color.Black;
-            submit.BackgroundImageLayout = ImageLayout.None;
-            submit.FlatStyle = FlatStyle.Flat;
-            submit.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            submit.Image = (Image)resources.GetObject("submit.Image");
-            submit.Location = new Point(366, 275);
-            submit.Name = "submit";
-            submit.Size = new Size(77, 52);
-            submit.TabIndex = 4;
-            submit.UseVisualStyleBackColor = false;
-            submit.Click += submit_Click;
+            this.submit.BackColor = System.Drawing.Color.Black;
+            this.submit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submit.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.submit.Image = ((System.Drawing.Image)(resources.GetObject("submit.Image")));
+            this.submit.Location = new System.Drawing.Point(418, 367);
+            this.submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(88, 69);
+            this.submit.TabIndex = 4;
+            this.submit.UseVisualStyleBackColor = false;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(136, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(608, 46);
-            label1.TabIndex = 6;
-            label1.Text = "Restaurant Management System";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(155, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(753, 58);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Restaurant Management System";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 401);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 31);
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(14, 535);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 41);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(43, 404);
-            label2.Name = "label2";
-            label2.Size = new Size(210, 16);
-            label2.TabIndex = 8;
-            label2.Text = "Copyright All Rights Reserved";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(49, 539);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(270, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Copyright All Rights Reserved";
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(27, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(103, 101);
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(31, 16);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(118, 135);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(294, 394);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(38, 38);
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(348, 528);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(338, 404);
-            label3.Name = "label3";
-            label3.Size = new Size(105, 16);
-            label3.TabIndex = 11;
-            label3.Text = "ISO 27001:2013";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(386, 539);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 20);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "ISO 27001:2013";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(471, 404);
-            label4.Name = "label4";
-            label4.Size = new Size(273, 16);
-            label4.TabIndex = 12;
-            label4.Text = "Contact : 2104030.stu@dmscollege.ac.in";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(538, 539);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(351, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Contact : 2104030.stu@dmscollege.ac.in";
             // 
             // Login_Page
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(790, 444);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(label2);
-            Controls.Add(pictureBox1);
-            Controls.Add(label1);
-            Controls.Add(submit);
-            Controls.Add(password_textbox);
-            Controls.Add(username_textbox);
-            Controls.Add(password);
-            Controls.Add(username);
-            Name = "Login_Page";
-            Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(903, 592);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.submit);
+            this.Controls.Add(this.password_textbox);
+            this.Controls.Add(this.username_textbox);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.username);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Login_Page";
+            this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

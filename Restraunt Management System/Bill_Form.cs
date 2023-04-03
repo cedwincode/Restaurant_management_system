@@ -8,11 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-//using static System.Windows.Forms.LinkLabel;
-//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-//using System.Security.AccessControl;
-//using static System.Runtime.InteropServices.JavaScript.JSType;
-//using System.Data.Common;
 
 namespace Restraunt_Management_System
 {
@@ -21,8 +16,11 @@ namespace Restraunt_Management_System
         //bryan
         //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
 
+        //bryan 2
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\Tst\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+
         //cedwin
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
+        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
         public Bill_Form()
         {
             InitializeComponent();
@@ -145,7 +143,7 @@ namespace Restraunt_Management_System
                 String fitem = cb_ftype.Text;
                 if (fitem.Contains(" Rs") == false)
                 {
-                    MessageBox.Show("String does not have Rs or space infront of Rs");
+                    MessageBox.Show("String does not have Rs or space infront of Rs or Try e.g [pudding Rs23]");
                     return;
                 }
 
@@ -158,13 +156,13 @@ namespace Restraunt_Management_System
                     {
                         if (fprice == "0")
                         {
-                            MessageBox.Show("price cant be 0");
+                            MessageBox.Show("price cant be 0 or Try e.g [pudding Rs23]");
                             return;
                         }
                     }
                     else
                     {
-                        MessageBox.Show("After Rs was not a number");
+                        MessageBox.Show("After Rs was not a number or Try e.g [pudding Rs23]");
                         return;
                     }
                     if (fprice.Substring(0, 1) == " ")
@@ -191,7 +189,7 @@ namespace Restraunt_Management_System
 
                 if (ditem.Contains(" Rs") == false)
                 {
-                    MessageBox.Show("String does not have Rs or space infront of Rs");
+                    MessageBox.Show("String does not have Rs or space infront of Rs or Try e.g [Soda Rs23] ");
                     return;
                 }
 
@@ -204,13 +202,13 @@ namespace Restraunt_Management_System
                     {
                         if (dprice == "0")
                         {
-                            MessageBox.Show("price cant be 0");
+                            MessageBox.Show("price cant be 0 or Try e.g [Soda Rs23] ");
                             return;
                         }
                     }
                     else
                     {
-                        MessageBox.Show("After Rs was not a number");
+                        MessageBox.Show("After Rs was not a number or Try e.g [Soda Rs23] ");
                         return;
                     }
 

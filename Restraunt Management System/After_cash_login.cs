@@ -29,6 +29,10 @@ namespace Restraunt_Management_System
             Application.Run(new Bill_Form());
         }
 
+        public void openReservation_Form(object obj)
+        {
+            Application.Run(new Reservation_Form());
+        }
         private void bt_back_login_Click(object sender, EventArgs e)
         {
             Thread th = new Thread(openLogin_Page);
@@ -59,6 +63,14 @@ namespace Restraunt_Management_System
         private void After_cash_login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_resv_form_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(openReservation_Form);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
         }
     }
 }

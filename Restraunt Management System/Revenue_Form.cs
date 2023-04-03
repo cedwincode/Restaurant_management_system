@@ -17,8 +17,11 @@ namespace Restraunt_Management_System
         //bryan
         //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
 
+        //bryan 2
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\Tst\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+       
         //cedwin
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
+       // SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
         public Revenue_Form()
         {
             InitializeComponent();
@@ -90,11 +93,19 @@ namespace Restraunt_Management_System
             String st = (cb_Beg.Text);
             String ed = (cb_End.Text);
 
+            if((cb_Beg.Text != "") && (cb_End.Text != ""))
+            {
+                if (Convert.ToInt32(cb_Beg.Text) == (Convert.ToInt32(cb_End.Text)))
+                {
+                    MessageBox.Show("Both number in range can't be same!");
+                    return;
+                }
+            }
             String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
             String todate = to_dtp.Value.ToString("yyyy-MM-dd");
 
 
-            //filter search with range only
+            //filter search with range and date  only
             if (((from_dtp.Checked == true) && (to_dtp.Checked == true)) || (from_dtp.Checked == true) || (to_dtp.Checked == true)) //validation included display
             {
 
@@ -309,17 +320,24 @@ namespace Restraunt_Management_System
 
             }
 
-            // filter total without range only
+            // filter total with range and date only
             if ((from_dtp.Checked && to_dtp.Checked) || (from_dtp.Checked == true) || (to_dtp.Checked == true))  //Id filter date is selected 
             {
-                con.Open();
-
                 String fromdate = from_dtp.Value.ToString("yyyy-MM-dd");
                 String todate = to_dtp.Value.ToString("yyyy-MM-dd");
 
                 String st = cb_Beg.Text;
                 String ed = cb_End.Text;
 
+                if ((cb_Beg.Text != "") && (cb_End.Text != ""))
+                {
+                    if (Convert.ToInt32(cb_Beg.Text) == (Convert.ToInt32(cb_End.Text)))
+                    {
+                        MessageBox.Show("Both number in range can't be same!");
+                        return;
+                    }
+                }
+                con.Open();
                 if ((cb_Beg.Text.Equals("") == true) && (cb_End.Text.Equals("") == true))
                 {
                     SqlCommand cmd = new SqlCommand("SELECT SUM(Amount) AS Total FROM [Revenue] WHERE date BETWEEN '" + fromdate + "' AND '" + todate + "'", con);
@@ -390,6 +408,14 @@ namespace Restraunt_Management_System
             {
                 String st = cb_Beg.Text;
                 String ed = cb_End.Text;
+                if ((cb_Beg.Text != "") && (cb_End.Text != ""))
+                {
+                    if (Convert.ToInt32(cb_Beg.Text) == (Convert.ToInt32(cb_End.Text)))
+                    {
+                        MessageBox.Show("Both number in range can't be same!");
+                        return;
+                    }
+                }
 
                 con.Open();
                 if ((cb_Beg.Text.Equals("") == false) && (cb_End.Text.Equals("") == true))
@@ -444,63 +470,12 @@ namespace Restraunt_Management_System
 
         }
 
-        private void cb_Beg_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void bt_back_man_Click(object sender, EventArgs e)
         {
             Thread th = new Thread(openAfter_mngr_login);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
             this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Revenue_Form_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void from_dtp_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgv_rev_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void lb_total_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Revenue_Form_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void cb_Beg_KeyPress(object sender, KeyPressEventArgs e)
@@ -519,10 +494,6 @@ namespace Restraunt_Management_System
             }
         }
 
-        private void cb_End_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void from_dtp_ValueChanged_1(object sender, EventArgs e)
         {
@@ -552,5 +523,6 @@ namespace Restraunt_Management_System
                 to_dtp.Checked = false;
             }
         }
+
     }
 }

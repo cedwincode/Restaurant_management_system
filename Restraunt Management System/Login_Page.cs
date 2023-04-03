@@ -44,9 +44,5 @@ namespace Restraunt_Management_System
             }
         }
 
-        private void username_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
