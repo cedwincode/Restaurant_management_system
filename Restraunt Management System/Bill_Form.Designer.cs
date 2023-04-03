@@ -133,7 +133,6 @@
             this.cb_fqty.Name = "cb_fqty";
             this.cb_fqty.Size = new System.Drawing.Size(151, 25);
             this.cb_fqty.TabIndex = 5;
-            this.cb_fqty.SelectedIndexChanged += new System.EventHandler(this.cb_fqty_SelectedIndexChanged);
             this.cb_fqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_fqty_KeyPress);
             // 
             // label4
@@ -195,6 +194,8 @@
             // rb_none
             // 
             this.rb_none.AutoSize = true;
+            this.rb_none.BackColor = System.Drawing.Color.Black;
+            this.rb_none.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.rb_none.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rb_none.ForeColor = System.Drawing.Color.Lime;
             this.rb_none.Location = new System.Drawing.Point(571, 105);
@@ -203,11 +204,12 @@
             this.rb_none.TabIndex = 10;
             this.rb_none.TabStop = true;
             this.rb_none.Text = "None";
-            this.rb_none.UseVisualStyleBackColor = true;
+            this.rb_none.UseVisualStyleBackColor = false;
             // 
             // rb_member
             // 
             this.rb_member.AutoSize = true;
+            this.rb_member.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.rb_member.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rb_member.ForeColor = System.Drawing.Color.Lime;
             this.rb_member.Location = new System.Drawing.Point(571, 138);
@@ -220,37 +222,45 @@
             // 
             // bt_add
             // 
+            this.bt_add.BackColor = System.Drawing.Color.LightGray;
+            this.bt_add.ForeColor = System.Drawing.Color.Black;
             this.bt_add.Location = new System.Drawing.Point(829, 17);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(94, 29);
             this.bt_add.TabIndex = 12;
             this.bt_add.Text = "Add";
-            this.bt_add.UseVisualStyleBackColor = true;
+            this.bt_add.UseVisualStyleBackColor = false;
             this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
             this.bt_add.MouseEnter += new System.EventHandler(this.bt_add_MouseEnter);
             this.bt_add.MouseLeave += new System.EventHandler(this.bt_add_MouseLeave);
             // 
             // bt_del
             // 
+            this.bt_del.BackColor = System.Drawing.Color.LightGray;
+            this.bt_del.ForeColor = System.Drawing.Color.Black;
             this.bt_del.Location = new System.Drawing.Point(829, 52);
             this.bt_del.Name = "bt_del";
             this.bt_del.Size = new System.Drawing.Size(94, 29);
             this.bt_del.TabIndex = 13;
             this.bt_del.Text = "Delete";
-            this.bt_del.UseVisualStyleBackColor = true;
+            this.bt_del.UseVisualStyleBackColor = false;
             this.bt_del.Click += new System.EventHandler(this.button2_Click);
             this.bt_del.MouseEnter += new System.EventHandler(this.bt_del_MouseEnter);
             this.bt_del.MouseLeave += new System.EventHandler(this.bt_del_MouseLeave);
             // 
             // bt_disp
             // 
+            this.bt_disp.BackColor = System.Drawing.Color.LightGray;
+            this.bt_disp.ForeColor = System.Drawing.Color.Black;
             this.bt_disp.Location = new System.Drawing.Point(829, 136);
             this.bt_disp.Name = "bt_disp";
             this.bt_disp.Size = new System.Drawing.Size(94, 29);
             this.bt_disp.TabIndex = 15;
             this.bt_disp.Text = "Search Bill";
-            this.bt_disp.UseVisualStyleBackColor = true;
+            this.bt_disp.UseVisualStyleBackColor = false;
             this.bt_disp.Click += new System.EventHandler(this.bt_search_bill_Click);
+            this.bt_disp.MouseEnter += new System.EventHandler(this.bt_disp_MouseEnter);
+            this.bt_disp.MouseLeave += new System.EventHandler(this.bt_disp_MouseLeave);
             // 
             // bill_dgv
             // 
@@ -349,13 +359,17 @@
             // 
             // bt_display
             // 
+            this.bt_display.BackColor = System.Drawing.Color.LightGray;
+            this.bt_display.ForeColor = System.Drawing.Color.Black;
             this.bt_display.Location = new System.Drawing.Point(829, 98);
             this.bt_display.Name = "bt_display";
             this.bt_display.Size = new System.Drawing.Size(94, 29);
             this.bt_display.TabIndex = 23;
             this.bt_display.Text = "Display";
-            this.bt_display.UseVisualStyleBackColor = true;
+            this.bt_display.UseVisualStyleBackColor = false;
             this.bt_display.Click += new System.EventHandler(this.bt_display_Click);
+            this.bt_display.MouseEnter += new System.EventHandler(this.bt_display_MouseEnter);
+            this.bt_display.MouseLeave += new System.EventHandler(this.bt_display_MouseLeave);
             // 
             // tb_search_bill
             // 
