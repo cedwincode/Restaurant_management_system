@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
             label1 = new Label();
             sugar_bar = new ProgressBar();
             buy_all_sugar = new Button();
@@ -54,6 +55,12 @@
             buy_selected_totato = new Button();
             buy_selected_oil = new Button();
             buy_selected_sugar = new Button();
+            use_selected_eggs = new Button();
+            use_selected_potato = new Button();
+            use_selected_tomato = new Button();
+            use_selected_oil = new Button();
+            use_selected_sugar = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -61,7 +68,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Lime;
-            label1.Location = new Point(44, 72);
+            label1.Location = new Point(27, 102);
             label1.Name = "label1";
             label1.Size = new Size(67, 25);
             label1.TabIndex = 0;
@@ -71,11 +78,11 @@
             // 
             sugar_bar.BackColor = Color.Black;
             sugar_bar.ForeColor = Color.Lime;
-            sugar_bar.Location = new Point(44, 114);
+            sugar_bar.Location = new Point(27, 144);
             sugar_bar.Name = "sugar_bar";
             sugar_bar.Size = new Size(287, 32);
             sugar_bar.TabIndex = 1;
-            sugar_bar.Value = 25;
+            sugar_bar.Value = 50;
             // 
             // buy_all_sugar
             // 
@@ -83,7 +90,7 @@
             buy_all_sugar.FlatStyle = FlatStyle.Flat;
             buy_all_sugar.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             buy_all_sugar.ForeColor = Color.Black;
-            buy_all_sugar.Location = new Point(693, 114);
+            buy_all_sugar.Location = new Point(696, 144);
             buy_all_sugar.Name = "buy_all_sugar";
             buy_all_sugar.Size = new Size(94, 32);
             buy_all_sugar.TabIndex = 2;
@@ -96,7 +103,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Lime;
-            label2.Location = new Point(44, 167);
+            label2.Location = new Point(27, 197);
             label2.Name = "label2";
             label2.Size = new Size(56, 25);
             label2.TabIndex = 3;
@@ -107,7 +114,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Lime;
-            label3.Location = new Point(44, 261);
+            label3.Location = new Point(27, 291);
             label3.Name = "label3";
             label3.Size = new Size(78, 25);
             label3.TabIndex = 4;
@@ -117,7 +124,7 @@
             // 
             eggs_bar.BackColor = Color.Black;
             eggs_bar.ForeColor = Color.Lime;
-            eggs_bar.Location = new Point(44, 215);
+            eggs_bar.Location = new Point(27, 245);
             eggs_bar.Name = "eggs_bar";
             eggs_bar.Size = new Size(288, 32);
             eggs_bar.TabIndex = 5;
@@ -125,7 +132,7 @@
             // 
             // potato_bar
             // 
-            potato_bar.Location = new Point(44, 311);
+            potato_bar.Location = new Point(27, 341);
             potato_bar.Name = "potato_bar";
             potato_bar.Size = new Size(288, 32);
             potato_bar.TabIndex = 6;
@@ -137,7 +144,7 @@
             buy_all_eggs.FlatStyle = FlatStyle.Flat;
             buy_all_eggs.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             buy_all_eggs.ForeColor = Color.Black;
-            buy_all_eggs.Location = new Point(693, 215);
+            buy_all_eggs.Location = new Point(696, 247);
             buy_all_eggs.Name = "buy_all_eggs";
             buy_all_eggs.Size = new Size(94, 32);
             buy_all_eggs.TabIndex = 7;
@@ -151,7 +158,7 @@
             buy_all_potato.FlatStyle = FlatStyle.Flat;
             buy_all_potato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             buy_all_potato.ForeColor = Color.Black;
-            buy_all_potato.Location = new Point(693, 311);
+            buy_all_potato.Location = new Point(696, 341);
             buy_all_potato.Name = "buy_all_potato";
             buy_all_potato.Size = new Size(94, 32);
             buy_all_potato.TabIndex = 8;
@@ -164,7 +171,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Lime;
-            label4.Location = new Point(44, 361);
+            label4.Location = new Point(27, 391);
             label4.Name = "label4";
             label4.Size = new Size(78, 25);
             label4.TabIndex = 9;
@@ -176,7 +183,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Lime;
-            label5.Location = new Point(44, 468);
+            label5.Location = new Point(27, 498);
             label5.Name = "label5";
             label5.Size = new Size(45, 25);
             label5.TabIndex = 10;
@@ -184,7 +191,7 @@
             // 
             // tomato_bar
             // 
-            tomato_bar.Location = new Point(44, 416);
+            tomato_bar.Location = new Point(27, 446);
             tomato_bar.Name = "tomato_bar";
             tomato_bar.Size = new Size(288, 32);
             tomato_bar.TabIndex = 11;
@@ -192,7 +199,7 @@
             // 
             // oil_bar
             // 
-            oil_bar.Location = new Point(44, 514);
+            oil_bar.Location = new Point(27, 544);
             oil_bar.Name = "oil_bar";
             oil_bar.Size = new Size(287, 32);
             oil_bar.TabIndex = 12;
@@ -204,7 +211,7 @@
             buy_all_tomato.FlatStyle = FlatStyle.Flat;
             buy_all_tomato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             buy_all_tomato.ForeColor = Color.Black;
-            buy_all_tomato.Location = new Point(693, 416);
+            buy_all_tomato.Location = new Point(696, 446);
             buy_all_tomato.Name = "buy_all_tomato";
             buy_all_tomato.Size = new Size(94, 32);
             buy_all_tomato.TabIndex = 13;
@@ -218,7 +225,7 @@
             buy_all_oil.FlatStyle = FlatStyle.Flat;
             buy_all_oil.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             buy_all_oil.ForeColor = Color.Black;
-            buy_all_oil.Location = new Point(693, 514);
+            buy_all_oil.Location = new Point(696, 544);
             buy_all_oil.Name = "buy_all_oil";
             buy_all_oil.Size = new Size(94, 32);
             buy_all_oil.TabIndex = 14;
@@ -229,11 +236,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Cascadia Code", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Cascadia Code", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Lime;
-            label6.Location = new Point(328, 9);
+            label6.Location = new Point(311, 30);
             label6.Name = "label6";
-            label6.Size = new Size(159, 35);
+            label6.Size = new Size(209, 46);
             label6.TabIndex = 15;
             label6.Text = "Inventory";
             // 
@@ -242,7 +249,7 @@
             sugar_per.BackColor = Color.DarkGray;
             sugar_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             sugar_per.ForeColor = Color.Black;
-            sugar_per.Location = new Point(455, 114);
+            sugar_per.Location = new Point(328, 144);
             sugar_per.Multiline = true;
             sugar_per.Name = "sugar_per";
             sugar_per.PlaceholderText = "%";
@@ -255,7 +262,7 @@
             eggs_per.BackColor = Color.DarkGray;
             eggs_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             eggs_per.ForeColor = Color.Black;
-            eggs_per.Location = new Point(455, 215);
+            eggs_per.Location = new Point(328, 245);
             eggs_per.Multiline = true;
             eggs_per.Name = "eggs_per";
             eggs_per.PlaceholderText = "%";
@@ -267,7 +274,7 @@
             potato_per.BackColor = Color.DarkGray;
             potato_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             potato_per.ForeColor = Color.Black;
-            potato_per.Location = new Point(455, 311);
+            potato_per.Location = new Point(328, 341);
             potato_per.Multiline = true;
             potato_per.Name = "potato_per";
             potato_per.PlaceholderText = "%";
@@ -279,7 +286,7 @@
             tomato_per.BackColor = Color.DarkGray;
             tomato_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             tomato_per.ForeColor = Color.Black;
-            tomato_per.Location = new Point(455, 419);
+            tomato_per.Location = new Point(328, 446);
             tomato_per.Multiline = true;
             tomato_per.Name = "tomato_per";
             tomato_per.PlaceholderText = "%";
@@ -291,7 +298,7 @@
             oil_per.BackColor = Color.DarkGray;
             oil_per.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             oil_per.ForeColor = Color.Black;
-            oil_per.Location = new Point(455, 514);
+            oil_per.Location = new Point(328, 544);
             oil_per.Multiline = true;
             oil_per.Name = "oil_per";
             oil_per.PlaceholderText = "%";
@@ -303,7 +310,7 @@
             buy_selected_eggs.BackColor = Color.Lime;
             buy_selected_eggs.FlatStyle = FlatStyle.Flat;
             buy_selected_eggs.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_eggs.Location = new Point(521, 215);
+            buy_selected_eggs.Location = new Point(391, 245);
             buy_selected_eggs.Name = "buy_selected_eggs";
             buy_selected_eggs.Size = new Size(134, 32);
             buy_selected_eggs.TabIndex = 22;
@@ -316,7 +323,7 @@
             buy_selected_potato.BackColor = Color.Lime;
             buy_selected_potato.FlatStyle = FlatStyle.Flat;
             buy_selected_potato.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_potato.Location = new Point(521, 311);
+            buy_selected_potato.Location = new Point(391, 341);
             buy_selected_potato.Name = "buy_selected_potato";
             buy_selected_potato.Size = new Size(134, 32);
             buy_selected_potato.TabIndex = 23;
@@ -329,7 +336,7 @@
             buy_selected_totato.BackColor = Color.Lime;
             buy_selected_totato.FlatStyle = FlatStyle.Flat;
             buy_selected_totato.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_totato.Location = new Point(521, 416);
+            buy_selected_totato.Location = new Point(391, 446);
             buy_selected_totato.Name = "buy_selected_totato";
             buy_selected_totato.Size = new Size(134, 32);
             buy_selected_totato.TabIndex = 24;
@@ -342,7 +349,7 @@
             buy_selected_oil.BackColor = Color.Lime;
             buy_selected_oil.FlatStyle = FlatStyle.Flat;
             buy_selected_oil.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buy_selected_oil.Location = new Point(521, 514);
+            buy_selected_oil.Location = new Point(391, 544);
             buy_selected_oil.Name = "buy_selected_oil";
             buy_selected_oil.Size = new Size(134, 32);
             buy_selected_oil.TabIndex = 25;
@@ -356,7 +363,7 @@
             buy_selected_sugar.FlatStyle = FlatStyle.Flat;
             buy_selected_sugar.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buy_selected_sugar.ForeColor = Color.Black;
-            buy_selected_sugar.Location = new Point(521, 114);
+            buy_selected_sugar.Location = new Point(391, 144);
             buy_selected_sugar.Name = "buy_selected_sugar";
             buy_selected_sugar.Size = new Size(134, 32);
             buy_selected_sugar.TabIndex = 26;
@@ -364,12 +371,93 @@
             buy_selected_sugar.UseVisualStyleBackColor = false;
             buy_selected_sugar.Click += buy_selected_sugar_Click;
             // 
+            // use_selected_eggs
+            // 
+            use_selected_eggs.BackColor = Color.Lime;
+            use_selected_eggs.FlatStyle = FlatStyle.Flat;
+            use_selected_eggs.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            use_selected_eggs.Location = new Point(540, 247);
+            use_selected_eggs.Name = "use_selected_eggs";
+            use_selected_eggs.Size = new Size(139, 32);
+            use_selected_eggs.TabIndex = 28;
+            use_selected_eggs.Text = "Use Selected";
+            use_selected_eggs.UseVisualStyleBackColor = false;
+            use_selected_eggs.Click += use_selected_eggs_Click;
+            // 
+            // use_selected_potato
+            // 
+            use_selected_potato.BackColor = Color.Lime;
+            use_selected_potato.FlatStyle = FlatStyle.Flat;
+            use_selected_potato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            use_selected_potato.Location = new Point(540, 341);
+            use_selected_potato.Name = "use_selected_potato";
+            use_selected_potato.Size = new Size(139, 32);
+            use_selected_potato.TabIndex = 29;
+            use_selected_potato.Text = "Use Selected";
+            use_selected_potato.UseVisualStyleBackColor = false;
+            use_selected_potato.Click += use_selected_potato_Click;
+            // 
+            // use_selected_tomato
+            // 
+            use_selected_tomato.BackColor = Color.Lime;
+            use_selected_tomato.FlatStyle = FlatStyle.Flat;
+            use_selected_tomato.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            use_selected_tomato.Location = new Point(540, 446);
+            use_selected_tomato.Name = "use_selected_tomato";
+            use_selected_tomato.Size = new Size(139, 32);
+            use_selected_tomato.TabIndex = 30;
+            use_selected_tomato.Text = "Use Selected";
+            use_selected_tomato.UseVisualStyleBackColor = false;
+            use_selected_tomato.Click += use_selected_tomato_Click;
+            // 
+            // use_selected_oil
+            // 
+            use_selected_oil.BackColor = Color.Lime;
+            use_selected_oil.FlatStyle = FlatStyle.Flat;
+            use_selected_oil.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            use_selected_oil.Location = new Point(540, 544);
+            use_selected_oil.Name = "use_selected_oil";
+            use_selected_oil.Size = new Size(139, 32);
+            use_selected_oil.TabIndex = 31;
+            use_selected_oil.Text = "Use Selected";
+            use_selected_oil.UseVisualStyleBackColor = false;
+            use_selected_oil.Click += use_selected_oil_Click;
+            // 
+            // use_selected_sugar
+            // 
+            use_selected_sugar.BackColor = Color.Lime;
+            use_selected_sugar.FlatStyle = FlatStyle.Flat;
+            use_selected_sugar.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            use_selected_sugar.Location = new Point(540, 144);
+            use_selected_sugar.Name = "use_selected_sugar";
+            use_selected_sugar.Size = new Size(139, 32);
+            use_selected_sugar.TabIndex = 32;
+            use_selected_sugar.Text = "Use Selected";
+            use_selected_sugar.UseVisualStyleBackColor = false;
+            use_selected_sugar.Click += use_selected_sugar_Click;
+            // 
+            // button1
+            // 
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(54, 57);
+            button1.TabIndex = 33;
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Inventory
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(819, 630);
+            Controls.Add(button1);
+            Controls.Add(use_selected_sugar);
+            Controls.Add(use_selected_oil);
+            Controls.Add(use_selected_tomato);
+            Controls.Add(use_selected_potato);
+            Controls.Add(use_selected_eggs);
             Controls.Add(buy_selected_sugar);
             Controls.Add(buy_selected_oil);
             Controls.Add(buy_selected_totato);
@@ -431,5 +519,11 @@
         private Button buy_selected_totato;
         private Button buy_selected_oil;
         private Button buy_selected_sugar;
+        private Button use_selected_eggs;
+        private Button use_selected_potato;
+        private Button use_selected_tomato;
+        private Button use_selected_oil;
+        private Button use_selected_sugar;
+        private Button button1;
     }
 }

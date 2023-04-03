@@ -102,3 +102,4 @@ C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management Sy
 C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.pdb
 C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.genruntimeconfig.cache
 C:\Users\rodri\Source\Repos\Restaurant_management_system\Restraunt Management System\obj\Debug\net7.0-windows\ref\Restraunt Management System.dll
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Inventory.resources

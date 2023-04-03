@@ -102,5 +102,50 @@ namespace Restraunt_Management_System
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void use_selected_sugar_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(sugar_per.Text) <= sugar_bar.Value)
+            {
+                sugar_bar.Value = sugar_bar.Value - Convert.ToInt32(sugar_per.Text);
+            }
+        }
+
+        private void use_selected_eggs_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(eggs_per.Text) <= eggs_bar.Value)
+            {
+                eggs_bar.Value = eggs_bar.Value - Convert.ToInt32(eggs_per.Text);
+            }
+        }
+
+        private void use_selected_potato_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(potato_per.Text) <= potato_bar.Value)
+            {
+                potato_bar.Value = potato_bar.Value - Convert.ToInt32(potato_per.Text);
+            }
+        }
+
+        private void use_selected_tomato_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(tomato_per.Text) <= tomato_bar.Value)
+            {
+                tomato_bar.Value = tomato_bar.Value - Convert.ToInt32(tomato_per.Text);
+            }
+        }
+
+        private void use_selected_oil_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(oil_per.Text) <= oil_bar.Value)
+            {
+                oil_bar.Value = oil_bar.Value - Convert.ToInt32(oil_per.Text);
+            }
+        }
     }
 }
