@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="After_cash_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="After_mngr_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Bill_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reservation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Revenue_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Reservation.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
