@@ -134,3 +134,5 @@ C:\Users\rodri\Desktop\Tst\Restraunt Management System\obj\Debug\net7.0-windows\
 C:\Users\rodri\Desktop\Tst\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt Management System.genruntimeconfig.cache
 C:\Users\rodri\Desktop\Tst\Restraunt Management System\obj\Debug\net7.0-windows\ref\Restraunt Management System.dll
 C:\Users\rodri\Desktop\Tst\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Reservation_Form.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Reservation_Form.resources
+C:\Programming\web programming\restaurant management system\Restraunt Management System\obj\Debug\net7.0-windows\Restraunt_Management_System.Reservation.resources

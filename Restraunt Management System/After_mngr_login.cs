@@ -72,6 +72,6 @@ namespace Restraunt_Management_System
 
         }
 
-        
+
     }
 }
