@@ -29,81 +29,87 @@ namespace Restraunt_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation));
-            label1 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            dataGridView1 = new DataGridView();
-            label2 = new Label();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bt_back_resr_form = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(311, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(204, 39);
-            label1.TabIndex = 0;
-            label1.Text = "Reservation";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(355, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(264, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Reservation";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(315, 110);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.Location = new System.Drawing.Point(360, 147);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(228, 27);
+            this.dateTimePicker1.TabIndex = 1;
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(75, 200);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(657, 150);
-            dataGridView1.TabIndex = 2;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(86, 267);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(751, 200);
+            this.dataGridView1.TabIndex = 2;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Lime;
-            label2.Location = new Point(213, 114);
-            label2.Name = "label2";
-            label2.Size = new Size(96, 17);
-            label2.TabIndex = 3;
-            label2.Text = "Select Date";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(243, 152);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 22);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Select Date";
             // 
-            // button1
+            // bt_back_resr_form
             // 
-            button1.Cursor = Cursors.Hand;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(12, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(49, 52);
-            button1.TabIndex = 4;
-            button1.UseVisualStyleBackColor = true;
+            this.bt_back_resr_form.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_back_resr_form.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_back_resr_form.Image = ((System.Drawing.Image)(resources.GetObject("bt_back_resr_form.Image")));
+            this.bt_back_resr_form.Location = new System.Drawing.Point(14, 16);
+            this.bt_back_resr_form.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_back_resr_form.Name = "bt_back_resr_form";
+            this.bt_back_resr_form.Size = new System.Drawing.Size(56, 69);
+            this.bt_back_resr_form.TabIndex = 4;
+            this.bt_back_resr_form.UseVisualStyleBackColor = true;
+            this.bt_back_resr_form.Click += new System.EventHandler(this.bt_back_resr_form_Click);
             // 
             // Reservation
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(dataGridView1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(label1);
-            Name = "Reservation";
-            Text = "Reservation";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.Controls.Add(this.bt_back_resr_form);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Reservation";
+            this.Text = "Reservation";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -112,6 +118,6 @@ namespace Restraunt_Management_System
         private DateTimePicker dateTimePicker1;
         private DataGridView dataGridView1;
         private Label label2;
-        private Button button1;
+        private Button bt_back_resr_form;
     }
 }

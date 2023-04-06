@@ -17,9 +17,16 @@ namespace Restraunt_Management_System
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void openReservation_Form(object obj)
         {
-
+            Application.Run(new Reservation_Form());
+        }
+        private void bt_back_resr_form_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(openReservation_Form);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
         }
     }
 }

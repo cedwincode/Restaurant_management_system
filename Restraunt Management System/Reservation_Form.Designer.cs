@@ -29,258 +29,344 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation_Form));
-            bt_back_cash = new Button();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label6 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            label7 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            panel1 = new Panel();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.bt_back_cash = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_name = new System.Windows.Forms.TextBox();
+            this.tb_pno = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtp = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cb_hr = new System.Windows.Forms.ComboBox();
+            this.cbt = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt_show_resev = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_clear = new System.Windows.Forms.Button();
+            this.tb_tno = new System.Windows.Forms.TextBox();
+            this.cb_min = new System.Windows.Forms.ComboBox();
+            this.cb_nseat = new System.Windows.Forms.ComboBox();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // bt_back_cash
             // 
-            bt_back_cash.Cursor = Cursors.Hand;
-            bt_back_cash.FlatStyle = FlatStyle.Flat;
-            bt_back_cash.Image = (Image)resources.GetObject("bt_back_cash.Image");
-            bt_back_cash.Location = new Point(12, 6);
-            bt_back_cash.Margin = new Padding(3, 2, 3, 2);
-            bt_back_cash.Name = "bt_back_cash";
-            bt_back_cash.Size = new Size(50, 53);
-            bt_back_cash.TabIndex = 0;
-            bt_back_cash.UseVisualStyleBackColor = true;
-            bt_back_cash.Click += bt_back_cash_Click;
+            this.bt_back_cash.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_back_cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_back_cash.Image = ((System.Drawing.Image)(resources.GetObject("bt_back_cash.Image")));
+            this.bt_back_cash.Location = new System.Drawing.Point(14, 8);
+            this.bt_back_cash.Name = "bt_back_cash";
+            this.bt_back_cash.Size = new System.Drawing.Size(57, 71);
+            this.bt_back_cash.TabIndex = 0;
+            this.bt_back_cash.UseVisualStyleBackColor = true;
+            this.bt_back_cash.Click += new System.EventHandler(this.bt_back_cash_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(176, 10);
-            label1.Name = "label1";
-            label1.Size = new Size(323, 43);
-            label1.TabIndex = 1;
-            label1.Text = "Reservation Form";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(201, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(390, 52);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Reservation Form";
             // 
-            // textBox1
+            // tb_name
             // 
-            textBox1.Location = new Point(281, 95);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 23);
-            textBox1.TabIndex = 2;
+            this.tb_name.Location = new System.Drawing.Point(321, 127);
+            this.tb_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_name.Name = "tb_name";
+            this.tb_name.Size = new System.Drawing.Size(228, 27);
+            this.tb_name.TabIndex = 2;
+            this.tb_name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_name_KeyPress);
             // 
-            // textBox2
+            // tb_pno
             // 
-            textBox2.Location = new Point(281, 149);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(200, 23);
-            textBox2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(281, 203);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(54, 23);
-            textBox3.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(281, 246);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(54, 23);
-            textBox4.TabIndex = 5;
+            this.tb_pno.Location = new System.Drawing.Point(321, 199);
+            this.tb_pno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_pno.Name = "tb_pno";
+            this.tb_pno.Size = new System.Drawing.Size(228, 27);
+            this.tb_pno.TabIndex = 3;
+            this.tb_pno.TextChanged += new System.EventHandler(this.tb_pno_TextChanged);
+            this.tb_pno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_pno_KeyPress);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Lime;
-            label2.Location = new Point(214, 98);
-            label2.Name = "label2";
-            label2.Size = new Size(45, 20);
-            label2.TabIndex = 6;
-            label2.Text = "Name";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(245, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Name";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Lime;
-            label3.Location = new Point(142, 148);
-            label3.Name = "label3";
-            label3.Size = new Size(117, 20);
-            label3.TabIndex = 7;
-            label3.Text = "Phone Number";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(162, 197);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Phone Number";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Lime;
-            label4.Location = new Point(142, 202);
-            label4.Name = "label4";
-            label4.Size = new Size(117, 20);
-            label4.TabIndex = 8;
-            label4.Text = "Table Number";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(162, 269);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 25);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Table Number";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Lime;
-            label5.Location = new Point(119, 245);
-            label5.Name = "label5";
-            label5.Size = new Size(144, 20);
-            label5.TabIndex = 9;
-            label5.Text = "Number of Seats";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(136, 327);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(177, 25);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Number of Seats";
             // 
-            // dateTimePicker1
+            // dtp
             // 
-            dateTimePicker1.Location = new Point(281, 303);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 10;
+            this.dtp.Location = new System.Drawing.Point(321, 404);
+            this.dtp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtp.Name = "dtp";
+            this.dtp.Size = new System.Drawing.Size(228, 27);
+            this.dtp.TabIndex = 10;
+            this.dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dtp_KeyPress);
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.Lime;
-            label6.Location = new Point(218, 306);
-            label6.Name = "label6";
-            label6.Size = new Size(45, 20);
-            label6.TabIndex = 11;
-            label6.Text = "Date";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Lime;
+            this.label6.Location = new System.Drawing.Point(249, 408);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 25);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Date";
             // 
-            // comboBox1
+            // cb_hr
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8 ", "9", "10", "11", "12" });
-            comboBox1.Location = new Point(281, 347);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(54, 23);
-            comboBox1.TabIndex = 12;
+            this.cb_hr.FormattingEnabled = true;
+            this.cb_hr.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8 ",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cb_hr.Location = new System.Drawing.Point(321, 463);
+            this.cb_hr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_hr.Name = "cb_hr";
+            this.cb_hr.Size = new System.Drawing.Size(61, 28);
+            this.cb_hr.TabIndex = 12;
+            this.cb_hr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_hr_KeyPress);
             // 
-            // comboBox2
+            // cbt
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "AM", "PM" });
-            comboBox2.Location = new Point(341, 347);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(54, 23);
-            comboBox2.TabIndex = 13;
+            this.cbt.FormattingEnabled = true;
+            this.cbt.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.cbt.Location = new System.Drawing.Point(340, 366);
+            this.cbt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbt.Name = "cbt";
+            this.cbt.Size = new System.Drawing.Size(61, 28);
+            this.cbt.TabIndex = 13;
+            this.cbt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbt_KeyPress);
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.Lime;
-            label7.Location = new Point(218, 347);
-            label7.Name = "label7";
-            label7.Size = new Size(45, 20);
-            label7.TabIndex = 14;
-            label7.Text = "Time";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Lime;
+            this.label7.Location = new System.Drawing.Point(249, 463);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 25);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Time";
             // 
             // button1
             // 
-            button1.BackColor = Color.Black;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(171, 312);
-            button1.Name = "button1";
-            button1.Size = new Size(89, 55);
-            button1.TabIndex = 15;
-            button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(207, 416);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 62);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
-            // button2
+            // bt_show_resev
             // 
-            button2.BackColor = Color.Lime;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(566, 393);
-            button2.Name = "button2";
-            button2.Size = new Size(113, 38);
-            button2.TabIndex = 16;
-            button2.Text = "Reservation";
-            button2.UseVisualStyleBackColor = false;
+            this.bt_show_resev.BackColor = System.Drawing.Color.Lime;
+            this.bt_show_resev.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_show_resev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_show_resev.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_show_resev.Location = new System.Drawing.Point(642, 524);
+            this.bt_show_resev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_show_resev.Name = "bt_show_resev";
+            this.bt_show_resev.Size = new System.Drawing.Size(134, 51);
+            this.bt_show_resev.TabIndex = 16;
+            this.bt_show_resev.Text = "Reservation";
+            this.bt_show_resev.UseVisualStyleBackColor = false;
+            this.bt_show_resev.Click += new System.EventHandler(this.bt_show_resev_Click);
             // 
             // panel1
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(button1);
-            panel1.Location = new Point(100, 72);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(417, 371);
-            panel1.TabIndex = 17;
-            panel1.Paint += panel1_Paint_1;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.bt_clear);
+            this.panel1.Controls.Add(this.tb_tno);
+            this.panel1.Controls.Add(this.cb_min);
+            this.panel1.Controls.Add(this.cb_nseat);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.cbt);
+            this.panel1.Location = new System.Drawing.Point(114, 96);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(476, 494);
+            this.panel1.TabIndex = 17;
+            // 
+            // bt_clear
+            // 
+            this.bt_clear.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_clear.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.bt_clear.FlatAppearance.BorderSize = 2;
+            this.bt_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_clear.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_clear.ForeColor = System.Drawing.Color.Black;
+            this.bt_clear.Location = new System.Drawing.Point(315, 416);
+            this.bt_clear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_clear.Name = "bt_clear";
+            this.bt_clear.Size = new System.Drawing.Size(102, 62);
+            this.bt_clear.TabIndex = 19;
+            this.bt_clear.Text = "Clear";
+            this.bt_clear.UseVisualStyleBackColor = false;
+            this.bt_clear.Click += new System.EventHandler(this.bt_clear_Click);
+            this.bt_clear.MouseEnter += new System.EventHandler(this.bt_clear_MouseEnter);
+            this.bt_clear.MouseLeave += new System.EventHandler(this.bt_clear_MouseLeave);
+            // 
+            // tb_tno
+            // 
+            this.tb_tno.Location = new System.Drawing.Point(206, 170);
+            this.tb_tno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_tno.Name = "tb_tno";
+            this.tb_tno.Size = new System.Drawing.Size(62, 27);
+            this.tb_tno.TabIndex = 18;
+            this.tb_tno.TextChanged += new System.EventHandler(this.tb_tno_TextChanged);
+            this.tb_tno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_tno_KeyPress);
+            // 
+            // cb_min
+            // 
+            this.cb_min.FormattingEnabled = true;
+            this.cb_min.Items.AddRange(new object[] {
+            "00",
+            "15",
+            "30",
+            "45"});
+            this.cb_min.Location = new System.Drawing.Point(273, 366);
+            this.cb_min.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_min.Name = "cb_min";
+            this.cb_min.Size = new System.Drawing.Size(61, 28);
+            this.cb_min.TabIndex = 17;
+            this.cb_min.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_min_KeyPress);
+            // 
+            // cb_nseat
+            // 
+            this.cb_nseat.FormattingEnabled = true;
+            this.cb_nseat.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cb_nseat.Location = new System.Drawing.Point(207, 232);
+            this.cb_nseat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_nseat.Name = "cb_nseat";
+            this.cb_nseat.Size = new System.Drawing.Size(61, 28);
+            this.cb_nseat.TabIndex = 16;
+            this.cb_nseat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_nseat_KeyPress);
             // 
             // Reservation_Form
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(700, 481);
-            Controls.Add(button2);
-            Controls.Add(label7);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(label6);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(bt_back_cash);
-            Controls.Add(panel1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Reservation_Form";
-            Text = "Reservation_Form";
-            Load += Reservation_Form_Load_1;
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(800, 641);
+            this.Controls.Add(this.bt_show_resev);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cb_hr);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dtp);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tb_pno);
+            this.Controls.Add(this.tb_name);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bt_back_cash);
+            this.Controls.Add(this.panel1);
+            this.Name = "Reservation_Form";
+            this.Text = "Reservation_Form";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private Button bt_back_cash;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox tb_name;
+        private TextBox tb_pno;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtp;
         private Label label6;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cb_hr;
+        private ComboBox cbt;
         private Label label7;
         private Button button1;
-        private Button button2;
+        private Button bt_show_resev;
         private Panel panel1;
+        private ComboBox cb_min;
+        private ComboBox cb_nseat;
+        private TextBox tb_tno;
+        private Button bt_clear;
     }
 }
