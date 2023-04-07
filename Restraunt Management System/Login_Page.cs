@@ -44,5 +44,25 @@ namespace Restraunt_Management_System
             }
         }
 
+        private void username_textbox_TextChanged(object sender, EventArgs e)
+        {
+            if (username_textbox.Text.Length > 30)
+            {
+                username_textbox.Text = username_textbox.Text.Substring(0, 30);
+                username_textbox.SelectionStart = username_textbox.Text.Length;
+                username_textbox.SelectionLength = 0;
+            }
+        }
+
+        private void password_textbox_TextChanged(object sender, EventArgs e)
+        {
+            if (password_textbox.Text.Length > 30)
+            {
+                password_textbox.Text = password_textbox.Text.Substring(0, 30);
+                password_textbox.SelectionStart = password_textbox.Text.Length;
+                password_textbox.SelectionLength = 0;
+            }
+        }
+
     }
 }

@@ -227,10 +227,13 @@
             // 
             // bt_show_resev
             // 
-            this.bt_show_resev.BackColor = System.Drawing.Color.Lime;
+            this.bt_show_resev.BackColor = System.Drawing.Color.Black;
             this.bt_show_resev.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_show_resev.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_show_resev.FlatAppearance.BorderSize = 2;
             this.bt_show_resev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_show_resev.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_show_resev.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_show_resev.ForeColor = System.Drawing.Color.Lime;
             this.bt_show_resev.Location = new System.Drawing.Point(642, 524);
             this.bt_show_resev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bt_show_resev.Name = "bt_show_resev";
@@ -239,6 +242,8 @@
             this.bt_show_resev.Text = "Reservation";
             this.bt_show_resev.UseVisualStyleBackColor = false;
             this.bt_show_resev.Click += new System.EventHandler(this.bt_show_resev_Click);
+            this.bt_show_resev.MouseEnter += new System.EventHandler(this.bt_show_resev_MouseEnter);
+            this.bt_show_resev.MouseLeave += new System.EventHandler(this.bt_show_resev_MouseLeave);
             // 
             // panel1
             // 

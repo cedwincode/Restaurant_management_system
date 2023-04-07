@@ -77,6 +77,7 @@
             this.tb_b_id.Name = "tb_b_id";
             this.tb_b_id.Size = new System.Drawing.Size(151, 25);
             this.tb_b_id.TabIndex = 1;
+            this.tb_b_id.TextChanged += new System.EventHandler(this.tb_b_id_TextChanged_1);
             this.tb_b_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_b_id_KeyPress);
             // 
             // cb_ftype
@@ -94,6 +95,7 @@
             this.cb_ftype.Name = "cb_ftype";
             this.cb_ftype.Size = new System.Drawing.Size(151, 25);
             this.cb_ftype.TabIndex = 2;
+            this.cb_ftype.TextChanged += new System.EventHandler(this.cb_ftype_TextChanged);
             // 
             // label2
             // 
@@ -132,6 +134,7 @@
             this.cb_fqty.Name = "cb_fqty";
             this.cb_fqty.Size = new System.Drawing.Size(151, 25);
             this.cb_fqty.TabIndex = 5;
+            this.cb_fqty.TextChanged += new System.EventHandler(this.cb_fqty_TextChanged);
             this.cb_fqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_fqty_KeyPress);
             // 
             // label4
@@ -160,6 +163,7 @@
             this.cb_dtype.Name = "cb_dtype";
             this.cb_dtype.Size = new System.Drawing.Size(151, 25);
             this.cb_dtype.TabIndex = 7;
+            this.cb_dtype.TextChanged += new System.EventHandler(this.cb_dtype_TextChanged);
             // 
             // label5
             // 
@@ -187,6 +191,7 @@
             this.cb_dqty.Name = "cb_dqty";
             this.cb_dqty.Size = new System.Drawing.Size(151, 25);
             this.cb_dqty.TabIndex = 9;
+            this.cb_dqty.TextChanged += new System.EventHandler(this.cb_dqty_TextChanged);
             this.cb_dqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_dqty_KeyPress);
             // 
             // rb_none
@@ -223,6 +228,7 @@
             this.bt_add.BackColor = System.Drawing.Color.LightGray;
             this.bt_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_add.ForeColor = System.Drawing.Color.Black;
             this.bt_add.Location = new System.Drawing.Point(622, 13);
             this.bt_add.Name = "bt_add";
@@ -239,6 +245,7 @@
             this.bt_del.BackColor = System.Drawing.Color.LightGray;
             this.bt_del.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_del.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_del.ForeColor = System.Drawing.Color.Black;
             this.bt_del.Location = new System.Drawing.Point(622, 69);
             this.bt_del.Name = "bt_del";
@@ -255,6 +262,7 @@
             this.bt_disp.BackColor = System.Drawing.Color.LightGray;
             this.bt_disp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_disp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_disp.ForeColor = System.Drawing.Color.Black;
             this.bt_disp.Location = new System.Drawing.Point(818, 119);
             this.bt_disp.Name = "bt_disp";
@@ -281,6 +289,7 @@
             this.bill_dgv.RowTemplate.Height = 29;
             this.bill_dgv.Size = new System.Drawing.Size(926, 283);
             this.bill_dgv.TabIndex = 16;
+            this.bill_dgv.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.bill_dgv_CellFormatting);
             // 
             // bt_back_cash
             // 
@@ -348,6 +357,7 @@
             this.bt_display.BackColor = System.Drawing.Color.LightGray;
             this.bt_display.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_display.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_display.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_display.ForeColor = System.Drawing.Color.Black;
             this.bt_display.Location = new System.Drawing.Point(622, 124);
             this.bt_display.Name = "bt_display";
@@ -367,6 +377,7 @@
             this.tb_search_bill.Name = "tb_search_bill";
             this.tb_search_bill.Size = new System.Drawing.Size(93, 25);
             this.tb_search_bill.TabIndex = 22;
+            this.tb_search_bill.TextChanged += new System.EventHandler(this.tb_search_bill_TextChanged);
             // 
             // label8
             // 

@@ -14,7 +14,14 @@ namespace Restraunt_Management_System
 {
     public partial class Reservation_Form : Form
     {
+        //bryan
+        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+
+        //bryan 2
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\nata\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+
+        //cedwin
+        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
 
         public Reservation_Form()
         {
@@ -31,7 +38,7 @@ namespace Restraunt_Management_System
         }
 
 
-        public void clear()
+        public void clear()  //clear function
         {
             tb_name.Text = "";
             tb_pno.Text = "";
@@ -44,7 +51,7 @@ namespace Restraunt_Management_System
         }
 
 
-        private void bt_back_cash_Click(object sender, EventArgs e)
+        private void bt_back_cash_Click(object sender, EventArgs e)  //clear all text
         {
             Thread th = new Thread(openAfter_cash_loginrv);
             th.SetApartmentState(ApartmentState.STA);
@@ -52,9 +59,9 @@ namespace Restraunt_Management_System
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e)  //Adds reservation
         {
-            
             String rname, rdate, rtime;
             int hr;
             int  tno, sno;
@@ -188,10 +195,11 @@ namespace Restraunt_Management_System
 
             //Data being inserted
             con.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO [Reserv] VALUES('"+rname+"','"+pno+"','"+tno+"','"+sno+"','"+rdate+"','"+rtime+"')",con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO [Reserv] (rname,pno,tableno,seatno,rdate,rtime) VALUES('"+rname+"','"+pno+"','"+tno+"','"+sno+"','"+rdate+"','"+rtime+"')",con);
             cmd.ExecuteNonQuery();
             con.Close();
             clear();
+            MessageBox.Show("Reservation did Successfuly");
         }
 
         private void tb_name_KeyPress(object sender, KeyPressEventArgs e)
@@ -324,6 +332,23 @@ namespace Restraunt_Management_System
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
             this.Close();
+        }
+
+        private void bt_show_resev_MouseEnter(object sender, EventArgs e)
+        {
+            bt_show_resev.FlatAppearance.BorderColor = Color.Black;
+            bt_show_resev.BackColor = Color.Lime;
+            bt_show_resev.ForeColor = Color.Black;
+        }
+
+        private void bt_show_resev_MouseLeave(object sender, EventArgs e)
+        {
+            
+
+
+            bt_show_resev.FlatAppearance.BorderColor = Color.WhiteSmoke;
+            bt_show_resev.BackColor = Color.Black;
+            bt_show_resev.ForeColor = Color.Lime;
         }
     }
 }

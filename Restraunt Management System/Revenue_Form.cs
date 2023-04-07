@@ -408,6 +408,17 @@ namespace Restraunt_Management_System
             {
                 String st = cb_Beg.Text;
                 String ed = cb_End.Text;
+
+                if ((cb_Beg.Text != "") && (cb_End.Text != ""))
+                {
+                    if (Convert.ToInt32(cb_Beg.Text) > Convert.ToInt32(cb_End.Text))
+                    {
+                        MessageBox.Show("Invalid Amount range choose valid amount range");
+                        con.Close();
+                        return;
+                    }
+                }
+
                 if ((cb_Beg.Text != "") && (cb_End.Text != ""))
                 {
                     if (Convert.ToInt32(cb_Beg.Text) == (Convert.ToInt32(cb_End.Text)))
@@ -488,6 +499,10 @@ namespace Restraunt_Management_System
 
         private void cb_End_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if(cb_End.Text.Length == 0 && e.KeyChar == '0')
+            {
+                e.Handled = true;
+            }
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
@@ -527,6 +542,57 @@ namespace Restraunt_Management_System
         private void Revenue_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgv_rev_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dgv_rev.Rows)
+            {
+                for (int i = 0; i < dgv_rev.ColumnCount; i++)
+                {
+                    if (row.Cells[i].Value != null)
+                    {
+                        row.Cells[i].Style.BackColor = Color.LightGreen;
+                        row.Cells[i].Style.ForeColor = Color.Black;
+
+                    }
+                }
+            }
+        }
+
+        private void day_dtp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void from_dtp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void to_dtp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void cb_Beg_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_Beg.Text.Length > 9)
+            {
+                cb_Beg.Text = cb_Beg.Text.Substring(0, 9);
+                cb_Beg.SelectionStart = cb_Beg.Text.Length;
+                cb_Beg.SelectionLength = 0;
+            }
+        }
+
+        private void cb_End_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_End.Text.Length > 9)
+            {
+                cb_End.Text = cb_End.Text.Substring(0, 9);
+                cb_End.SelectionStart = cb_End.Text.Length;
+                cb_End.SelectionLength = 0;
+            }
         }
     }
 }

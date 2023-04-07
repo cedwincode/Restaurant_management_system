@@ -103,16 +103,20 @@
             this.dgv_rev.RowTemplate.Height = 29;
             this.dgv_rev.Size = new System.Drawing.Size(430, 205);
             this.dgv_rev.TabIndex = 1;
+            this.dgv_rev.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_rev_CellFormatting);
             // 
             // bt_disp
             // 
+            this.bt_disp.BackColor = System.Drawing.Color.LightGray;
             this.bt_disp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_disp.ForeColor = System.Drawing.Color.Black;
             this.bt_disp.Location = new System.Drawing.Point(529, 433);
             this.bt_disp.Name = "bt_disp";
             this.bt_disp.Size = new System.Drawing.Size(94, 29);
             this.bt_disp.TabIndex = 2;
             this.bt_disp.Text = "Display All";
-            this.bt_disp.UseVisualStyleBackColor = true;
+            this.bt_disp.UseVisualStyleBackColor = false;
             this.bt_disp.Click += new System.EventHandler(this.bt_disp_Click);
             // 
             // label2
@@ -144,6 +148,7 @@
             this.from_dtp.Size = new System.Drawing.Size(225, 27);
             this.from_dtp.TabIndex = 5;
             this.from_dtp.ValueChanged += new System.EventHandler(this.from_dtp_ValueChanged_1);
+            this.from_dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.from_dtp_KeyPress);
             // 
             // to_dtp
             // 
@@ -152,16 +157,20 @@
             this.to_dtp.Size = new System.Drawing.Size(225, 27);
             this.to_dtp.TabIndex = 6;
             this.to_dtp.ValueChanged += new System.EventHandler(this.to_dtp_ValueChanged);
+            this.to_dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.to_dtp_KeyPress);
             // 
             // bt_spec_disp
             // 
+            this.bt_spec_disp.BackColor = System.Drawing.Color.LightGray;
             this.bt_spec_disp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_spec_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_spec_disp.ForeColor = System.Drawing.Color.Black;
             this.bt_spec_disp.Location = new System.Drawing.Point(658, 433);
             this.bt_spec_disp.Name = "bt_spec_disp";
             this.bt_spec_disp.Size = new System.Drawing.Size(94, 29);
             this.bt_spec_disp.TabIndex = 7;
             this.bt_spec_disp.Text = "Display Filter";
-            this.bt_spec_disp.UseVisualStyleBackColor = true;
+            this.bt_spec_disp.UseVisualStyleBackColor = false;
             this.bt_spec_disp.Click += new System.EventHandler(this.bt_spec_disp_Click);
             // 
             // label4
@@ -192,7 +201,8 @@
             this.day_dtp.Name = "day_dtp";
             this.day_dtp.Size = new System.Drawing.Size(227, 27);
             this.day_dtp.TabIndex = 10;
-            this.day_dtp.ValueChanged += new System.EventHandler(this.from_dtp_ValueChanged_1);
+            this.day_dtp.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.day_dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.day_dtp_KeyPress);
             // 
             // label5
             // 
@@ -218,13 +228,16 @@
             // 
             // bt_get_total
             // 
+            this.bt_get_total.BackColor = System.Drawing.Color.LightGray;
             this.bt_get_total.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_get_total.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_get_total.ForeColor = System.Drawing.Color.Black;
             this.bt_get_total.Location = new System.Drawing.Point(232, 159);
             this.bt_get_total.Name = "bt_get_total";
             this.bt_get_total.Size = new System.Drawing.Size(94, 29);
             this.bt_get_total.TabIndex = 13;
             this.bt_get_total.Text = "Get Total";
-            this.bt_get_total.UseVisualStyleBackColor = true;
+            this.bt_get_total.UseVisualStyleBackColor = false;
             this.bt_get_total.Click += new System.EventHandler(this.bt_get_total_Click);
             // 
             // cb_Beg
@@ -244,6 +257,7 @@
             this.cb_Beg.Name = "cb_Beg";
             this.cb_Beg.Size = new System.Drawing.Size(71, 28);
             this.cb_Beg.TabIndex = 14;
+            this.cb_Beg.TextChanged += new System.EventHandler(this.cb_Beg_TextChanged);
             this.cb_Beg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_Beg_KeyPress);
             // 
             // cb_End
@@ -263,6 +277,7 @@
             this.cb_End.Name = "cb_End";
             this.cb_End.Size = new System.Drawing.Size(71, 28);
             this.cb_End.TabIndex = 15;
+            this.cb_End.TextChanged += new System.EventHandler(this.cb_End_TextChanged);
             this.cb_End.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_End_KeyPress);
             // 
             // label6

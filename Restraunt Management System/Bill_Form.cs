@@ -303,9 +303,77 @@ namespace Restraunt_Management_System
             {
                 date = tb_date.Text;
             }
+ 
+
+            //CHECKING IF ADDING ITEM TO A PREVIOUS BILL
+            con.Open();
+            SqlCommand cmd4 = new SqlCommand("SELECT COUNT(B_id) FROM [Bill] WHERE B_id = '" + b_id + "'",con);
+            int m = Convert.ToInt32(cmd4.ExecuteScalar());
+            con.Close();
+            if(m >= 1)
+            {
+                con.Open();
+                SqlCommand cmd5 = new SqlCommand("SELECT TOP 1 Datetime FROM [Bill] WHERE B_id = '" + b_id + "'",con);
+                String alrdate = cmd5.ExecuteScalar().ToString();
+                con.Close();
+
+                DateTime today = new DateTime();
+                today = Convert.ToDateTime(alrdate);
+                String todaydate = today.Date.ToString("yyyy-MM-dd");
+
+                DateTime dat = DateTime.Now;
+                if(dat.Date.ToString("yyyy-MM-dd").Equals(todaydate)==false)
+                {
+                    MessageBox.Show("You cannot enter item to a bill with previous date");
+                    return;
+                }
+            }
 
 
+            //Checking membership if next is none
+            if(rb_none.Checked)
+            {
+                con.Open();
+                SqlCommand cmd7 = new SqlCommand("SELECT COUNT(B_id) FROM [Bill] WHERE B_id = '" + b_id + "'",con);
+                int n = Convert.ToInt32(cmd7.ExecuteScalar());
+                con.Close();
 
+                if(n >= 1)
+                {
+                    con.Open();
+                    SqlCommand cmd6 = new SqlCommand("SELECT TOP 1 Discount FROM [Bill] Where B_id = '" + b_id + "' ", con);
+                    int chdiscout = Convert.ToInt32(cmd6.ExecuteScalar());
+                    con.Close();
+                    if (chdiscout != 0)
+                    {
+                        MessageBox.Show("Invalid First you did Memeber and now None do member");
+                        return;
+                    }
+                }
+            }
+            else  //Checking none if next is memebership
+            {
+                con.Open();
+                SqlCommand cmd7 = new SqlCommand("SELECT COUNT(B_id) FROM [Bill] WHERE B_id = '" + b_id + "'", con);
+                int n = Convert.ToInt32(cmd7.ExecuteScalar());
+                con.Close();
+
+                if (n >= 1)
+                {
+                    con.Open();
+                    SqlCommand cmd6 = new SqlCommand("SELECT TOP 1 Discount FROM [Bill] Where B_id = '" + b_id + "' ", con);
+                    int chdiscout = Convert.ToInt32(cmd6.ExecuteScalar());
+                    con.Close();
+                    if (chdiscout == 0)
+                    {
+                        MessageBox.Show("Invalid First you did None and now Member do none");
+                        return;
+                    }
+                }
+            }
+            
+
+            //FINALLY IF EVERYTHING IS CORRECT STORING DATA
             con.Open();
             int k;//for checking if query has worked or not
 
@@ -336,9 +404,6 @@ namespace Restraunt_Management_System
                         }
 
                     }
-
-
-
 
                 }
                 else
@@ -587,6 +652,92 @@ namespace Restraunt_Management_System
                 }
             }
 
+        }
+
+        private void bill_dgv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in bill_dgv.Rows)
+            {
+                for (int i = 0; i < bill_dgv.ColumnCount; i++)
+                {
+                    if (row.Cells[i].Value != null)
+                    {
+                        row.Cells[i].Style.BackColor = Color.LightGreen;
+                        row.Cells[i].Style.ForeColor = Color.Black;
+
+                    }
+                }
+            }
+        }
+
+        private void tb_b_id_TextChanged_1(object sender, EventArgs e)
+        {
+            if (tb_b_id.Text.Length > 9)
+            {
+                tb_b_id.Text = tb_b_id.Text.Substring(0, 9);
+                tb_b_id.SelectionStart = tb_b_id.Text.Length;
+                tb_b_id.SelectionLength = 0;
+            }
+        }
+
+        private void cb_fqty_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_fqty.Text.Length > 9)
+            {
+                cb_fqty.Text = cb_fqty.Text.Substring(0, 9);
+                cb_fqty.SelectionStart = cb_fqty.Text.Length;
+                cb_fqty.SelectionLength = 0;
+            }
+        }
+
+        private void cb_dqty_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_dqty.Text.Length > 9)
+            {
+                cb_dqty.Text = cb_dqty.Text.Substring(0, 9);
+                cb_dqty.SelectionStart = cb_dqty.Text.Length;
+                cb_dqty.SelectionLength = 0;
+            }
+        }
+
+        private void tb_search_bill_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_search_bill.Text.Length > 9)
+            {
+                tb_search_bill.Text = tb_search_bill.Text.Substring(0, 9);
+                tb_search_bill.SelectionStart = tb_search_bill.Text.Length;
+                tb_search_bill.SelectionLength = 0;
+            }
+        }
+
+        private void cb_ftype_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_ftype.Text.Length > 30)
+            {
+                cb_ftype.Text = cb_ftype.Text.Substring(0, 30);
+                cb_ftype.SelectionStart = cb_ftype.Text.Length;
+                cb_ftype.SelectionLength = 0;
+            }
+        }
+
+        private void cb_dtype_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_dtype.Text.Length > 30)
+            {
+                cb_dtype.Text = cb_dtype.Text.Substring(0, 30);
+                cb_dtype.SelectionStart = cb_dtype.Text.Length;
+                cb_dtype.SelectionLength = 0;
+            }
+        }
+
+        private void cb_dtype_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_dtype.Text.Length > 30)
+            {
+                cb_dtype.Text = cb_dtype.Text.Substring(0, 30);
+                cb_dtype.SelectionStart = cb_dtype.Text.Length;
+                cb_dtype.SelectionLength = 0;
+            }
         }
     }
 }
