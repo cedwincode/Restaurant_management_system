@@ -76,7 +76,7 @@ namespace Restraunt_Management_System
             this.Res_dgv.ReadOnly = true;
             this.Res_dgv.RowHeadersWidth = 51;
             this.Res_dgv.RowTemplate.Height = 25;
-            this.Res_dgv.Size = new System.Drawing.Size(849, 203);
+            this.Res_dgv.Size = new System.Drawing.Size(849, 277);
             this.Res_dgv.TabIndex = 2;
             this.Res_dgv.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.Res_dgv_CellFormatting);
             // 

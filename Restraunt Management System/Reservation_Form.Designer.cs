@@ -285,6 +285,7 @@
             this.tb_tno.Location = new System.Drawing.Point(206, 170);
             this.tb_tno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_tno.Name = "tb_tno";
+            this.tb_tno.PlaceholderText = "1-50";
             this.tb_tno.Size = new System.Drawing.Size(62, 27);
             this.tb_tno.TabIndex = 18;
             this.tb_tno.TextChanged += new System.EventHandler(this.tb_tno_TextChanged);

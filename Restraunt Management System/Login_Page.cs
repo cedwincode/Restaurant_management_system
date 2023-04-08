@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace Restraunt_Management_System
 {
     public partial class Login_Page : Form
@@ -22,7 +24,7 @@ namespace Restraunt_Management_System
 
         }
 
-        private void submit_Click(object sender, EventArgs e)
+        public void enter_details()
         {
             if ((username_textbox.Text == "cashier") && (password_textbox.Text == "admin"))
             {
@@ -42,6 +44,10 @@ namespace Restraunt_Management_System
             {
                 MessageBox.Show("Invalid details try again!");
             }
+        }
+        private void submit_Click(object sender, EventArgs e)
+        {
+            enter_details();
         }
 
         private void username_textbox_TextChanged(object sender, EventArgs e)
@@ -64,5 +70,20 @@ namespace Restraunt_Management_System
             }
         }
 
+        private void username_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                enter_details();
+            }
+        }
+
+        private void password_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                enter_details();
+            }
+        }
     }
 }

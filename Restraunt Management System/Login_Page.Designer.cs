@@ -80,6 +80,7 @@
             this.username_textbox.Size = new System.Drawing.Size(178, 25);
             this.username_textbox.TabIndex = 2;
             this.username_textbox.TextChanged += new System.EventHandler(this.username_textbox_TextChanged);
+            this.username_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.username_textbox_KeyPress);
             // 
             // password_textbox
             // 
@@ -93,6 +94,7 @@
             this.password_textbox.Size = new System.Drawing.Size(178, 25);
             this.password_textbox.TabIndex = 3;
             this.password_textbox.TextChanged += new System.EventHandler(this.password_textbox_TextChanged);
+            this.password_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.password_textbox_KeyPress);
             // 
             // submit
             // 

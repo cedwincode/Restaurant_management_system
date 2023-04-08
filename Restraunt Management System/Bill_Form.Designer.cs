@@ -86,10 +86,13 @@
             this.cb_ftype.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cb_ftype.FormattingEnabled = true;
             this.cb_ftype.Items.AddRange(new object[] {
+            "Sorpotel Rs120",
+            "Pork Vindaloo Rs120",
+            "Bebinca Rs80",
+            "Dodol Rs80",
             "Ros omlet Rs25",
             "Cupcake Rs10",
             "Fried Rice Rs60",
-            "Pork Roast Rs120",
             "Dosa Rs35"});
             this.cb_ftype.Location = new System.Drawing.Point(107, 75);
             this.cb_ftype.Name = "cb_ftype";
@@ -154,6 +157,8 @@
             this.cb_dtype.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cb_dtype.FormattingEnabled = true;
             this.cb_dtype.Items.AddRange(new object[] {
+            "Tea Rs10",
+            "Coffee Rs15",
             "Sprite 200ml Rs15",
             "Pepsi 200ml Rs15",
             "Maaza 200ml Rs25",
