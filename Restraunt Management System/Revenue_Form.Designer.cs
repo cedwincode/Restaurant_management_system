@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Revenue_Form));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_rev = new System.Windows.Forms.DataGridView();
@@ -79,26 +79,26 @@
             this.dgv_rev.AllowUserToDeleteRows = false;
             this.dgv_rev.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_rev.BackgroundColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_rev.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_rev.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_rev.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_rev.Location = new System.Drawing.Point(31, 127);
             this.dgv_rev.Name = "dgv_rev";
             this.dgv_rev.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_rev.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_rev.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_rev.RowHeadersWidth = 51;
             this.dgv_rev.RowTemplate.Height = 29;
             this.dgv_rev.Size = new System.Drawing.Size(430, 205);
@@ -109,6 +109,9 @@
             // 
             this.bt_disp.BackColor = System.Drawing.Color.LightGray;
             this.bt_disp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_disp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_disp.FlatAppearance.BorderSize = 2;
+            this.bt_disp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_disp.ForeColor = System.Drawing.Color.Black;
             this.bt_disp.Location = new System.Drawing.Point(529, 433);
@@ -118,6 +121,8 @@
             this.bt_disp.Text = "Display All";
             this.bt_disp.UseVisualStyleBackColor = false;
             this.bt_disp.Click += new System.EventHandler(this.bt_disp_Click);
+            this.bt_disp.MouseEnter += new System.EventHandler(this.bt_disp_MouseEnter);
+            this.bt_disp.MouseLeave += new System.EventHandler(this.bt_disp_MouseLeave);
             // 
             // label2
             // 
@@ -163,6 +168,9 @@
             // 
             this.bt_spec_disp.BackColor = System.Drawing.Color.LightGray;
             this.bt_spec_disp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_spec_disp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_spec_disp.FlatAppearance.BorderSize = 2;
+            this.bt_spec_disp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_spec_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_spec_disp.ForeColor = System.Drawing.Color.Black;
             this.bt_spec_disp.Location = new System.Drawing.Point(658, 433);
@@ -172,6 +180,8 @@
             this.bt_spec_disp.Text = "Display Filter";
             this.bt_spec_disp.UseVisualStyleBackColor = false;
             this.bt_spec_disp.Click += new System.EventHandler(this.bt_spec_disp_Click);
+            this.bt_spec_disp.MouseEnter += new System.EventHandler(this.bt_spec_disp_MouseEnter);
+            this.bt_spec_disp.MouseLeave += new System.EventHandler(this.bt_spec_disp_MouseLeave);
             // 
             // label4
             // 
@@ -230,6 +240,9 @@
             // 
             this.bt_get_total.BackColor = System.Drawing.Color.LightGray;
             this.bt_get_total.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_get_total.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_get_total.FlatAppearance.BorderSize = 2;
+            this.bt_get_total.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_get_total.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_get_total.ForeColor = System.Drawing.Color.Black;
             this.bt_get_total.Location = new System.Drawing.Point(232, 159);
@@ -239,6 +252,8 @@
             this.bt_get_total.Text = "Get Total";
             this.bt_get_total.UseVisualStyleBackColor = false;
             this.bt_get_total.Click += new System.EventHandler(this.bt_get_total_Click);
+            this.bt_get_total.MouseEnter += new System.EventHandler(this.bt_get_total_MouseEnter);
+            this.bt_get_total.MouseLeave += new System.EventHandler(this.bt_get_total_MouseLeave);
             // 
             // cb_Beg
             // 

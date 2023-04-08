@@ -202,6 +202,12 @@ namespace Restraunt_Management_System
             MessageBox.Show("Reservation did Successfuly");
         }
 
+
+        private void bt_clear_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
         private void tb_name_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == ' ')
@@ -307,10 +313,7 @@ namespace Restraunt_Management_System
             button1.ForeColor = Color.Black;
         }
 
-        private void bt_clear_Click(object sender, EventArgs e)
-        {
-            clear();
-        }
+ 
 
         private void bt_clear_MouseEnter(object sender, EventArgs e)
         {
@@ -343,9 +346,6 @@ namespace Restraunt_Management_System
 
         private void bt_show_resev_MouseLeave(object sender, EventArgs e)
         {
-            
-
-
             bt_show_resev.FlatAppearance.BorderColor = Color.WhiteSmoke;
             bt_show_resev.BackColor = Color.Black;
             bt_show_resev.ForeColor = Color.Lime;

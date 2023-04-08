@@ -491,7 +491,11 @@ namespace Restraunt_Management_System
 
         private void cb_Beg_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (cb_Beg.Text.Length == 0 && e.KeyChar == '0')
+            {
+                e.Handled = true;
+            }
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -577,6 +581,7 @@ namespace Restraunt_Management_System
 
         private void cb_Beg_TextChanged(object sender, EventArgs e)
         {
+            
             if (cb_Beg.Text.Length > 9)
             {
                 cb_Beg.Text = cb_Beg.Text.Substring(0, 9);
@@ -593,6 +598,48 @@ namespace Restraunt_Management_System
                 cb_End.SelectionStart = cb_End.Text.Length;
                 cb_End.SelectionLength = 0;
             }
+        }
+
+        private void bt_get_total_MouseEnter(object sender, EventArgs e)
+        {
+            bt_get_total.FlatAppearance.BorderColor = Color.Red;
+            bt_get_total.BackColor = Color.Black;
+            bt_get_total.ForeColor = Color.Lime;
+        }
+
+        private void bt_get_total_MouseLeave(object sender, EventArgs e)
+        {
+            bt_get_total.FlatAppearance.BorderColor = Color.Black;
+            bt_get_total.BackColor = Color.LightGray;
+            bt_get_total.ForeColor = Color.Black;
+        }
+
+        private void bt_spec_disp_MouseEnter(object sender, EventArgs e)
+        {
+            bt_spec_disp.FlatAppearance.BorderColor = Color.Red;
+            bt_spec_disp.BackColor = Color.Black;
+            bt_spec_disp.ForeColor = Color.Lime;
+        }
+
+        private void bt_spec_disp_MouseLeave(object sender, EventArgs e)
+        {
+            bt_spec_disp.FlatAppearance.BorderColor = Color.Black;
+            bt_spec_disp.BackColor = Color.LightGray;
+            bt_spec_disp.ForeColor = Color.Black;
+        }
+
+        private void bt_disp_MouseEnter(object sender, EventArgs e)
+        {
+            bt_disp.FlatAppearance.BorderColor = Color.Red;
+            bt_disp.BackColor = Color.Black;
+            bt_disp.ForeColor = Color.Lime;
+        }
+
+        private void bt_disp_MouseLeave(object sender, EventArgs e)
+        {
+            bt_disp.FlatAppearance.BorderColor = Color.Black;
+            bt_disp.BackColor = Color.LightGray;
+            bt_disp.ForeColor = Color.Black;
         }
     }
 }

@@ -595,23 +595,12 @@ namespace Restraunt_Management_System
             show_bill();
         }
 
-
-        private void tb_b_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tb_b_id_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
-        }
-
-        private void cb_dqty_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void cb_fqty_KeyPress(object sender, KeyPressEventArgs e)
@@ -682,9 +671,9 @@ namespace Restraunt_Management_System
 
         private void cb_fqty_TextChanged(object sender, EventArgs e)
         {
-            if (cb_fqty.Text.Length > 9)
+            if (cb_fqty.Text.Length > 3)
             {
-                cb_fqty.Text = cb_fqty.Text.Substring(0, 9);
+                cb_fqty.Text = cb_fqty.Text.Substring(0, 3);
                 cb_fqty.SelectionStart = cb_fqty.Text.Length;
                 cb_fqty.SelectionLength = 0;
             }
@@ -692,9 +681,9 @@ namespace Restraunt_Management_System
 
         private void cb_dqty_TextChanged(object sender, EventArgs e)
         {
-            if (cb_dqty.Text.Length > 9)
+            if (cb_dqty.Text.Length > 3)
             {
-                cb_dqty.Text = cb_dqty.Text.Substring(0, 9);
+                cb_dqty.Text = cb_dqty.Text.Substring(0, 3);
                 cb_dqty.SelectionStart = cb_dqty.Text.Length;
                 cb_dqty.SelectionLength = 0;
             }
@@ -717,16 +706,6 @@ namespace Restraunt_Management_System
                 cb_ftype.Text = cb_ftype.Text.Substring(0, 30);
                 cb_ftype.SelectionStart = cb_ftype.Text.Length;
                 cb_ftype.SelectionLength = 0;
-            }
-        }
-
-        private void cb_dtype_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cb_dtype.Text.Length > 30)
-            {
-                cb_dtype.Text = cb_dtype.Text.Substring(0, 30);
-                cb_dtype.SelectionStart = cb_dtype.Text.Length;
-                cb_dtype.SelectionLength = 0;
             }
         }
 

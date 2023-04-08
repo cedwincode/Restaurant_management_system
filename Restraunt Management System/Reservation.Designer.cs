@@ -114,9 +114,9 @@ namespace Restraunt_Management_System
             this.bt_ch_reserv.ForeColor = System.Drawing.Color.Black;
             this.bt_ch_reserv.Location = new System.Drawing.Point(401, 123);
             this.bt_ch_reserv.Name = "bt_ch_reserv";
-            this.bt_ch_reserv.Size = new System.Drawing.Size(152, 29);
+            this.bt_ch_reserv.Size = new System.Drawing.Size(130, 29);
             this.bt_ch_reserv.TabIndex = 5;
-            this.bt_ch_reserv.Text = "Check Reservation";
+            this.bt_ch_reserv.Text = "Check All (Day)";
             this.bt_ch_reserv.UseVisualStyleBackColor = false;
             this.bt_ch_reserv.Click += new System.EventHandler(this.bt_ch_reserv_Click);
             this.bt_ch_reserv.MouseEnter += new System.EventHandler(this.bt_ch_reserv_MouseEnter);

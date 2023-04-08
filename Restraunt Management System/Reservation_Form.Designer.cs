@@ -69,7 +69,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(201, 13);
+            this.label1.Location = new System.Drawing.Point(167, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 52);
             this.label1.TabIndex = 1;
@@ -77,7 +77,7 @@
             // 
             // tb_name
             // 
-            this.tb_name.Location = new System.Drawing.Point(321, 127);
+            this.tb_name.Location = new System.Drawing.Point(332, 130);
             this.tb_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(228, 27);
@@ -86,7 +86,7 @@
             // 
             // tb_pno
             // 
-            this.tb_pno.Location = new System.Drawing.Point(321, 199);
+            this.tb_pno.Location = new System.Drawing.Point(332, 202);
             this.tb_pno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_pno.Name = "tb_pno";
             this.tb_pno.Size = new System.Drawing.Size(228, 27);
@@ -99,7 +99,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(245, 131);
+            this.label2.Location = new System.Drawing.Point(256, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 6;
@@ -110,7 +110,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(162, 197);
+            this.label3.Location = new System.Drawing.Point(173, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 25);
             this.label3.TabIndex = 7;
@@ -121,7 +121,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(162, 269);
+            this.label4.Location = new System.Drawing.Point(173, 272);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 25);
             this.label4.TabIndex = 8;
@@ -132,7 +132,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(136, 327);
+            this.label5.Location = new System.Drawing.Point(147, 330);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(177, 25);
             this.label5.TabIndex = 9;
@@ -140,7 +140,7 @@
             // 
             // dtp
             // 
-            this.dtp.Location = new System.Drawing.Point(321, 404);
+            this.dtp.Location = new System.Drawing.Point(332, 407);
             this.dtp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtp.Name = "dtp";
             this.dtp.Size = new System.Drawing.Size(228, 27);
@@ -152,7 +152,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(249, 408);
+            this.label6.Location = new System.Drawing.Point(260, 411);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 25);
             this.label6.TabIndex = 11;
@@ -174,7 +174,7 @@
             "10",
             "11",
             "12"});
-            this.cb_hr.Location = new System.Drawing.Point(321, 463);
+            this.cb_hr.Location = new System.Drawing.Point(332, 466);
             this.cb_hr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cb_hr.Name = "cb_hr";
             this.cb_hr.Size = new System.Drawing.Size(61, 28);
@@ -199,7 +199,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Lime;
-            this.label7.Location = new System.Drawing.Point(249, 463);
+            this.label7.Location = new System.Drawing.Point(260, 466);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 25);
             this.label7.TabIndex = 14;
@@ -234,7 +234,7 @@
             this.bt_show_resev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_show_resev.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_show_resev.ForeColor = System.Drawing.Color.Lime;
-            this.bt_show_resev.Location = new System.Drawing.Point(642, 524);
+            this.bt_show_resev.Location = new System.Drawing.Point(643, 527);
             this.bt_show_resev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bt_show_resev.Name = "bt_show_resev";
             this.bt_show_resev.Size = new System.Drawing.Size(134, 51);
@@ -254,7 +254,7 @@
             this.panel1.Controls.Add(this.cb_nseat);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.cbt);
-            this.panel1.Location = new System.Drawing.Point(114, 96);
+            this.panel1.Location = new System.Drawing.Point(125, 99);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(476, 494);
