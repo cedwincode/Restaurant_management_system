@@ -129,7 +129,7 @@ namespace Restraunt_Management_System
             this.bt_show_all.FlatAppearance.BorderSize = 2;
             this.bt_show_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_show_all.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_show_all.Location = new System.Drawing.Point(772, 123);
+            this.bt_show_all.Location = new System.Drawing.Point(790, 123);
             this.bt_show_all.Name = "bt_show_all";
             this.bt_show_all.Size = new System.Drawing.Size(99, 29);
             this.bt_show_all.TabIndex = 6;
@@ -184,7 +184,7 @@ namespace Restraunt_Management_System
             this.bt_res.FlatAppearance.BorderSize = 2;
             this.bt_res.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_res.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_res.Location = new System.Drawing.Point(730, 159);
+            this.bt_res.Location = new System.Drawing.Point(748, 159);
             this.bt_res.Name = "bt_res";
             this.bt_res.Size = new System.Drawing.Size(141, 36);
             this.bt_res.TabIndex = 10;
