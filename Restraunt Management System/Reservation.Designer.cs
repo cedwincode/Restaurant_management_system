@@ -199,7 +199,7 @@ namespace Restraunt_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.ClientSize = new System.Drawing.Size(914, 530);
             this.Controls.Add(this.bt_res);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_cancel);

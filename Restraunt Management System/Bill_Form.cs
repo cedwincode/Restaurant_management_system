@@ -60,6 +60,7 @@ namespace Restraunt_Management_System
                 con.Close();
                 if (k > 0)
                 {
+                    MessageBox.Show("Deleted Bill with Id: " + d_id);
                     show_bill();
 
                 }
@@ -81,6 +82,7 @@ namespace Restraunt_Management_System
                 con.Close();
                 if (k > 0)
                 {
+                    MessageBox.Show("Deleted Bill with Id: " + del_id);
                     show_bill();
 
                 }
