@@ -36,8 +36,6 @@ namespace Restraunt_Management_System
 
         private void button2_Click(object sender, EventArgs e)  //TO DELETE BUTTON EVENT
         {
-            con.Open();
-
             if ((tb_b_id.Text == "") && bill_dgv.CurrentCell.Selected == false)
             {
                 MessageBox.Show("Entered a Bill id or select Bill id from table and try again!!");
@@ -51,15 +49,19 @@ namespace Restraunt_Management_System
                 int srow = bill_dgv.CurrentCell.RowIndex;
                 int d_id = Convert.ToInt32(bill_dgv.Rows[srow].Cells[0].Value);
 
-                SqlCommand delfrev = new SqlCommand("DELETE FROM Revenue WHERE Id IN(SELECT Id AS BID FROM Bill WHERE B_id = '" + d_id + "')", con);
-                delfrev.ExecuteNonQuery();
-                con.Close();
+                
 
                 DialogResult result = MessageBox.Show("Are you sure want to delete Bill with Id: "+d_id+"", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if(result != DialogResult.OK)
                 {
                     return;
                 }
+
+                con.Open();
+                SqlCommand delfrev = new SqlCommand("DELETE FROM Revenue WHERE Id IN(SELECT Id AS BID FROM Bill WHERE B_id = '" + d_id + "')", con);
+                delfrev.ExecuteNonQuery();
+                con.Close();
+
 
                 con.Open();
                 SqlCommand cmd = new SqlCommand("DELETE FROM [Bill] WHERE B_id = '" + d_id + "'", con);
