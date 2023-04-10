@@ -7,6 +7,7 @@ namespace Restraunt_Management_System
         public Login_Page()
         {
             InitializeComponent();
+
         }
 
         public void openAfter_cash_login(object obj)
@@ -85,5 +86,9 @@ namespace Restraunt_Management_System
                 enter_details();
             }
         }
+
+
+
+        
     }
 }

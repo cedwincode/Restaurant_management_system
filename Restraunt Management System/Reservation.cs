@@ -111,6 +111,13 @@ namespace Restraunt_Management_System
                 int rowid = Res_dgv.CurrentCell.RowIndex;
                 int delid =  Convert.ToInt32(Res_dgv.Rows[rowid].Cells[0].Value);
 
+
+                DialogResult result = MessageBox.Show("Are you sure you want to canceL reservation with Id: " + delid + "", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if(result != DialogResult.OK)
+                {
+                    return;
+                }
+
                 con.Open();
                 SqlCommand cmd = new SqlCommand("DELETE FROM [Reserv] WHERE (res_id = '"+delid+"' AND rdate = '"+tdydate+"' AND rtime > '"+actime+ "')  OR (res_id = '"+delid+"' AND rdate >'"+tdydate+"')", con);
                 int k = cmd.ExecuteNonQuery();
@@ -256,6 +263,7 @@ namespace Restraunt_Management_System
                 }
             }
         }
+
     }
 }
  
