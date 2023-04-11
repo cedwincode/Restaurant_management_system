@@ -18,12 +18,12 @@ namespace Restraunt_Management_System
     {
         //bryan
         //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
-        
+
         //bryan 2
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\nata\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\nata\Restraunt Management System\Dala.mdf"";Integrated Security=True");
 
         //cedwin
-        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
         public Reservation()
         {
             InitializeComponent();
@@ -54,9 +54,9 @@ namespace Restraunt_Management_System
             String today = DateTime.Now.Date.ToString("yyyy-MM-dd");
             con.Open();
             DataTable dta = new DataTable();
-            SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT  res_id AS ID, rname AS Name,pno AS 'Mobile no',tableno AS 'Tabel no',seatno AS 'Seat no',rdate AS 'Date',rtime AS 'Time'  FROM [Reserv] WHERE rdate >  '"+today+"' OR (rdate = '"+today+"' AND  rtime > '"+actime+"') ", con);
+            SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT  res_id AS ID, rname AS Name,pno AS 'Mobile no',tableno AS 'Tabel no',seatno AS 'Seat no',rdate AS 'Date',rtime AS 'Time'  FROM [Reserv] WHERE rdate >  '" + today + "' OR (rdate = '" + today + "' AND  rtime > '" + actime + "') ", con);
             dtaadp.Fill(dta);
-            if(dta.Rows.Count==0)
+            if (dta.Rows.Count == 0)
             {
                 MessageBox.Show("There are no reservation");
             }
@@ -89,13 +89,13 @@ namespace Restraunt_Management_System
             DataTable dta = new DataTable();
             SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT  res_id AS ID, rname AS Name,pno AS 'Mobile no',tableno AS 'Tabel no',seatno AS 'Seat no',rdate AS 'Date',rtime AS 'Time'  FROM [Reserv] WHERE rdate = '" + spec_day + "'", con);
             dtaadp.Fill(dta);
-            if(dta.Rows.Count==0)
+            if (dta.Rows.Count == 0)
             {
                 MessageBox.Show("There are no reservation on this date");
             }
             Res_dgv.DataSource = dta;
             con.Close();
-        
+
         }
 
         private void bt_cancel_Click(object sender, EventArgs e)  //TO CANCEL RESERVATION
@@ -104,25 +104,25 @@ namespace Restraunt_Management_System
             DateTime today = DateTime.Now;
             TimeSpan timenow = today.TimeOfDay;
             String actime = timenow.ToString(@"hh\:mm\:ss");  //storing the time of today
-            
 
-            if(tb_r_id.Text == "") //Selecting and deleting
+
+            if (tb_r_id.Text == "") //Selecting and deleting
             {
                 int rowid = Res_dgv.CurrentCell.RowIndex;
-                int delid =  Convert.ToInt32(Res_dgv.Rows[rowid].Cells[0].Value);
+                int delid = Convert.ToInt32(Res_dgv.Rows[rowid].Cells[0].Value);
 
 
                 DialogResult result = MessageBox.Show("Are you sure you want to canceL reservation with Id: " + delid + "", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if(result != DialogResult.OK)
+                if (result != DialogResult.OK)
                 {
                     return;
                 }
 
                 con.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM [Reserv] WHERE (res_id = '"+delid+"' AND rdate = '"+tdydate+"' AND rtime > '"+actime+ "')  OR (res_id = '"+delid+"' AND rdate >'"+tdydate+"')", con);
+                SqlCommand cmd = new SqlCommand("DELETE FROM [Reserv] WHERE (res_id = '" + delid + "' AND rdate = '" + tdydate + "' AND rtime > '" + actime + "')  OR (res_id = '" + delid + "' AND rdate >'" + tdydate + "')", con);
                 int k = cmd.ExecuteNonQuery();
                 con.Close();
-                if(k> 0)
+                if (k > 0)
                 {
                     MessageBox.Show("Cancelled reservation with Id :" + delid);
                     show_res();
@@ -131,7 +131,7 @@ namespace Restraunt_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("There was no reservation with Id: "+delid+ " or invalid date or time");
+                    MessageBox.Show("There was no reservation with Id: " + delid + " or invalid date or time");
                     return;
                 }
 
@@ -139,7 +139,7 @@ namespace Restraunt_Management_System
             else //Entering manually
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM [Reserv] WHERE (res_id = '" +tb_r_id.Text + "' AND rdate = '"+tdydate+"' AND rtime > '"+actime+ "') OR (res_id = '" +tb_r_id.Text + "' AND rdate > '"+tdydate+"') ", con);
+                SqlCommand cmd = new SqlCommand("DELETE FROM [Reserv] WHERE (res_id = '" + tb_r_id.Text + "' AND rdate = '" + tdydate + "' AND rtime > '" + actime + "') OR (res_id = '" + tb_r_id.Text + "' AND rdate > '" + tdydate + "') ", con);
                 int k = cmd.ExecuteNonQuery();
                 con.Close();
                 if (k > 0)
@@ -151,7 +151,7 @@ namespace Restraunt_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("There was no reservation with Id: " + tb_r_id.Text+ " or invalid date or time");
+                    MessageBox.Show("There was no reservation with Id: " + tb_r_id.Text + " or invalid date or time");
                     return;
                 }
             }
@@ -164,7 +164,7 @@ namespace Restraunt_Management_System
 
         private void dtp_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled=true;
+            e.Handled = true;
         }
 
         private void tb_r_id_KeyPress(object sender, KeyPressEventArgs e)
@@ -176,7 +176,7 @@ namespace Restraunt_Management_System
             }
             */
 
-            if(!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -184,7 +184,7 @@ namespace Restraunt_Management_System
 
         private void tb_r_id_TextChanged(object sender, EventArgs e)
         {
-            if(tb_r_id.Text.Length > 9)
+            if (tb_r_id.Text.Length > 9)
             {
                 tb_r_id.Text = tb_r_id.Text.Substring(0, 9);
                 tb_r_id.SelectionStart = tb_r_id.Text.Length;
@@ -266,4 +266,3 @@ namespace Restraunt_Management_System
 
     }
 }
- 
