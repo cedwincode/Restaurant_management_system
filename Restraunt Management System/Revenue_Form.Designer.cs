@@ -28,416 +28,421 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Revenue_Form));
-            label1 = new Label();
-            dgv_rev = new DataGridView();
-            bt_disp = new Button();
-            label2 = new Label();
-            label3 = new Label();
-            from_dtp = new DateTimePicker();
-            to_dtp = new DateTimePicker();
-            bt_spec_disp = new Button();
-            label4 = new Label();
-            lb_total = new Label();
-            day_dtp = new DateTimePicker();
-            label5 = new Label();
-            total = new Label();
-            bt_get_total = new Button();
-            cb_Beg = new ComboBox();
-            cb_End = new ComboBox();
-            label6 = new Label();
-            label7 = new Label();
-            bt_back_mngr = new Button();
-            label8 = new Label();
-            panel1 = new Panel();
-            label11 = new Label();
-            label10 = new Label();
-            panel2 = new Panel();
-            label12 = new Label();
-            label9 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgv_rev).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgv_rev = new System.Windows.Forms.DataGridView();
+            this.bt_disp = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.from_dtp = new System.Windows.Forms.DateTimePicker();
+            this.to_dtp = new System.Windows.Forms.DateTimePicker();
+            this.bt_spec_disp = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lb_total = new System.Windows.Forms.Label();
+            this.day_dtp = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.total = new System.Windows.Forms.Label();
+            this.bt_get_total = new System.Windows.Forms.Button();
+            this.cb_Beg = new System.Windows.Forms.ComboBox();
+            this.cb_End = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.bt_back_mngr = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_rev)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Code", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Lime;
-            label1.Location = new Point(92, 65);
-            label1.Name = "label1";
-            label1.Size = new Size(216, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Revenue Statement";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(105, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Revenue Statement";
             // 
             // dgv_rev
             // 
-            dgv_rev.AllowUserToAddRows = false;
-            dgv_rev.AllowUserToDeleteRows = false;
-            dgv_rev.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgv_rev.BackgroundColor = Color.Black;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgv_rev.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgv_rev.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_rev.Location = new Point(27, 95);
-            dgv_rev.Margin = new Padding(3, 2, 3, 2);
-            dgv_rev.Name = "dgv_rev";
-            dgv_rev.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgv_rev.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgv_rev.RowHeadersWidth = 51;
-            dgv_rev.RowTemplate.Height = 29;
-            dgv_rev.Size = new Size(376, 154);
-            dgv_rev.TabIndex = 1;
-            dgv_rev.CellFormatting += dgv_rev_CellFormatting;
+            this.dgv_rev.AllowUserToAddRows = false;
+            this.dgv_rev.AllowUserToDeleteRows = false;
+            this.dgv_rev.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_rev.BackgroundColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_rev.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_rev.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_rev.Location = new System.Drawing.Point(31, 127);
+            this.dgv_rev.Name = "dgv_rev";
+            this.dgv_rev.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_rev.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_rev.RowHeadersWidth = 51;
+            this.dgv_rev.RowTemplate.Height = 29;
+            this.dgv_rev.Size = new System.Drawing.Size(430, 205);
+            this.dgv_rev.TabIndex = 1;
+            this.dgv_rev.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_rev_CellFormatting);
             // 
             // bt_disp
             // 
-            bt_disp.BackColor = Color.LightGray;
-            bt_disp.Cursor = Cursors.Hand;
-            bt_disp.FlatAppearance.BorderColor = Color.Black;
-            bt_disp.FlatAppearance.BorderSize = 2;
-            bt_disp.FlatStyle = FlatStyle.Flat;
-            bt_disp.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            bt_disp.ForeColor = Color.Black;
-            bt_disp.Location = new Point(463, 320);
-            bt_disp.Margin = new Padding(3, 2, 3, 2);
-            bt_disp.Name = "bt_disp";
-            bt_disp.Size = new Size(91, 27);
-            bt_disp.TabIndex = 2;
-            bt_disp.Text = "Display All";
-            bt_disp.UseVisualStyleBackColor = false;
-            bt_disp.Click += bt_disp_Click;
-            bt_disp.MouseEnter += bt_disp_MouseEnter;
-            bt_disp.MouseLeave += bt_disp_MouseLeave;
+            this.bt_disp.BackColor = System.Drawing.Color.LightGray;
+            this.bt_disp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_disp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_disp.FlatAppearance.BorderSize = 2;
+            this.bt_disp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_disp.ForeColor = System.Drawing.Color.Black;
+            this.bt_disp.Location = new System.Drawing.Point(529, 425);
+            this.bt_disp.Name = "bt_disp";
+            this.bt_disp.Size = new System.Drawing.Size(104, 37);
+            this.bt_disp.TabIndex = 2;
+            this.bt_disp.Text = "Display All";
+            this.bt_disp.UseVisualStyleBackColor = false;
+            this.bt_disp.Click += new System.EventHandler(this.bt_disp_Click);
+            this.bt_disp.MouseEnter += new System.EventHandler(this.bt_disp_MouseEnter);
+            this.bt_disp.MouseLeave += new System.EventHandler(this.bt_disp_MouseLeave);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Lime;
-            label2.Location = new Point(17, 12);
-            label2.Name = "label2";
-            label2.Size = new Size(35, 16);
-            label2.TabIndex = 3;
-            label2.Text = "From";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(19, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "From";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Lime;
-            label3.Location = new Point(17, 53);
-            label3.Name = "label3";
-            label3.Size = new Size(21, 16);
-            label3.TabIndex = 4;
-            label3.Text = "To";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(19, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "To";
             // 
             // from_dtp
             // 
-            from_dtp.Location = new Point(88, 7);
-            from_dtp.Margin = new Padding(3, 2, 3, 2);
-            from_dtp.Name = "from_dtp";
-            from_dtp.Size = new Size(197, 23);
-            from_dtp.TabIndex = 5;
-            from_dtp.ValueChanged += from_dtp_ValueChanged_1;
-            from_dtp.KeyPress += from_dtp_KeyPress;
+            this.from_dtp.Location = new System.Drawing.Point(101, 9);
+            this.from_dtp.Name = "from_dtp";
+            this.from_dtp.Size = new System.Drawing.Size(225, 27);
+            this.from_dtp.TabIndex = 5;
+            this.from_dtp.ValueChanged += new System.EventHandler(this.from_dtp_ValueChanged_1);
+            this.from_dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.from_dtp_KeyPress);
             // 
             // to_dtp
             // 
-            to_dtp.Location = new Point(88, 48);
-            to_dtp.Margin = new Padding(3, 2, 3, 2);
-            to_dtp.Name = "to_dtp";
-            to_dtp.Size = new Size(197, 23);
-            to_dtp.TabIndex = 6;
-            to_dtp.ValueChanged += to_dtp_ValueChanged;
-            to_dtp.KeyPress += to_dtp_KeyPress;
+            this.to_dtp.Location = new System.Drawing.Point(101, 64);
+            this.to_dtp.Name = "to_dtp";
+            this.to_dtp.Size = new System.Drawing.Size(225, 27);
+            this.to_dtp.TabIndex = 6;
+            this.to_dtp.ValueChanged += new System.EventHandler(this.to_dtp_ValueChanged);
+            this.to_dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.to_dtp_KeyPress);
             // 
             // bt_spec_disp
             // 
-            bt_spec_disp.BackColor = Color.LightGray;
-            bt_spec_disp.Cursor = Cursors.Hand;
-            bt_spec_disp.FlatAppearance.BorderColor = Color.Black;
-            bt_spec_disp.FlatAppearance.BorderSize = 2;
-            bt_spec_disp.FlatStyle = FlatStyle.Flat;
-            bt_spec_disp.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            bt_spec_disp.ForeColor = Color.Black;
-            bt_spec_disp.Location = new Point(576, 320);
-            bt_spec_disp.Margin = new Padding(3, 2, 3, 2);
-            bt_spec_disp.Name = "bt_spec_disp";
-            bt_spec_disp.Size = new Size(82, 27);
-            bt_spec_disp.TabIndex = 7;
-            bt_spec_disp.Text = "Display Filter";
-            bt_spec_disp.UseVisualStyleBackColor = false;
-            bt_spec_disp.Click += bt_spec_disp_Click;
-            bt_spec_disp.MouseEnter += bt_spec_disp_MouseEnter;
-            bt_spec_disp.MouseLeave += bt_spec_disp_MouseLeave;
+            this.bt_spec_disp.BackColor = System.Drawing.Color.LightGray;
+            this.bt_spec_disp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_spec_disp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_spec_disp.FlatAppearance.BorderSize = 2;
+            this.bt_spec_disp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_spec_disp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_spec_disp.ForeColor = System.Drawing.Color.Black;
+            this.bt_spec_disp.Location = new System.Drawing.Point(658, 425);
+            this.bt_spec_disp.Name = "bt_spec_disp";
+            this.bt_spec_disp.Size = new System.Drawing.Size(94, 37);
+            this.bt_spec_disp.TabIndex = 7;
+            this.bt_spec_disp.Text = "Display Filter";
+            this.bt_spec_disp.UseVisualStyleBackColor = false;
+            this.bt_spec_disp.Click += new System.EventHandler(this.bt_spec_disp_Click);
+            this.bt_spec_disp.MouseEnter += new System.EventHandler(this.bt_spec_disp_MouseEnter);
+            this.bt_spec_disp.MouseLeave += new System.EventHandler(this.bt_spec_disp_MouseLeave);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Cascadia Code", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Lime;
-            label4.Location = new Point(3, 51);
-            label4.Name = "label4";
-            label4.Size = new Size(109, 15);
-            label4.TabIndex = 8;
-            label4.Text = "Total amount(Day)";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(3, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 18);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Total amount(Day)";
             // 
             // lb_total
             // 
-            lb_total.AutoSize = true;
-            lb_total.Font = new Font("Cascadia Code", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_total.ForeColor = Color.Lime;
-            lb_total.Location = new Point(126, 51);
-            lb_total.Name = "lb_total";
-            lb_total.Size = new Size(31, 15);
-            lb_total.TabIndex = 9;
-            lb_total.Text = "None";
+            this.lb_total.AutoSize = true;
+            this.lb_total.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lb_total.ForeColor = System.Drawing.Color.Lime;
+            this.lb_total.Location = new System.Drawing.Point(144, 68);
+            this.lb_total.Name = "lb_total";
+            this.lb_total.Size = new System.Drawing.Size(40, 18);
+            this.lb_total.TabIndex = 9;
+            this.lb_total.Text = "None";
             // 
             // day_dtp
             // 
-            day_dtp.Location = new Point(185, 46);
-            day_dtp.Margin = new Padding(3, 2, 3, 2);
-            day_dtp.Name = "day_dtp";
-            day_dtp.Size = new Size(199, 23);
-            day_dtp.TabIndex = 10;
-            day_dtp.ValueChanged += dateTimePicker1_ValueChanged;
-            day_dtp.KeyPress += day_dtp_KeyPress;
+            this.day_dtp.Location = new System.Drawing.Point(211, 61);
+            this.day_dtp.Name = "day_dtp";
+            this.day_dtp.Size = new System.Drawing.Size(227, 27);
+            this.day_dtp.TabIndex = 10;
+            this.day_dtp.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.day_dtp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.day_dtp_KeyPress);
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Cascadia Code", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Lime;
-            label5.Location = new Point(17, 123);
-            label5.Name = "label5";
-            label5.Size = new Size(79, 15);
-            label5.TabIndex = 11;
-            label5.Text = "Total amount";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(19, 164);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 18);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Total amount";
             // 
             // total
             // 
-            total.AutoSize = true;
-            total.Font = new Font("Cascadia Code", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            total.ForeColor = Color.Lime;
-            total.Location = new Point(130, 123);
-            total.Name = "total";
-            total.Size = new Size(31, 15);
-            total.TabIndex = 12;
-            total.Text = "None";
+            this.total.AutoSize = true;
+            this.total.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.total.ForeColor = System.Drawing.Color.Lime;
+            this.total.Location = new System.Drawing.Point(149, 164);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(40, 18);
+            this.total.TabIndex = 12;
+            this.total.Text = "None";
             // 
             // bt_get_total
             // 
-            bt_get_total.BackColor = Color.LightGray;
-            bt_get_total.Cursor = Cursors.Hand;
-            bt_get_total.FlatAppearance.BorderColor = Color.Black;
-            bt_get_total.FlatAppearance.BorderSize = 2;
-            bt_get_total.FlatStyle = FlatStyle.Flat;
-            bt_get_total.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            bt_get_total.ForeColor = Color.Black;
-            bt_get_total.Location = new Point(204, 114);
-            bt_get_total.Margin = new Padding(3, 2, 3, 2);
-            bt_get_total.Name = "bt_get_total";
-            bt_get_total.Size = new Size(82, 33);
-            bt_get_total.TabIndex = 13;
-            bt_get_total.Text = "Get Total";
-            bt_get_total.UseVisualStyleBackColor = false;
-            bt_get_total.Click += bt_get_total_Click;
-            bt_get_total.MouseEnter += bt_get_total_MouseEnter;
-            bt_get_total.MouseLeave += bt_get_total_MouseLeave;
+            this.bt_get_total.BackColor = System.Drawing.Color.LightGray;
+            this.bt_get_total.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_get_total.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_get_total.FlatAppearance.BorderSize = 2;
+            this.bt_get_total.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_get_total.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bt_get_total.ForeColor = System.Drawing.Color.Black;
+            this.bt_get_total.Location = new System.Drawing.Point(232, 154);
+            this.bt_get_total.Name = "bt_get_total";
+            this.bt_get_total.Size = new System.Drawing.Size(94, 39);
+            this.bt_get_total.TabIndex = 13;
+            this.bt_get_total.Text = "Get Total";
+            this.bt_get_total.UseVisualStyleBackColor = false;
+            this.bt_get_total.Click += new System.EventHandler(this.bt_get_total_Click);
+            this.bt_get_total.MouseEnter += new System.EventHandler(this.bt_get_total_MouseEnter);
+            this.bt_get_total.MouseLeave += new System.EventHandler(this.bt_get_total_MouseLeave);
             // 
             // cb_Beg
             // 
-            cb_Beg.FormattingEnabled = true;
-            cb_Beg.Items.AddRange(new object[] { "50", "100", "150", "200", "300", "400", "500", "1000", "2000" });
-            cb_Beg.Location = new Point(130, 86);
-            cb_Beg.Margin = new Padding(3, 2, 3, 2);
-            cb_Beg.Name = "cb_Beg";
-            cb_Beg.Size = new Size(63, 23);
-            cb_Beg.TabIndex = 14;
-            cb_Beg.TextChanged += cb_Beg_TextChanged;
-            cb_Beg.KeyPress += cb_Beg_KeyPress;
+            this.cb_Beg.FormattingEnabled = true;
+            this.cb_Beg.Items.AddRange(new object[] {
+            "50",
+            "100",
+            "150",
+            "200",
+            "300",
+            "400",
+            "500",
+            "1000",
+            "2000"});
+            this.cb_Beg.Location = new System.Drawing.Point(149, 115);
+            this.cb_Beg.Name = "cb_Beg";
+            this.cb_Beg.Size = new System.Drawing.Size(71, 28);
+            this.cb_Beg.TabIndex = 14;
+            this.cb_Beg.TextChanged += new System.EventHandler(this.cb_Beg_TextChanged);
+            this.cb_Beg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_Beg_KeyPress);
             // 
             // cb_End
             // 
-            cb_End.FormattingEnabled = true;
-            cb_End.Items.AddRange(new object[] { "50", "100", "150", "200", "300", "400", "500", "1000", "2000" });
-            cb_End.Location = new Point(223, 86);
-            cb_End.Margin = new Padding(3, 2, 3, 2);
-            cb_End.Name = "cb_End";
-            cb_End.Size = new Size(63, 23);
-            cb_End.TabIndex = 15;
-            cb_End.TextChanged += cb_End_TextChanged;
-            cb_End.KeyPress += cb_End_KeyPress;
+            this.cb_End.FormattingEnabled = true;
+            this.cb_End.Items.AddRange(new object[] {
+            "50",
+            "100",
+            "150",
+            "200",
+            "300",
+            "400",
+            "500",
+            "1000",
+            "2000"});
+            this.cb_End.Location = new System.Drawing.Point(255, 115);
+            this.cb_End.Name = "cb_End";
+            this.cb_End.Size = new System.Drawing.Size(71, 28);
+            this.cb_End.TabIndex = 15;
+            this.cb_End.TextChanged += new System.EventHandler(this.cb_End_TextChanged);
+            this.cb_End.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_End_KeyPress);
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.Lime;
-            label6.Location = new Point(17, 93);
-            label6.Name = "label6";
-            label6.Size = new Size(91, 16);
-            label6.TabIndex = 16;
-            label6.Text = "Amount Range";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Lime;
+            this.label6.Location = new System.Drawing.Point(19, 124);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Amount Range";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.Lime;
-            label7.Location = new Point(197, 88);
-            label7.Name = "label7";
-            label7.Size = new Size(21, 16);
-            label7.TabIndex = 17;
-            label7.Text = "To";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Lime;
+            this.label7.Location = new System.Drawing.Point(225, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 20);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "To";
             // 
             // bt_back_mngr
             // 
-            bt_back_mngr.Cursor = Cursors.Hand;
-            bt_back_mngr.FlatStyle = FlatStyle.Flat;
-            bt_back_mngr.Image = (Image)resources.GetObject("bt_back_mngr.Image");
-            bt_back_mngr.Location = new Point(12, 11);
-            bt_back_mngr.Margin = new Padding(3, 2, 3, 2);
-            bt_back_mngr.Name = "bt_back_mngr";
-            bt_back_mngr.Size = new Size(50, 56);
-            bt_back_mngr.TabIndex = 18;
-            bt_back_mngr.UseVisualStyleBackColor = true;
-            bt_back_mngr.Click += bt_back_man_Click;
+            this.bt_back_mngr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_back_mngr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_back_mngr.Image = ((System.Drawing.Image)(resources.GetObject("bt_back_mngr.Image")));
+            this.bt_back_mngr.Location = new System.Drawing.Point(14, 15);
+            this.bt_back_mngr.Name = "bt_back_mngr";
+            this.bt_back_mngr.Size = new System.Drawing.Size(57, 75);
+            this.bt_back_mngr.TabIndex = 18;
+            this.bt_back_mngr.UseVisualStyleBackColor = true;
+            this.bt_back_mngr.Click += new System.EventHandler(this.bt_back_man_Click);
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Cascadia Code", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.Lime;
-            label8.Location = new Point(457, 65);
-            label8.Name = "label8";
-            label8.Size = new Size(84, 28);
-            label8.TabIndex = 19;
-            label8.Text = "Filter";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Lime;
+            this.label8.Location = new System.Drawing.Point(522, 87);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 35);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Filter";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Black;
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(from_dtp);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(bt_get_total);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(total);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(to_dtp);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(cb_Beg);
-            panel1.Controls.Add(cb_End);
-            panel1.Location = new Point(446, 95);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(305, 154);
-            panel1.TabIndex = 20;
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.from_dtp);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.bt_get_total);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.total);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.to_dtp);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.cb_Beg);
+            this.panel1.Controls.Add(this.cb_End);
+            this.panel1.Location = new System.Drawing.Point(510, 127);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(349, 205);
+            this.panel1.TabIndex = 20;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.Lime;
-            label11.Location = new Point(58, 12);
-            label11.Name = "label11";
-            label11.Size = new Size(14, 16);
-            label11.TabIndex = 19;
-            label11.Text = "+";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Lime;
+            this.label11.Location = new System.Drawing.Point(66, 16);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(18, 20);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "+";
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.Lime;
-            label10.Location = new Point(58, 55);
-            label10.Name = "label10";
-            label10.Size = new Size(14, 16);
-            label10.TabIndex = 18;
-            label10.Text = "+";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Lime;
+            this.label10.Location = new System.Drawing.Point(66, 73);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 20);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "+";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Black;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(label12);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(lb_total);
-            panel2.Controls.Add(day_dtp);
-            panel2.Location = new Point(29, 268);
-            panel2.Margin = new Padding(3, 2, 3, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(389, 79);
-            panel2.TabIndex = 21;
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lb_total);
+            this.panel2.Controls.Add(this.day_dtp);
+            this.panel2.Location = new System.Drawing.Point(33, 357);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(444, 105);
+            this.panel2.TabIndex = 21;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.ForeColor = Color.Lime;
-            label12.Location = new Point(166, 50);
-            label12.Name = "label12";
-            label12.Size = new Size(14, 16);
-            label12.TabIndex = 20;
-            label12.Text = "+";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Lime;
+            this.label12.Location = new System.Drawing.Point(190, 67);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(18, 20);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "+";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Cascadia Code", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.Lime;
-            label9.Location = new Point(90, 13);
-            label9.Name = "label9";
-            label9.Size = new Size(180, 20);
-            label9.TabIndex = 22;
-            label9.Text = "Select Specific Day";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Lime;
+            this.label9.Location = new System.Drawing.Point(103, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(221, 25);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Select Specific Day";
             // 
             // Revenue_Form
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(763, 358);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Controls.Add(label8);
-            Controls.Add(bt_back_mngr);
-            Controls.Add(bt_spec_disp);
-            Controls.Add(bt_disp);
-            Controls.Add(dgv_rev);
-            Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Revenue_Form";
-            Text = "Revenue_Form";
-            Load += Revenue_Form_Load;
-            ((System.ComponentModel.ISupportInitialize)dgv_rev).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(872, 477);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.bt_back_mngr);
+            this.Controls.Add(this.bt_spec_disp);
+            this.Controls.Add(this.bt_disp);
+            this.Controls.Add(this.dgv_rev);
+            this.Controls.Add(this.label1);
+            this.Name = "Revenue_Form";
+            this.Text = "Revenue_Form";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_rev)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

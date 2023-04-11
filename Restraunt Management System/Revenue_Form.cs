@@ -18,10 +18,10 @@ namespace Restraunt_Management_System
         //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\source\repos\Restaurant_management_system\Restraunt Management System\Dala.mdf"";Integrated Security=True");
 
         //bryan 2
-        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\nata\Restraunt Management System\Dala.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\rodri\Desktop\nata\Restraunt Management System\Dala.mdf"";Integrated Security=True");
 
         //cedwin
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
+        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programming\web programming\restaurant management system\Restraunt Management System\Dala.mdf"";Integrated Security=True;Connect Timeout=30");
         public Revenue_Form()
         {
             InitializeComponent();
@@ -495,7 +495,7 @@ namespace Restraunt_Management_System
             {
                 e.Handled = true;
             }
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -503,7 +503,7 @@ namespace Restraunt_Management_System
 
         private void cb_End_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (cb_End.Text.Length == 0 && e.KeyChar == '0')
+            if(cb_End.Text.Length == 0 && e.KeyChar == '0')
             {
                 e.Handled = true;
             }
@@ -543,11 +543,6 @@ namespace Restraunt_Management_System
             }
         }
 
-        private void Revenue_Form_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgv_rev_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             foreach (DataGridViewRow row in dgv_rev.Rows)
@@ -581,7 +576,7 @@ namespace Restraunt_Management_System
 
         private void cb_Beg_TextChanged(object sender, EventArgs e)
         {
-
+            
             if (cb_Beg.Text.Length > 9)
             {
                 cb_Beg.Text = cb_Beg.Text.Substring(0, 9);
