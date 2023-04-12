@@ -81,6 +81,7 @@ namespace Restraunt_Management_System
             }
             else
             {
+                con.Open();
                 int del_id = Convert.ToInt32(tb_b_id.Text);
                 SqlCommand delfrev = new SqlCommand("DELETE FROM Revenue WHERE Id IN(SELECT Id AS BID FROM Bill WHERE B_id = '" + del_id + "')", con);
                 delfrev.ExecuteNonQuery();
@@ -165,9 +166,9 @@ namespace Restraunt_Management_System
                 {
                     if (int.TryParse(fprice, out int value))
                     {
-                        if (fprice == "0")
+                        if ((fprice == "0") || fprice.Substring(0,1).Equals("-"))
                         {
-                            MessageBox.Show("price cant be 0 or Try e.g [pudding Rs23]");
+                            MessageBox.Show("price cant be 0, negative number or Try e.g [pudding Rs23]");
                             return;
                         }
                     }
@@ -211,9 +212,9 @@ namespace Restraunt_Management_System
                 {
                     if (int.TryParse(dprice, out int value))
                     {
-                        if (dprice == "0")
+                        if ((dprice == "0") || dprice.Substring(0,1).Equals("-"))
                         {
-                            MessageBox.Show("price cant be 0 or Try e.g [Soda Rs23] ");
+                            MessageBox.Show("price can't be 0, negative number or Try e.g [Soda Rs23] ");
                             return;
                         }
                     }
@@ -479,7 +480,7 @@ namespace Restraunt_Management_System
         {
             con.Open();
             DataTable dta = new DataTable();
-            SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT [B_id],[Datetime],[Food type],[Food qty],[Drink type],[Drink qty],[Discount],[Total] FROM [Bill] ORDER BY B_id", con);
+            SqlDataAdapter dtaadp = new SqlDataAdapter("SELECT [B_id],[Datetime],[Food type],[Food qty],[Drink type],[Drink qty],[Discount],[Total] FROM [Bill] ORDER BY B_id DESC", con);
             dtaadp.Fill(dta);
             bill_dgv.DataSource = dta;
 
